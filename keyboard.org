@@ -23,12 +23,15 @@
 | C-x u                 | undo                                              |
 | C-g                   | cancel                                            |
 | M-m                   | home but to first non-whitespace                  |
+| M-< M->               | beginning (end) of buffer                         |
 | C-M-f                 | forward by sexp                                   |
 | C-M-b                 | backward by sexp                                  |
 | C-l                   | center window at point                            |
 | M-g M-g               | go to line                                        |
-| M-0 or C-0            | digit argument 0-9                                |
+| M-0 or C-u 0          | digit argument 0-9                                |
 | M-- or C--            | negative argument                                 |
+| C-c C-<down>          | duplicate line                                    |
+| C-c C-d               | delete line                                       |
 |                       |                                                   |
 | C-s                   | forward search                                    |
 | C-r                   | reverse search                                    |
