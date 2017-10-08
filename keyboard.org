@@ -1,0 +1,76 @@
+| C-x C-+               | zoom in                                           |
+| C-x C--               | zoom out                                          |
+| C-x 0                 | delete active window                              |
+| C-x 1                 | deletes other windows                             |
+| C-x 2                 | split window below                                |
+| C-x 3                 | split window right                                |
+| C-x 4 0               | kill buffer and window                            |
+| C-x o                 | other buffer                                      |
+| C-x b                 | switch to buffer                                  |
+| C-x C-b               | list buffers                                      |
+| C-x C-f               | open file                                         |
+| C-x C-s               | save buffer                                       |
+| C-x C-c               | exit Emacs                                        |
+|                       |                                                   |
+| <any prefix> C-h      | list keys for prefix                              |
+| M-x apropos           | help                                              |
+| M-x info              | manual (u = up)                                   |
+| M-x describe-mode     |                                                   |
+| M-x describe-function |                                                   |
+| M-x describe-variable |                                                   |
+| M-x describe-key      |                                                   |
+|                       |                                                   |
+| C-x u                 | undo                                              |
+| C-g                   | cancel                                            |
+| M-m                   | home but to first non-whitespace                  |
+| C-M-f                 | forward by sexp                                   |
+| C-M-b                 | backward by sexp                                  |
+| C-l                   | center window at point                            |
+| M-g M-g               | go to line                                        |
+| M-0 or C-0            | digit argument 0-9                                |
+| M-- or C--            | negative argument                                 |
+|                       |                                                   |
+| C-s                   | forward search                                    |
+| C-r                   | reverse search                                    |
+| C-s C-s               | forward search with previous term                 |
+| C-r C-r               | reverse search with previous term                 |
+| C-g                   | exits search and returns to orig location         |
+| ret                   | selects match and drops mark at previous location |
+| C-w                   | add word at point to search string                |
+| C-y                   | yank from clipboard to search string              |
+| M-x occur             | find all                                          |
+| M-x imenu             | jump to definition                                |
+| M-%                   | interactive search and replace                    |
+| M-x                   | search and replace                                |
+|                       |                                                   |
+| C-M-<spc>             | mark by sexp                                      |
+| M-@                   | mark by word                                      |
+| C-x h                 | mark whole buffer                                 |
+| C-u C-<spc>           | return to mark                                    |
+| C-<spc>               | set mark toggles region                           |
+| C-k                   | kill rest of line                                 |
+| C-S-<backspace>       | kill line                                         |
+| M-d, C-<backspace>    | kill word                                         |
+| C-w                   | kill region                                       |
+| M-w                   | copy to kill ring                                 |
+| C-y                   | yank                                              |
+| M-y                   | cycle through kill ring                           |
+|                       |                                                   |
+| \vert-                | create horizontal line                            |
+| \vert                 | start a row                                       |
+| C-c ^                 | sort rows by column where point is                |
+| C-c -                 | insert horizontal line                            |
+| M-S-<down>            | insert row                                        |
+| M-S-<up>              | kill current row                                  |
+| M-<up>                | move column up (down)                             |
+| M-S-<right>           | insert column                                     |
+| M-S-<left>            | kill current column                               |
+| M-<left>              | move column left (right)                          |
+|                       |                                                   |
+| \*                    | start heading                                     |
+| <tab>                 | show/hide heading                                 |
+| C-c C-n               | next heading                                      |
+| C-c C-p               | previous heading                                  |
+| \+ \- \*              | plain list item                                   |
+| [ ]                   | checkbox                                          |
+| C-c !                 | add date                                          |
