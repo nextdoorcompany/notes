@@ -31,7 +31,7 @@
 | M-0 or C-u 0          | digit argument 0-9                                |
 | M-- or C--            | negative argument                                 |
 | C-c C-<down>          | duplicate line                                    |
-| C-c C-d               | delete line                                       |
+| C-c <del>             | delete line                                       |
 |                       |                                                   |
 | C-s                   | forward search                                    |
 | C-r                   | reverse search                                    |
@@ -44,7 +44,7 @@
 | M-x occur             | find all                                          |
 | M-x imenu             | jump to definition                                |
 | M-%                   | interactive search and replace                    |
-| M-x                   | search and replace                                |
+| M-x replace-string    | search and replace                                |
 |                       |                                                   |
 | C-M-<spc>             | mark by sexp                                      |
 | M-@                   | mark by word                                      |
