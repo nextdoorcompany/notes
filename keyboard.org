@@ -1,3 +1,6 @@
+#+HTML_HEAD: <style>body {font-size: xx-small;}</style>
+#+OPTIONS: html-postamble:nil
+#+TITLE:
 | C-x C-+               | zoom in                                           |
 | C-x C--               | zoom out                                          |
 | C-x 0                 | delete active window                              |
