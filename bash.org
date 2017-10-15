@@ -1,2 +1,4 @@
 ln -s /path/to/target /path/to/symlink
 
+sudo apt install aspell
+

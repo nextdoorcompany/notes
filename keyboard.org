@@ -23,6 +23,10 @@
 | M-x describe-variable |                                                   |
 | M-x describe-key      |                                                   |
 |                       |                                                   |
+| M-x flyspell-mode     | highlight spelling                                |
+| M-x ispell-buffer     | check buffer                                      |
+| M-$                   | check work at point                               |
+|                       |                                                   |
 | C-x u                 | undo                                              |
 | C-g                   | cancel                                            |
 | M-m                   | home but to first non-whitespace                  |
