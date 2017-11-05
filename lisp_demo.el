@@ -111,4 +111,33 @@ major-mode
 
 (yes-or-no-p "foo?")
 
+(defun insert-the-current-time ()
+  "Insert the current time"
+  (interactive "*")
+  (insert (current-time-string)))
 
+(defvar insert-date-format "%x"
+  "*Format for \\[insert-date] (c.f. 'format-time-string').")
+
+(defun insert-date ()
+  "Insert the date"
+  (interactive "*")
+  (insert (format-time-string insert-date-format (current-time))))
+
+(defun update-writestamps ()
+  "Find writestamps and replacethem with current date."
+  (save-excursion
+    (save-restriction
+      (save-match-data
+        (widen)
+        (goto-char (point-min))
+        (while (search-forward "WRITESTAMP((" nil t)
+          (let ((start (point)))
+            (search-forward "))")
+            (delete-region start (- (point) 2))
+            (goto-char start)
+            (insert-date))))))
+  nil)
+
+
+WRITESTAMP((11/05/2017))
