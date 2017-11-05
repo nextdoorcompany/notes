@@ -28,6 +28,7 @@
 | M-$                   | check work at point                               |
 |                       |                                                   |
 | C-x u                 | undo                                              |
+| C-x z                 | repeat (z alone for multiple)                     |
 | C-g                   | cancel                                            |
 | M-m                   | home but to first non-whitespace                  |
 | M-< M->               | beginning (end) of buffer                         |
@@ -76,6 +77,7 @@
 | M-S-<right>           | insert column                                     |
 | M-S-<left>            | kill current column                               |
 | M-<left>              | move column left (right)                          |
+| C-c =                 | add formula                                       |
 |                       |                                                   |
 | \*                    | start heading                                     |
 | <tab>                 | show/hide heading                                 |

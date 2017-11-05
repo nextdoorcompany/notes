@@ -1,0 +1,11 @@
+#+HTML_HEAD: <style>body {font-size: xx-large;}</style>
+#+OPTIONS: html-postamble:nil
+#+TITLE:BOM
+#+ATTR_HTML: :border2 :rules all :frame border
+| ITEM | 0 | 1 | SUM |
+|------+---+---+-----|
+| FOO  | 1 | 2 |   3 |
+| BAR  | 2 | 2 |   4 |
+| cat  | 1 | 9 |  10 |
+| dog  | 2 | 2 |   4 |
+#+TBLFM: $4=vsum($2..$3)
