@@ -90,4 +90,25 @@ major-mode
 
 (describe-key (kbd "M-#"))
 
+(defun other-window-backward (&optional n)
+  "Select Nth previous window."
+  (interactive "P")
+  (other-window (- (prefix-numeric-value n))))
+
+(other-window-backward)
+
+(defun point-to-top ()
+  "Put point on top line of window."
+  (interactive)
+  (move-to-window-line 0))
+
+(point-to-top)
+
+(defun point-to-bottom ()
+  "Put point on bottom line of window."
+  (interactive)
+  (move-to-window-line -1))
+
+(yes-or-no-p "foo?")
+
 
