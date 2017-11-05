@@ -2,6 +2,8 @@
 ;; If you want to create a file, visit that file with C-x C-f,
 ;; then enter the text in that file's own buffer.
 
+(eldoc-mode)
+
 (insert "foo")
 
 (message "echo")
