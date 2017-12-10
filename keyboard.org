@@ -47,6 +47,8 @@
 | M-x bookmark-set      | sets bookmark of current open file                |
 | M-x list-bookmark     | opens bookmark buffer                             |
 | M-x bookmark-jump     | opens bookmarked file                             |
+| M-x narrow-to-region  | narrows to current selection                      |
+| M-x widen             | widens to full buffer                             |
 |                       |                                                   |
 | C-s                   | forward search                                    |
 | C-r                   | reverse search                                    |
