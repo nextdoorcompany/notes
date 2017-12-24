@@ -1,6 +1,7 @@
 #+HTML_HEAD: <style>body {font-size: xx-small;}</style>
 #+OPTIONS: html-postamble:nil
 #+TITLE:
+| *GENERAL*             |                                                   |
 | C-x C-+               | zoom in                                           |
 | C-x C--               | zoom out                                          |
 | C-x 0                 | delete active window                              |
@@ -19,6 +20,7 @@
 | C-x C-s               | save buffer                                       |
 | C-x C-c               | exit Emacs                                        |
 |                       |                                                   |
+| *HELP*                |                                                   |
 | <any prefix> C-h      | list keys for prefix                              |
 | M-x apropos           | help                                              |
 | M-x info              | manual (u = up)                                   |
@@ -27,10 +29,12 @@
 | M-x describe-variable |                                                   |
 | M-x describe-key      |                                                   |
 |                       |                                                   |
+| *SPELLING*            |                                                   |
 | M-x flyspell-mode     | highlight spelling                                |
 | M-x ispell-buffer     | check buffer                                      |
 | M-$                   | check work at point                               |
 |                       |                                                   |
+| *EDITING*             |                                                   |
 | C-x u                 | undo                                              |
 | C-x z                 | repeat (z alone for multiple)                     |
 | C-g                   | cancel                                            |
@@ -50,6 +54,7 @@
 | M-x narrow-to-region  | narrows to current selection                      |
 | M-x widen             | widens to full buffer                             |
 |                       |                                                   |
+| *SEARCH*              |                                                   |
 | C-s                   | forward search                                    |
 | C-r                   | reverse search                                    |
 | C-s C-s               | forward search with previous term                 |
@@ -63,6 +68,7 @@
 | M-%                   | interactive search and replace                    |
 | M-x replace-string    | search and replace                                |
 |                       |                                                   |
+| *MARK*                |                                                   |
 | C-M-<spc>             | mark by sexp                                      |
 | M-@                   | mark by word                                      |
 | C-x h                 | mark whole buffer                                 |
@@ -76,18 +82,20 @@
 | C-y                   | yank                                              |
 | M-y                   | cycle through kill ring                           |
 |                       |                                                   |
+| *ORG TABLE*           |                                                   |
 | \vert-                | create horizontal line                            |
 | \vert                 | start a row                                       |
 | C-c ^                 | sort rows by column where point is                |
 | C-c -                 | insert horizontal line                            |
 | M-S-<down>            | insert row                                        |
 | M-S-<up>              | kill current row                                  |
-| M-<up>                | move column up (down)                             |
+| M-<up>                | move row up (down)                                |
 | M-S-<right>           | insert column                                     |
 | M-S-<left>            | kill current column                               |
 | M-<left>              | move column left (right)                          |
 | C-c =                 | add formula                                       |
 |                       |                                                   |
+| *ORG GENERAL*         |                                                   |
 | \*                    | start heading                                     |
 | <tab>                 | show/hide heading                                 |
 | C-c C-n               | next heading                                      |
@@ -95,3 +103,14 @@
 | \+ \- \*              | plain list item                                   |
 | [ ]                   | checkbox                                          |
 | C-c !                 | add date                                          |
+|                       |                                                   |
+| *ORG TODO*            |                                                   |
+| C-c C-t               | cycle TODO item through states                    |
+| C-c C-s               | scheduele a TODO                                  |
+| C-c C-d               | insert a deadline                                 |
+| C-c C-z               | add a note                                        |
+|                       |                                                   |
+| *ORG AGENDA VIEW*     |                                                   |
+| d                     | daily view                                        |
+| t                     | cycle TODO item through states                    |
+| <tab>                 | go to original item                               |
