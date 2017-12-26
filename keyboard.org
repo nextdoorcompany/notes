@@ -106,11 +106,18 @@
 |                       |                                                   |
 | *ORG TODO*            |                                                   |
 | C-c C-t               | cycle TODO item through states                    |
-| C-c C-s               | scheduele a TODO                                  |
+| C-c C-s               | schedule a TODO                                   |
 | C-c C-d               | insert a deadline                                 |
 | C-c C-z               | add a note                                        |
+| M-S-<return>          | add a TODO at same indentation                    |
 |                       |                                                   |
 | *ORG AGENDA VIEW*     |                                                   |
 | d                     | daily view                                        |
 | t                     | cycle TODO item through states                    |
 | <tab>                 | go to original item                               |
+|                       |                                                   |
+| *ARTIST MODE*         |                                                   |
+| C-c C-a C-o           | select drawing tool                               |
+| <return>              | starts and stops lines and rect, dir on poly line |
+| C-u <return>          | stops poly line                                   |
+| < >                   | adds/removes arrows of last line drawn            |
