@@ -115,6 +115,7 @@
 | d                     | daily view                                        |
 | t                     | cycle TODO item through states                    |
 | s                     | save all connected org files                      |
+| r                     | reload view                                       |
 | <tab>                 | go to original item                               |
 |                       |                                                   |
 | *ARTIST MODE*         |                                                   |
