@@ -114,6 +114,7 @@
 | *ORG AGENDA VIEW*     |                                                   |
 | d                     | daily view                                        |
 | t                     | cycle TODO item through states                    |
+| s                     | save all connected org files                      |
 | <tab>                 | go to original item                               |
 |                       |                                                   |
 | *ARTIST MODE*         |                                                   |
