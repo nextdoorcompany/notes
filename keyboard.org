@@ -16,6 +16,7 @@
 | C-x 4 b               | display a buffer in the next window               |
 | C-x 4 f               | display a file in the next window                 |
 | C-x i                 | insert file contents into buffer                  |
+| C-x C-c               | insert control-c into ansi-term                   |
 | C-x C-f               | open file                                         |
 | C-x C-s               | save buffer                                       |
 | C-x C-c               | exit Emacs                                        |
