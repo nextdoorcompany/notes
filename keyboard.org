@@ -68,6 +68,7 @@
 | M-x imenu             | jump to definition                                |
 | M-%                   | interactive search and replace                    |
 | M-x replace-string    | search and replace                                |
+| M-x align-regexp      | align region around regexp                        |
 |                       |                                                   |
 | *MARK*                |                                                   |
 | C-M-<spc>             | mark by sexp                                      |
