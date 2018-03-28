@@ -54,6 +54,7 @@
 | M-x bookmark-jump     | opens bookmarked file                             |
 | M-x narrow-to-region  | narrows to current selection                      |
 | M-x widen             | widens to full buffer                             |
+| M-x align-regexp      | align region around regexp                        |
 |                       |                                                   |
 | *SEARCH*              |                                                   |
 | C-s                   | forward search                                    |
@@ -68,7 +69,6 @@
 | M-x imenu             | jump to definition                                |
 | M-%                   | interactive search and replace                    |
 | M-x replace-string    | search and replace                                |
-| M-x align-regexp      | align region around regexp                        |
 |                       |                                                   |
 | *MARK*                |                                                   |
 | C-M-<spc>             | mark by sexp                                      |
