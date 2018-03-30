@@ -29,6 +29,8 @@
 | M-x describe-function |                                                   |
 | M-x describe-variable |                                                   |
 | M-x describe-key      |                                                   |
+| M-x describe-bindings |                                                   |
+| M-x where-is          | enter command it gives keybinding                 |
 |                       |                                                   |
 | *SPELLING*            |                                                   |
 | M-x flyspell-mode     | highlight spelling                                |
@@ -125,3 +127,13 @@
 | <return>              | starts and stops lines and rect, dir on poly line |
 | C-u <return>          | stops poly line                                   |
 | < >                   | adds/removes arrows of last line drawn            |
+|                       |                                                   |
+| *DIRED*               |                                                   |
+| C-x d                 | open                                              |
+| q                     | quit                                              |
+| m u                   | mark unmark                                       |
+| C                     | copy                                              |
+| D                     | delete                                            |
+| f                     | open                                              |
+| v                     | open read only                                    |
+| \^                    | up a directory                                    |
