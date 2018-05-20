@@ -132,10 +132,14 @@
 | C-x d                 | open                                              |
 | q                     | quit                                              |
 | m u                   | mark unmark                                       |
+| U                     | unmark all                                        |
 | C                     | copy                                              |
 | D                     | delete                                            |
 | f                     | open                                              |
 | v                     | open read only                                    |
 | \^                    | up a directory                                    |
+| w                     | copy filename to kill ring                        |
+| M-0 w                 | copy full path to kill ring                       |
+| \!                    | run shell command on marked (r is script to open) |
 | M-x locate            | linux locate (sudo updatedb)                      |
 | M-x find-name-dired   | linux find -name                                  |
