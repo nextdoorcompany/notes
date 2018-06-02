@@ -1,2 +1,16 @@
-pathlib = new os.path see ceder
+* build from source
 
+** download tarball from python
+
+** unpack to current directory
+#+BEGIN_SRC shell
+tar -xzf /path/to/tar.gz
+#+END_SRC
+
+** build
+#+BEGIN_SRC shell
+./configure --prefix=/home/$USER/.local
+make
+make test
+sudo make install
+#+END_SRC
