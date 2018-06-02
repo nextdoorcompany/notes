@@ -1,0 +1,32 @@
+* install qutebrowser on 18.04
+
+** install using tox
+#+BEGIN_SRC shell
+git clone https://github.com/qutebrowser/qutebrowser.git
+cd qutebrowser
+tox -e mkvenv-pypi
+#+END_SRC
+
+** isolate openssl 1.0 libs
+#+BEGIN_SRC shell
+cp /usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+cp /usr/lib/x86_64-linux-gnu/libssl.so.1.0.0
+#+END_SRC
+
+** run script
+#+BEGIN_SRC shell
+#!/bin/bash
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/openssl
+~/qutebrowser/.venv/bin/python3 -m qutebrowser "$@"
+#+END_SRC
+
+** use config
+:version
+find config directory and symlink dotfiles
+
+** update from source
+#+BEGIN_SRC shell
+cd qutebrowser
+git pull
+tox -r -e mkvenv-pypi
+#+END_SRC

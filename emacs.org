@@ -1,0 +1,22 @@
+* emacs 26.1 from source 18.04
+
+** download tarball from gnu
+
+** unpack to current directory
+#+BEGIN_SRC shell
+tar -xzf /path/to/tar.gz
+#+END_SRC
+
+** uncomment deb-src from /etc/apt/sources.list
+
+** install deps
+#+BEGIN_SRC shell
+sudo apt build-dep emacs25
+#+END_SRC
+
+** build
+#+BEGIN_SRC shell
+./configure --prefix=/home/$USER/.local
+make
+make install
+#+END_SRC
