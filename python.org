@@ -1,5 +1,11 @@
 * build from source
 
+** install deps
+#+BEGIN_SRC shell
+sudo apt install libssl-dev
+sudo apt build-dep python3.5
+#+END_SRC
+
 ** download tarball from python
 
 ** unpack to current directory
