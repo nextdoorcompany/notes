@@ -1,145 +1,154 @@
 #+HTML_HEAD: <style>body {font-size: xx-small;}</style>
 #+OPTIONS: html-postamble:nil
 #+TITLE:
-| *GENERAL*             |                                                   |
-| C-x C-+               | zoom in                                           |
-| C-x C--               | zoom out                                          |
-| C-x 0                 | delete active window                              |
-| C-x 1                 | deletes other windows                             |
-| C-x 2                 | split window below                                |
-| C-x 3                 | split window right                                |
-| C-x } C-x {           | increase (decrease) buffer width                  |
-| C-x 4 0               | kill buffer and window                            |
-| C-x o                 | other buffer                                      |
-| C-x b                 | switch to buffer                                  |
-| C-x C-b               | list buffers                                      |
-| C-x 4 b               | display a buffer in the next window               |
-| C-x 4 f               | display a file in the next window                 |
-| C-x i                 | insert file contents into buffer                  |
-| C-x C-c               | insert control-c into ansi-term                   |
-| C-x C-f               | open file                                         |
-| C-x C-s               | save buffer                                       |
-| C-x C-c               | exit Emacs                                        |
-|                       |                                                   |
-| *HELP*                |                                                   |
-| <any prefix> C-h      | list keys for prefix                              |
-| M-x apropos           | help                                              |
-| M-x info              | manual (u = up)                                   |
-| M-x describe-mode     |                                                   |
-| M-x describe-function |                                                   |
-| M-x describe-variable |                                                   |
-| M-x describe-key      |                                                   |
-| M-x describe-bindings |                                                   |
-| M-x where-is          | enter command it gives keybinding                 |
-|                       |                                                   |
-| *SPELLING*            |                                                   |
-| M-x flyspell-mode     | highlight spelling                                |
-| M-x ispell-buffer     | check buffer                                      |
-| M-$                   | check work at point                               |
-|                       |                                                   |
-| *EDITING*             |                                                   |
-| C-x u                 | undo                                              |
-| C-x z                 | repeat (z alone for multiple)                     |
-| C-g                   | cancel                                            |
-| M-m                   | home but to first non-whitespace                  |
-| M-< M->               | beginning (end) of buffer                         |
-| C-M-f                 | forward by sexp                                   |
-| C-M-b                 | backward by sexp                                  |
-| C-l                   | center window at point                            |
-| M-g M-g               | go to line                                        |
-| M-0 or C-u 0          | digit argument 0-9                                |
-| M-- or C--            | negative argument                                 |
-| C-c C-<down>          | duplicate line                                    |
-| C-c <del>             | delete line                                       |
-| M-x bookmark-set      | sets bookmark of current open file                |
-| M-x list-bookmark     | opens bookmark buffer                             |
-| M-x bookmark-jump     | opens bookmarked file                             |
-| M-x narrow-to-region  | narrows to current selection                      |
-| M-x widen             | widens to full buffer                             |
-| M-x align-regexp      | align region around regexp                        |
-|                       |                                                   |
-| *SEARCH*              |                                                   |
-| C-s                   | forward search                                    |
-| C-r                   | reverse search                                    |
-| C-s C-s               | forward search with previous term                 |
-| C-r C-r               | reverse search with previous term                 |
-| C-g                   | exits search and returns to orig location         |
-| ret                   | selects match and drops mark at previous location |
-| C-w                   | add word at point to search string                |
-| C-y                   | yank from clipboard to search string              |
-| M-x occur             | find all                                          |
-| M-x imenu             | jump to definition                                |
-| M-%                   | interactive search and replace                    |
-| M-x replace-string    | search and replace                                |
-|                       |                                                   |
-| *MARK*                |                                                   |
-| C-M-<spc>             | mark by sexp                                      |
-| M-@                   | mark by word                                      |
-| C-x h                 | mark whole buffer                                 |
-| C-u C-<spc>           | return to mark                                    |
-| C-<spc>               | set mark toggles region                           |
-| C-k                   | kill rest of line                                 |
-| C-S-<backspace>       | kill line                                         |
-| M-d, C-<backspace>    | kill word                                         |
-| C-w                   | kill region                                       |
-| M-w                   | copy to kill ring                                 |
-| C-y                   | yank                                              |
-| M-y                   | cycle through kill ring                           |
-|                       |                                                   |
-| *ORG TABLE*           |                                                   |
-| \vert-                | create horizontal line                            |
-| \vert                 | start a row                                       |
-| C-c ^                 | sort rows by column where point is                |
-| C-c -                 | insert horizontal line                            |
-| M-S-<down>            | insert row                                        |
-| M-S-<up>              | kill current row                                  |
-| M-<up>                | move row up (down)                                |
-| M-S-<right>           | insert column                                     |
-| M-S-<left>            | kill current column                               |
-| M-<left>              | move column left (right)                          |
-| C-c =                 | add formula                                       |
-|                       |                                                   |
-| *ORG GENERAL*         |                                                   |
-| \*                    | start heading                                     |
-| <tab>                 | show/hide heading                                 |
-| C-c C-n               | next heading                                      |
-| C-c C-p               | previous heading                                  |
-| \+ \- \*              | plain list item                                   |
-| [ ]                   | checkbox                                          |
-| C-c !                 | add date                                          |
-|                       |                                                   |
-| *ORG TODO*            |                                                   |
-| C-c C-t               | cycle TODO item through states                    |
-| C-c C-s               | schedule a TODO                                   |
-| C-c C-d               | insert a deadline                                 |
-| C-c C-z               | add a note                                        |
-| M-S-<return>          | add a TODO at same indentation                    |
-|                       |                                                   |
-| *ORG AGENDA VIEW*     |                                                   |
-| d                     | daily view                                        |
-| t                     | cycle TODO item through states                    |
-| s                     | save all connected org files                      |
-| r                     | reload view                                       |
-| <tab>                 | go to original item                               |
-|                       |                                                   |
-| *ARTIST MODE*         |                                                   |
-| C-c C-a C-o           | select drawing tool                               |
-| <return>              | starts and stops lines and rect, dir on poly line |
-| C-u <return>          | stops poly line                                   |
-| < >                   | adds/removes arrows of last line drawn            |
-|                       |                                                   |
-| *DIRED*               |                                                   |
-| C-x d                 | open                                              |
-| q                     | quit                                              |
-| m u                   | mark unmark                                       |
-| U                     | unmark all                                        |
-| C                     | copy                                              |
-| D                     | delete                                            |
-| f                     | open                                              |
-| v                     | open read only                                    |
-| \^                    | up a directory                                    |
-| w                     | copy filename to kill ring                        |
-| M-0 w                 | copy full path to kill ring                       |
-| \!                    | run shell command on marked (r is script to open) |
-| M-x locate            | linux locate (sudo updatedb)                      |
-| M-x find-name-dired   | linux find -name                                  |
+| *GENERAL*               |                                                   |
+| C-x C-+                 | zoom in                                           |
+| C-x C--                 | zoom out                                          |
+| C-x 0                   | delete active window                              |
+| C-x 1                   | deletes other windows                             |
+| C-x 2                   | split window below                                |
+| C-x 3                   | split window right                                |
+| C-x } C-x {             | increase (decrease) buffer width                  |
+| C-x 4 0                 | kill buffer and window                            |
+| C-x o                   | other buffer                                      |
+| C-x b                   | switch to buffer                                  |
+| C-x C-b                 | list buffers                                      |
+| C-x 4 b                 | display a buffer in the next window               |
+| C-x 4 f                 | display a file in the next window                 |
+| C-x i                   | insert file contents into buffer                  |
+| C-x C-c                 | insert control-c into ansi-term                   |
+| C-x C-f                 | open file                                         |
+| C-x C-s                 | save buffer                                       |
+| C-x C-c                 | exit Emacs                                        |
+|                         |                                                   |
+| *HELP*                  |                                                   |
+| <any prefix> C-h        | list keys for prefix                              |
+| M-x apropos             | help                                              |
+| M-x info                | manual (u = up)                                   |
+| M-x describe-mode       |                                                   |
+| M-x describe-function   |                                                   |
+| M-x describe-variable   |                                                   |
+| M-x describe-key        |                                                   |
+| M-x describe-bindings   |                                                   |
+| M-x where-is            | enter command it gives keybinding                 |
+|                         |                                                   |
+| *SPELLING*              |                                                   |
+| M-x flyspell-mode       | highlight spelling                                |
+| M-x ispell-buffer       | check buffer                                      |
+| M-$                     | check work at point                               |
+|                         |                                                   |
+| *EDITING*               |                                                   |
+| C-x u                   | undo                                              |
+| C-x z                   | repeat (z alone for multiple)                     |
+| C-g                     | cancel                                            |
+| M-m                     | home but to first non-whitespace                  |
+| M-< M->                 | beginning (end) of buffer                         |
+| C-M-f                   | forward by sexp                                   |
+| C-M-b                   | backward by sexp                                  |
+| C-l                     | center window at point                            |
+| M-g M-g                 | go to line                                        |
+| M-0 or C-u 0            | digit argument 0-9                                |
+| M-- or C--              | negative argument                                 |
+| C-c C-<down>            | duplicate line                                    |
+| C-c <del>               | delete line                                       |
+| M-x bookmark-set        | sets bookmark of current open file                |
+| M-x list-bookmark       | opens bookmark buffer                             |
+| M-x bookmark-jump       | opens bookmarked file                             |
+| M-x narrow-to-region    | narrows to current selection                      |
+| M-x widen               | widens to full buffer                             |
+| M-x align-regexp        | align region around regexp                        |
+| M-x whitespace-mode     | displays whitespace characters                    |
+| C-M-v                   | scroll other window down                          |
+| C-M-S-v                 | scroll other window up                            |
+|                         |                                                   |
+| *SEARCH*                |                                                   |
+| C-s                     | forward search                                    |
+| C-r                     | reverse search                                    |
+| C-s C-s                 | forward search with previous term                 |
+| C-r C-r                 | reverse search with previous term                 |
+| C-g                     | exits search and returns to orig location         |
+| ret                     | selects match and drops mark at previous location |
+| C-w                     | add word at point to search string                |
+| C-y                     | yank from clipboard to search string              |
+| M-x occur               | find all                                          |
+| M-x imenu               | jump to definition                                |
+| M-%                     | interactive search and replace                    |
+| M-x replace-string      | search and replace                                |
+|                         |                                                   |
+| *MARK*                  |                                                   |
+| C-M-<spc>               | mark by sexp                                      |
+| M-@                     | mark by word                                      |
+| C-x h                   | mark whole buffer                                 |
+| C-u C-<spc>             | return to mark                                    |
+| C-<spc>                 | set mark toggles region                           |
+| C-k                     | kill rest of line                                 |
+| C-S-<backspace>         | kill line                                         |
+| M-d, C-<backspace>      | kill word                                         |
+| C-w                     | kill region                                       |
+| M-w                     | copy to kill ring                                 |
+| C-y                     | yank                                              |
+| M-y                     | cycle through kill ring                           |
+| C-=                     | mark using context                                |
+|                         |                                                   |
+| *ORG TABLE*             |                                                   |
+| \vert-                  | create horizontal line                            |
+| \vert                   | start a row                                       |
+| C-c ^                   | sort rows by column where point is                |
+| C-c -                   | insert horizontal line                            |
+| M-S-<down>              | insert row                                        |
+| M-S-<up>                | kill current row                                  |
+| M-<up>                  | move row up (down)                                |
+| M-S-<right>             | insert column                                     |
+| M-S-<left>              | kill current column                               |
+| M-<left>                | move column left (right)                          |
+| C-c =                   | add formula                                       |
+|                         |                                                   |
+| *ORG GENERAL*           |                                                   |
+| \*                      | start heading                                     |
+| C-c C-n                 | next heading                                      |
+| C-c C-p                 | previous heading                                  |
+| \+ \- \*                | plain list item                                   |
+| [ ]                     | checkbox                                          |
+| C-c !                   | add date                                          |
+|                         |                                                   |
+| *ORG TODO*              |                                                   |
+| C-c C-t                 | cycle TODO item through states                    |
+| C-c C-s                 | schedule a TODO                                   |
+| C-c C-d                 | insert a deadline                                 |
+| C-c C-z                 | add a note                                        |
+| M-S-<return>            | add a TODO at same indentation                    |
+|                         |                                                   |
+| *ORG AGENDA VIEW*       |                                                   |
+| d                       | daily view                                        |
+| t                       | cycle TODO item through states                    |
+| s                       | save all connected org files                      |
+| r                       | reload view                                       |
+| <tab>                   | go to original item                               |
+|                         |                                                   |
+| *ARTIST MODE*           |                                                   |
+| C-c C-a C-o             | select drawing tool                               |
+| <return>                | starts and stops lines and rect, dir on poly line |
+| C-u <return>            | stops poly line                                   |
+| < >                     | adds/removes arrows of last line drawn            |
+|                         |                                                   |
+| *DIRED*                 |                                                   |
+| C-x d                   | open                                              |
+| q                       | quit                                              |
+| m u                     | mark unmark                                       |
+| U                       | unmark all                                        |
+| C                       | copy                                              |
+| D                       | delete                                            |
+| f                       | open                                              |
+| v                       | open read only                                    |
+| \^                      | up a directory                                    |
+| w                       | copy filename to kill ring                        |
+| M-0 w                   | copy full path to kill ring                       |
+| \!                      | run shell command on marked (r is script to open) |
+| M-x locate              | linux locate (sudo updatedb)                      |
+| M-x find-name-dired     | linux find -name                                  |
+|                         |                                                   |
+| *YASNIPPET*             |                                                   |
+| <tab>                   | expand snippet                                    |
+| M-x yas-describe-tables | view snippets for current mode                    |
+| C-c w                   | create auto-snippet                               |
+| C-c y                   | expand auto-snippet                               |
