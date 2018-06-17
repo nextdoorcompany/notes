@@ -60,6 +60,7 @@
 | M-x whitespace-mode     | displays whitespace characters                    |
 | C-M-v                   | scroll other window down                          |
 | C-M-S-v                 | scroll other window up                            |
+| S-<return>              | create newline under current                      |
 |                         |                                                   |
 | *SEARCH*                |                                                   |
 | C-s                     | forward search                                    |
@@ -110,6 +111,7 @@
 | \+ \- \*                | plain list item                                   |
 | [ ]                     | checkbox                                          |
 | C-c !                   | add date                                          |
+| C-c '                   | open buffer for current code block                |
 |                         |                                                   |
 | *ORG TODO*              |                                                   |
 | C-c C-t                 | cycle TODO item through states                    |
