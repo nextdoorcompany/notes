@@ -31,6 +31,7 @@
 | M-x describe-key        |                                                   |
 | M-x describe-bindings   |                                                   |
 | M-x where-is            | enter command it gives keybinding                 |
+| M-x helpful-            | alternative to describe-                          |
 |                         |                                                   |
 | *SPELLING*              |                                                   |
 | M-x flyspell-mode       | highlight spelling                                |
