@@ -20,3 +20,42 @@ sudo apt build-dep emacs25
 make
 make install
 #+END_SRC
+
+
+* create Windows launch script
+
+Place script in emacs home directory.
+#+BEGIN_SRC shell
+  new-item -path env:. -name HOME -value C:\path\to\emacs\home
+  cd C:\path\to\emacs\home
+  C:\path\to\emacs\bin\runemacs.exe
+#+END_SRC
+
+Right click create shortcut in emacs home directory.
+#+BEGIN_SRC shell
+  %SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe -executionpolicy unrestricted -file C:\path\to\emacs\home\launch_emacs.ps1
+#+END_SRC
+
+* load dotfiles on Windows
+
+from within WSL
+#+BEGIN_SRC shell
+  cd .dotfiles
+  git pull
+
+  cp init-config.org /mnt/c/path/to/emacs/home/.init-config.org
+  cp init-packages.org /mnt/c/path/to/emacs/home/.init-packages.org
+  cp .emacs /mnt/c/path/to/emacs/home/.emacs
+#+END_SRC
+
+* use WSL for aspell
+
+Create aspell.bat in system path.  
+#+BEGIN_SRC shell
+  wsl aspell %*
+#+END_SRC
+
+
+
+
+
