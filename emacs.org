@@ -46,6 +46,7 @@ from within WSL
   cp init-config.org /mnt/c/path/to/emacs/home/.init-config.org
   cp init-packages.org /mnt/c/path/to/emacs/home/.init-packages.org
   cp .emacs /mnt/c/path/to/emacs/home/.emacs
+  cp snippets /mnt/c/path/to/emacs/home/.emacs.d/snippets
 #+END_SRC
 
 * use WSL for aspell
