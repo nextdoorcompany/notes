@@ -64,6 +64,8 @@
 | C-M-S-v                   | scroll other window up                            |
 | S-<return>                | create newline under current                      |
 | M-x diff-buffer-with-file | show unsaved changes                              |
+| C-c j                     | jump to visible character                         |
+| M-/                       | dynamic abbreviation expansion                    |
 |                           |                                                   |
 | *SEARCH*                  |                                                   |
 | C-s                       | forward search                                    |
@@ -83,7 +85,9 @@
 | C-M-<spc>                 | mark by sexp                                      |
 | M-@                       | mark by word                                      |
 | C-x h                     | mark whole buffer                                 |
-| C-u C-<spc>               | return to mark                                    |
+| C-<spc> C-<spc>           | push mark to mark ring                            |
+| C-u C-<spc>               | pop mark ring within buffer                       |
+| C-x C-<spc>               | pop global mark ring                              |
 | C-<spc>                   | set mark toggles region                           |
 | C-k                       | kill rest of line                                 |
 | C-S-<backspace>           | kill line                                         |
@@ -166,3 +170,11 @@
 | *SHELL*                   |                                                   |
 | M-! cmd                   | run command and display output                    |
 | M-\vert cmd               | run command with region as input                  |
+|                           |                                                   |
+| *WORKFLOW*                |                                                   |
+| C-c f                     | new scratch buffer with spell checking            |
+| M-x js/new-scratch-buffer | new scratch buffer no checking                    |
+|                           |                                                   |
+| *CALENDAR*                |                                                   |
+| M-x calendar              | opens calendar                                    |
+| M-w                       | copies date under cursor to kill ring             |
