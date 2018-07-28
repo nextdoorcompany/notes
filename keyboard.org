@@ -178,3 +178,10 @@
 | *CALENDAR*                |                                                   |
 | M-x calendar              | opens calendar                                    |
 | M-w                       | copies date under cursor to kill ring             |
+|                           |                                                   |
+| *PACKAGES*                |                                                   |
+| M-x list-packages         | opens package list                                |
+| M-x occur installed       | opens occur buffer with installed packages        |
+| U x                       | update packages                                   |
+| r                         | refresh package list                              |
+| h                         | help                                              |

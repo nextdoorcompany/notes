@@ -38,13 +38,17 @@ Right click create shortcut in emacs home directory.
 
 * load dotfiles on Windows
 
+To get WSL path name of home folder:
++ Navigate to folder in explore
++ Right click and copy address (not as text)
++ Paste into WSL console
+
 from within WSL
 #+BEGIN_SRC shell
   cd .dotfiles
   git pull
 
-  cp init-config.org /mnt/c/path/to/emacs/home/.init-config.org
-  cp init-packages.org /mnt/c/path/to/emacs/home/.init-packages.org
+  cp config.org /mnt/c/path/to/emacs/home/.config.org
   cp .emacs /mnt/c/path/to/emacs/home/.emacs
   cp -r snippets /mnt/c/path/to/emacs/home/.emacs.d
 #+END_SRC
