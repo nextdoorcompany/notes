@@ -185,3 +185,8 @@
 | U x                       | update packages                                   |
 | r                         | refresh package list                              |
 | h                         | help                                              |
+|                           |                                                   |
+| *HIGHLIGHTING*            |                                                   |
+| M-x highlight-regexp      | M-n, M-p cycle through colors                     |
+| M-x unhighlight-regexp    |                                                   |
+| M-s h l                   | shorthand regexp captures entire line             |
