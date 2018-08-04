@@ -112,10 +112,10 @@
 | C-c =                     | add formula                                       |
 |                           |                                                   |
 | *ORG GENERAL*             |                                                   |
-| \*                        | start heading                                     |
+| \ast                      | start heading                                     |
 | C-c C-n                   | next heading                                      |
 | C-c C-p                   | previous heading                                  |
-| \+ \- \*                  | plain list item                                   |
+| \plus \shy \ast           | plain list item                                   |
 | [ ]                       | checkbox                                          |
 | C-c !                     | add date                                          |
 | C-c '                     | open buffer for current code block                |
@@ -143,16 +143,18 @@
 | *DIRED*                   |                                                   |
 | C-x d                     | open                                              |
 | q                         | quit                                              |
+| h                         | help                                              |
 | m u                       | mark unmark                                       |
+| % m                       | mark by regexp                                    |
 | U                         | unmark all                                        |
 | C                         | copy                                              |
 | D                         | delete                                            |
 | f                         | open                                              |
 | v                         | open read only                                    |
-| \^                        | up a directory                                    |
+| \asciicirc                | up a directory                                    |
 | w                         | copy filename to kill ring                        |
 | M-0 w                     | copy full path to kill ring                       |
-| \!                        | run shell command on marked (r is script to open) |
+| \excl                     | run shell command on marked (r is script to open) |
 | M-x locate                | linux locate (sudo updatedb)                      |
 | M-x find-name-dired       | linux find -name                                  |
 |                           |                                                   |
