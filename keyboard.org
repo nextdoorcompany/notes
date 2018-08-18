@@ -192,3 +192,11 @@
 | M-x highlight-regexp      | M-n, M-p cycle through colors                     |
 | M-x unhighlight-regexp    |                                                   |
 | M-s h l                   | shorthand regexp captures entire line             |
+|                           |                                                   |
+| *MACROS*                  |                                                   |
+| <f3>                      | start recording (univeral arg sets the counter)   |
+| <f3>                      | insert counter                                    |
+| <f4>                      | stop recording                                    |
+| <f4>                      | run (universal arg sets number of times)          |
+| M-x name-last-kbd-macro   | names last macro                                  |
+| M-x insert-kbd-macro      | puts elisp equivalent of macro into buffer        |
