@@ -18,6 +18,7 @@
 | C-x i                     | insert file contents into buffer                  |
 | C-x C-c                   | insert control-c into ansi-term                   |
 | C-x C-f                   | open file                                         |
+| C-x C-r                   | open recent file list                             |
 | C-x C-s                   | save buffer                                       |
 | C-x C-c                   | exit Emacs                                        |
 |                           |                                                   |
