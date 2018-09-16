@@ -125,6 +125,7 @@
 | [ ]                       | checkbox                                          |
 | C-c !                     | add date                                          |
 | C-c '                     | open buffer for current code block                |
+| C-c c                     | open capture template window                      |
 |                           |                                                   |
 | *ORG TODO*                |                                                   |
 | C-c C-t                   | cycle TODO item through states                    |
