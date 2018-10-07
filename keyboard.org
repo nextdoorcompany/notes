@@ -72,6 +72,8 @@
 | M-x untabify              | change tabs to spaces in region                   |
 | C-x C-u                   | upcase-region                                     |
 | M-;                       | comment region or add comment                     |
+| M-x revert-buffer         | loads the file from disk                          |
+| M-x nato-region           | translate region to phonetic alphabet             |
 |                           |                                                   |
 | *SEARCH*                  |                                                   |
 | C-s                       | forward search                                    |
@@ -207,3 +209,10 @@
 | <f4>                      | run (universal arg sets number of times)          |
 | M-x name-last-kbd-macro   | names last macro                                  |
 | M-x insert-kbd-macro      | puts elisp equivalent of macro into buffer        |
+|                           |                                                   |
+| *CALC*                    |                                                   |
+| C-x * q                   | quick calculation put answer in kill-ring         |
+|                           |                                                   |
+| *IDO*                     |                                                   |
+| C-f/C-b                   | stop using IDO for files/buffers                  |
+| C-r/C-s                   | previous/next match                               |
