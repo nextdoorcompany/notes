@@ -60,6 +60,15 @@ Create aspell.bat in system path.
   wsl aspell %*
 #+END_SRC
 
+* create directory junction in Windows
+
+[[https://www.howtogeek.com/howto/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/][Post]] on creating links.
+
+Use cmd in emacs home directory to make ~/org.
+#+BEGIN_SRC shell
+  mklink /J org "c:\path\to\org"
+#+END_SRC
+
 
 
 
