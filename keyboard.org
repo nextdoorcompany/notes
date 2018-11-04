@@ -54,9 +54,9 @@
 | M-- or C--                | negative argument                                 |
 | C-c C-<down>              | duplicate line                                    |
 | C-c <del>                 | delete line                                       |
-| M-x bookmark-set          | sets bookmark of current open file                |
+| C-x r m                   | sets bookmark of current open file                |
 | M-x list-bookmark         | opens bookmark buffer                             |
-| M-x bookmark-jump         | opens bookmarked file                             |
+| C-x r b                   | opens bookmarked file                             |
 | C-x r <SPC> R             | records position in register named R              |
 | C-x r j R                 | jumps to position of register named R             |
 | M-x narrow-to-region      | narrows to current selection                      |
@@ -168,6 +168,8 @@
 | \!                        | run shell command on marked (r is script to open) |
 | M-x locate                | linux locate (sudo updatedb)                      |
 | M-x find-name-dired       | linux find -name                                  |
+| i                         | open subdirectory in same buffer                  |
+| C-u k                     | on subdirectory header kills from buffer          |
 |                           |                                                   |
 | *YASNIPPET*               |                                                   |
 | <tab>                     | expand snippet                                    |
