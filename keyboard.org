@@ -85,9 +85,11 @@
 | C-w                       | add word at point to search string                |
 | C-y                       | yank from clipboard to search string              |
 | M-x occur                 | find all                                          |
+| e/C-c C-c                 | starts/stops edit mode in occur buffer            |
 | M-x imenu                 | jump to definition                                |
 | M-%                       | interactive search and replace                    |
 | M-x replace-string        | search and replace                                |
+| M-q                       | search and replace in swiper search               |
 |                           |                                                   |
 | *MARK*                    |                                                   |
 | C-M-<spc>                 | mark by sexp                                      |
@@ -168,6 +170,7 @@
 | \!                        | run shell command on marked (r is script to open) |
 | M-x locate                | linux locate (sudo updatedb)                      |
 | M-x find-name-dired       | linux find -name                                  |
+| a                         | open file/dir and kill dired buffer               |
 | i                         | open subdirectory in same buffer                  |
 | C-u k                     | on subdirectory header kills from buffer          |
 |                           |                                                   |
