@@ -15,8 +15,10 @@
 | C-x C-b                   | list buffers                                      |
 | C-x 4 b                   | display a buffer in the next window               |
 | C-x 4 f                   | display a file in the next window                 |
+| C-x 4 t                   | transpose windows                                 |
 | C-x i                     | insert file contents into buffer                  |
 | C-x C-c                   | insert control-c into ansi-term                   |
+| C-c t                     | open or switch to ansi-term                       |
 | C-x C-f                   | open file                                         |
 | C-x C-r                   | open recent file list                             |
 | C-x C-s                   | save buffer                                       |
@@ -52,7 +54,8 @@
 | M-g M-g                   | go to line                                        |
 | M-0 or C-u 0              | digit argument 0-9                                |
 | M-- or C--                | negative argument                                 |
-| C-c C-<down>              | duplicate line                                    |
+| C-c d                     | duplicate line                                    |
+| C-c M d                   | duplicate line and comment original               |
 | C-c <del>                 | delete line                                       |
 | C-x r m                   | sets bookmark of current open file                |
 | M-x list-bookmark         | opens bookmark buffer                             |
@@ -74,6 +77,7 @@
 | M-;                       | comment region or add comment                     |
 | M-x revert-buffer         | loads the file from disk                          |
 | M-x nato-region           | translate region to phonetic alphabet             |
+| C-x C-o                   | delete blank lines around point                   |
 |                           |                                                   |
 | *SEARCH*                  |                                                   |
 | C-s                       | forward search                                    |
