@@ -17,7 +17,7 @@
 | C-x 4 f                   | display a file in the next window                 |
 | C-x 4 t                   | transpose windows                                 |
 | C-x i                     | insert file contents into buffer                  |
-| C-x C-c                   | insert control-c into ansi-term                   |
+| C-c C-c                   | insert control-c into ansi-term                   |
 | C-c t                     | open or switch to ansi-term                       |
 | C-x C-f                   | open file                                         |
 | C-x C-r                   | open recent file list                             |
