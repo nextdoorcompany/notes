@@ -129,6 +129,8 @@
 | \ast                      | start heading                                     |
 | C-c C-n                   | next heading                                      |
 | C-c C-p                   | previous heading                                  |
+| C-c M-f                   | next block                                        |
+| C-c M-b                   | previous block                                    |
 | \plus - \ast              | plain list item                                   |
 | [ ]                       | checkbox                                          |
 | C-c !                     | add date                                          |
