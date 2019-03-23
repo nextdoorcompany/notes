@@ -17,6 +17,7 @@
 | C-x 4 f                   | display a file in the next window                 |
 | C-x 4 t                   | transpose windows                                 |
 | C-x i                     | insert file contents into buffer                  |
+| C-c p                     | pin buffer window                                 |
 | C-c C-c                   | insert control-c into ansi-term                   |
 | C-c t                     | open or switch to ansi-term                       |
 | C-x C-f                   | open file                                         |
@@ -78,6 +79,7 @@
 | M-x revert-buffer         | loads the file from disk                          |
 | M-x nato-region           | translate region to phonetic alphabet             |
 | C-x C-o                   | delete blank lines around point                   |
+| M-<space>                 | delete all but one space around point             |
 |                           |                                                   |
 | *SEARCH*                  |                                                   |
 | C-s                       | forward search                                    |
@@ -179,6 +181,7 @@
 | a                         | open file/dir and kill dired buffer               |
 | i                         | open subdirectory in same buffer                  |
 | C-u k                     | on subdirectory header kills from buffer          |
+| (                         | expands/contracts details                         |
 |                           |                                                   |
 | *YASNIPPET*               |                                                   |
 | <tab>                     | expand snippet                                    |
@@ -197,7 +200,6 @@
 |                           |                                                   |
 | *WORKFLOW*                |                                                   |
 | C-c f                     | new scratch buffer with spell checking            |
-| M-x js/new-scratch-buffer | new scratch buffer no checking                    |
 |                           |                                                   |
 | *CALENDAR*                |                                                   |
 | M-x calendar              | opens calendar                                    |
