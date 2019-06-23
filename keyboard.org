@@ -80,6 +80,9 @@
 | M-x nato-region           | translate region to phonetic alphabet             |
 | C-x C-o                   | delete blank lines around point                   |
 | M-<space>                 | delete all but one space around point             |
+| M-x flush-lines           | delete lines with regex                           |
+| M-x keep-lines            | delete lines without regex                        |
+| M-x join-line             | join line to one above                            |
 |                           |                                                   |
 | *SEARCH*                  |                                                   |
 | C-s                       | forward search                                    |
@@ -108,6 +111,7 @@
 | C-k                       | kill rest of line                                 |
 | C-S-<backspace>           | kill line                                         |
 | M-d, C-<backspace>        | kill word                                         |
+| M-<backspace>             | backward kill word                                |
 | C-w                       | kill region                                       |
 | M-w                       | copy to kill ring                                 |
 | C-y                       | yank                                              |
@@ -200,6 +204,8 @@
 |                           |                                                   |
 | *WORKFLOW*                |                                                   |
 | C-c f                     | new scratch buffer with spell checking            |
+| C-x m                     | new mail buffer                                   |
+| C-c s                     | send mail buffer                                  |
 |                           |                                                   |
 | *CALENDAR*                |                                                   |
 | M-x calendar              | opens calendar                                    |
@@ -231,3 +237,11 @@
 | *IDO*                     |                                                   |
 | C-f/C-b                   | stop using IDO for files/buffers                  |
 | C-r/C-s                   | previous/next match                               |
+|                           |                                                   |
+| *IVY*                     |                                                   |
+| C-M-j                     | use prefix of a match                             |
+| C-j                       | accept current match                              |
+|                           |                                                   |
+| *SMARTPARENS*             |                                                   |
+| M-x sp-forward-slurp-sexp | forward(backward) increase parens by sexp         |
+|                           |                                                   |
