@@ -83,6 +83,7 @@
 | M-x flush-lines           | delete lines with regex                           |
 | M-x keep-lines            | delete lines without regex                        |
 | M-x join-line             | join line to one above                            |
+| C-x <space>               | rectangle mark mode                               |
 |                           |                                                   |
 | *SEARCH*                  |                                                   |
 | C-s                       | forward search                                    |
@@ -130,6 +131,7 @@
 | M-S-<left>                | kill current column                               |
 | M-<left>                  | move column left (right)                          |
 | C-c =                     | add formula                                       |
+| S-<enter>                 | copy down                                         |
 |                           |                                                   |
 | *ORG GENERAL*             |                                                   |
 | \ast                      | start heading                                     |
