@@ -84,6 +84,7 @@
 | M-x keep-lines            | delete lines without regex                        |
 | M-x join-line             | join line to one above                            |
 | C-x <space>               | rectangle mark mode                               |
+| M-z                       | zap up to char                                    |
 |                           |                                                   |
 | *SEARCH*                  |                                                   |
 | C-s                       | forward search                                    |
@@ -100,6 +101,7 @@
 | M-%                       | interactive search and replace                    |
 | M-x replace-string        | search and replace                                |
 | M-q                       | search and replace in swiper search               |
+| C-z                       | swiper                                            |
 |                           |                                                   |
 | *MARK*                    |                                                   |
 | C-M-<spc>                 | mark by sexp                                      |
@@ -245,5 +247,9 @@
 | C-j                       | accept current match                              |
 |                           |                                                   |
 | *SMARTPARENS*             |                                                   |
-| M-x sp-forward-slurp-sexp | forward(backward) increase parens by sexp         |
+| C-<right><left>           | forward(backward) slurp parens by sexp            |
+|                           |                                                   |
+| *COMPILIATION*            |                                                   |
+| C-c r                     | recompile                                         |
+| M-g M-n M-g M-p           | jump to next(previous) error from any buffer      |
 |                           |                                                   |
