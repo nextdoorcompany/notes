@@ -236,7 +236,23 @@
 | M-x insert-kbd-macro      | puts elisp equivalent of macro into buffer        |
 |                           |                                                   |
 | *CALC*                    |                                                   |
+| emacs -f full-calc        | launch emacs just for calc                        |
+| C-x * *                   | start calc                                        |
 | C-x * q                   | quick calculation put answer in kill-ring         |
+| C-x * s                   | calc summary                                      |
+| C-x * w                   | toggles embedded mode for number at point         |
+| C-u C-x * g               | grab region and interpret as number               |
+| C-x * y                   | yank top of stack                                 |
+|                           |                                                   |
+| *INSIDE CALC*             |                                                   |
+| '                         | start algabraic                                   |
+| h                         | help                                              |
+| <DEL>                     | removes one line of stack                         |
+| <TAB>                     | swaps last two lines of stack                     |
+| M-<TAB>                   | rotates stack                                     |
+| U                         | undo                                              |
+| C-x * o                   | other window that is not calc                     |
+| C-x * 0                   | reset calc                                        |
 |                           |                                                   |
 | *IDO*                     |                                                   |
 | C-f/C-b                   | stop using IDO for files/buffers                  |
