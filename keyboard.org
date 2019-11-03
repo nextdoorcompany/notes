@@ -236,7 +236,6 @@
 | M-x insert-kbd-macro      | puts elisp equivalent of macro into buffer        |
 |                           |                                                   |
 | *CALC*                    |                                                   |
-| emacs -f full-calc        | launch emacs just for calc                        |
 | C-x * *                   | start calc                                        |
 | C-x * q                   | quick calculation put answer in kill-ring         |
 | C-x * s                   | calc summary                                      |
@@ -247,10 +246,20 @@
 | *INSIDE CALC*             |                                                   |
 | '                         | start algabraic                                   |
 | h                         | help                                              |
-| <DEL>                     | removes one line of stack                         |
+| <backspace>               | removes one line of stack                         |
+| M-0 <backspace>           | clear stack                                       |
+| n                         | change sign                                       |
 | <TAB>                     | swaps last two lines of stack                     |
 | M-<TAB>                   | rotates stack                                     |
+| s s                       | peek stack and store to variable                  |
+| s t                       | pop stack and store to variable                   |
+| s r                       | recall variable                                   |
+| s u                       | clear variable                                    |
 | U                         | undo                                              |
+| D                         | redo                                              |
+| t n/p                     | move trail pointer                                |
+| t y                       | yank from trail                                   |
+| d g                       | group digits toggle                               |
 | C-x * o                   | other window that is not calc                     |
 | C-x * 0                   | reset calc                                        |
 |                           |                                                   |
