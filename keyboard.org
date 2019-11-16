@@ -154,6 +154,7 @@
 | C-c C-l                   | org insert link                                   |
 | C-c C-o                   | org follow link                                   |
 | M-x org-store-link        | store link (use insert later)                     |
+| C-c ^                     | sort entries in region                            |
 |                           |                                                   |
 | *ORG TODO*                |                                                   |
 | C-c C-t                   | cycle TODO item through states                    |
