@@ -23,6 +23,7 @@
 | C-x C-f                   | open file                                         |
 | C-x C-r                   | open recent file list                             |
 | C-x C-s                   | save buffer                                       |
+| C-x C-w                   | write buffer                                      |
 | C-x C-c                   | exit Emacs                                        |
 |                           |                                                   |
 | *HELP*                    |                                                   |
@@ -85,6 +86,7 @@
 | M-x join-line             | join line to one above                            |
 | C-x <space>               | rectangle mark mode                               |
 | M-z                       | zap up to char                                    |
+| C-x =                     | what cursor purson                                |
 |                           |                                                   |
 | *SEARCH*                  |                                                   |
 | C-s                       | forward search                                    |
@@ -148,6 +150,10 @@
 | C-c c                     | open capture template window                      |
 | C-c C-q                   | set tag for current heading                       |
 | C-M-i                     | auto-complete tag after a colon                   |
+| C-c C-x p                 | org set property                                  |
+| C-c C-l                   | org insert link                                   |
+| C-c C-o                   | org follow link                                   |
+| M-x org-store-link        | store link (use insert later)                     |
 |                           |                                                   |
 | *ORG TODO*                |                                                   |
 | C-c C-t                   | cycle TODO item through states                    |
@@ -162,6 +168,10 @@
 | s                         | save all connected org files                      |
 | r                         | reload view                                       |
 | <tab>                     | go to original item                               |
+|                           |                                                   |
+| *ORG CLOCK*               |                                                   |
+| C-c C-x C-i               | clock in                                          |
+| C-c C-x C-o               | clock out                                         |
 |                           |                                                   |
 | *ARTIST MODE*             |                                                   |
 | C-c C-a C-o               | select drawing tool                               |
@@ -244,7 +254,7 @@
 | C-x * y                   | yank top of stack                                 |
 |                           |                                                   |
 | *INSIDE CALC*             |                                                   |
-| '                         | start algabraic                                   |
+| '                         | start algebraic                                   |
 | h                         | help                                              |
 | <backspace>               | removes one line of stack                         |
 | M-0 <backspace>           | clear stack                                       |
@@ -262,6 +272,11 @@
 | d g                       | group digits toggle                               |
 | C-x * o                   | other window that is not calc                     |
 | C-x * 0                   | reset calc                                        |
+| t N                       | insert current time                               |
+| '<date>                   | insert date                                       |
+| c f/c F                   | top of stack to float/Fraction mode               |
+| Z F                       | store algebraic formula at top of stack           |
+| Z P                       | persist formula                                   |
 |                           |                                                   |
 | *IDO*                     |                                                   |
 | C-f/C-b                   | stop using IDO for files/buffers                  |
