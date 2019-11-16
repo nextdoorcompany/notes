@@ -134,7 +134,8 @@
 | M-S-<right>               | insert column                                     |
 | M-S-<left>                | kill current column                               |
 | M-<left>                  | move column left (right)                          |
-| C-c =                     | add formula                                       |
+| C-c =                     | add column formula (or type = in field)           |
+| C-u C-c =                 | add formula (or type := in field)                 |
 | S-<enter>                 | copy down                                         |
 |                           |                                                   |
 | *ORG GENERAL*             |                                                   |
