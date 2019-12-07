@@ -287,6 +287,7 @@
 | *IVY*                     |                                                   |
 | C-M-j                     | use prefix of a match                             |
 | C-j                       | accept current match                              |
+| C-c C-o                   | put current completions into an ivy occur buffer  |
 |                           |                                                   |
 | *SMARTPARENS*             |                                                   |
 | C-<right><left>           | forward(backward) slurp parens by sexp            |
