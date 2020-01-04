@@ -57,7 +57,7 @@
 | M-0 or C-u 0              | digit argument 0-9                                |
 | M-- or C--                | negative argument                                 |
 | C-c d                     | duplicate line                                    |
-| C-c M d                   | duplicate line and comment original               |
+| C-c M-d                   | duplicate line and comment original               |
 | C-c <del>                 | delete line                                       |
 | C-x r m                   | sets bookmark of current open file                |
 | M-x list-bookmark         | opens bookmark buffer                             |
@@ -73,7 +73,7 @@
 | S-<return>                | create newline under current                      |
 | M-x diff-buffer-with-file | show unsaved changes                              |
 | C-c j                     | jump to visible character                         |
-| M-/                       | dynamic abbreviation expansion                    |
+| M-/ C-M-/                 | dynamic abbreviation expansion (completion)       |
 | M-x untabify              | change tabs to spaces in region                   |
 | C-x C-u                   | upcase-region                                     |
 | M-;                       | comment region or add comment                     |
