@@ -155,3 +155,58 @@
 ;; t
 (number-or-marker-p 3)
 ;; t
+(defun occur (a lat)
+  "Returns the number of times a occurs in lat."
+  (cond ((null lat) 0)
+        ((equal (car lat) a) (1+ (occur a (cdr lat))))
+        (t (occur a (cdr lat)))))
+(occur 3 '(1 2))
+;; 0
+(occur 3 '(1 2 3))
+;; 1
+(occur 3 '(3 3 3 3))
+;; 4
+(defun leftmost (l)
+  "Returns the first atom from l regardless of depth."
+  (cond ((null l) nil)
+        ((atom (car l)) (car l))
+        ((leftmost (car l)))))
+(leftmost '(1 2 3))
+;; 1
+(leftmost '((((1)) 2) 3))
+;; 1
+(leftmost nil)
+;; nil
+(leftmost '(((() four))))
+;; nil
+(not t)
+;; nil
+(defun mynot (b)
+  "Inverts truth of b."
+  (cond (b nil)
+        (t t)))
+(mynot t)
+;; nil
+(mynot nil)
+;; t
+(defun rember* (a l)
+  "Removes a from l regardless of depth."
+  (cond ((null l) nil)
+        ((atom (car l))
+         (cond ((equal a (car l)) (rember* a (cdr l)))
+               (t (cons (car l) (rember* a (cdr l))))))
+        (t (cons (rember* a (car l)) (rember* a (cdr l))))))
+(rember* 2 '(1 3))
+;; (1 3)
+(rember* 2 '(1 2 3))
+;; (1 3)
+(rember* 2 '(1 (2) 3))
+;; (1 nil 3)
+(defun occur* (a l)
+  "Returns the number of times a occurs in list l."
+  (cond ((null l) 0)
+        ((atom (car l)) (cond ((equal a (car l)) (1+ (occur* a (cdr l))))
+                              (t (occur* a (cdr l)))))
+        (t (+ (occur* a (car l)) (occur* a (cdr l))))))
+(occur* 3 '(1 (2 3) (1 3 (3))))
+;; 3
