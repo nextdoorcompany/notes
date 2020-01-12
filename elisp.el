@@ -210,3 +210,30 @@
         (t (+ (occur* a (car l)) (occur* a (cdr l))))))
 (occur* 3 '(1 (2 3) (1 3 (3))))
 ;; 3
+(defun 1st-sub-exp (aexp)
+  "Returns the first subexpression of aexp."
+  (car aexp))
+
+(defun 2nd-sub-exp (aexp)
+  "Returns the second subexpression of aexp."
+  (car (cdr (cdr aexp))))
+
+(defun operator (aexp)
+  "Returns the operator of aexp"
+  (car (cdr aexp)))
+
+(defun value (aexp)
+  "Evaluates arithmetic expression aexp."
+  (cond ((numberp aexp) aexp)
+        ((equal (operator aexp) '+) (+ (value (1st-sub-exp aexp)) (value (2nd-sub-exp aexp))))
+        (t (* (value (1st-sub-exp aexp)) (value (2nd-sub-exp aexp))))))
+(value 2)
+;; 2
+(value '(2 + 2))
+;; 4
+(value '(2 + (2 + 2)))
+;; 6
+(value '(2 + (3 * 4)))
+;; 14
+
+
