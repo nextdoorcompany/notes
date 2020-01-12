@@ -296,3 +296,7 @@
 | C-c r                     | recompile                                         |
 | M-g M-n M-g M-p           | jump to next(previous) error from any buffer      |
 |                           |                                                   |
+| *ELISP*                   |                                                   |
+| C-x C-e                   | evaluate last sexp                                |
+| C-j                       | evaluate and print last sexp (scratch buffer)     |
+
