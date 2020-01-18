@@ -235,5 +235,117 @@
 ;; 6
 (value '(2 + (3 * 4)))
 ;; 14
+(defun makeset (lat)
+  "Makes a set from lat lat."
+  (cond ((null lat) ())
+        ((member (car lat) (cdr lat)) (makeset (cdr lat)))
+        (t (cons (car lat) (makeset (cdr lat))))))
 
+(makeset '(1 1 2 3))
+;; (1 2 3)
 
+(if (cl-oddp 1) 'odd 'even)
+;; odd
+
+(if (cl-evenp 1) 'odd 'even)
+;; even
+
+(and 1 2 3 4)
+;; 4
+
+(or 1 2 3 4)
+;; 1
+
+(defun my-average (x y)
+  "Averages numbers x and y."
+  (let ((sum (+ x y)))
+    (list x y 'average 'is (/ sum 2.0))))
+
+(my-average 2 3)
+;; (2 3 average is 2.5)
+
+(defun size-range (x y z)
+  "Returns size range."
+  (let* ((biggest (max x y z))
+         (smallest (min x y z))
+         (r (/ biggest smallest 1.0)))
+    (list 'factor 'of r)))
+
+(size-range 1 2 3)
+;; (factor of 3.0)
+
+;; let* crates variables one at a time
+
+(setq words '((one . un)
+              (two . deux)
+              (three . trois)
+              (four . quatre)
+              (five . cinq)))
+
+(assoc 'three words)
+;; (three . trois)
+(assoc 'foo words)
+;; nil
+(cdr (assoc 'three words))
+;; trois
+(rassoc 'trois words)
+;; (three . trois)
+(cl-subst 3 2 '(2 2 2))
+;; (3 3 3)
+(setq fn #'cons)
+fn
+;; cons
+(type-of fn)
+;; symbol
+(funcall fn 'c 'd)
+;; (c . d)
+(mapcar #'car '((1 2) (5 6)))
+;; (1 5)
+(mapcar #'(lambda (n) (* n n)) '(1 2 3))
+;; (1 4 9)
+(cl-find-if #'cl-oddp '(2 4 6 7 9))
+;; 7
+(cl-find-if #'cl-oddp '(2 4 6 7 9) :from-end t)
+;; 9
+(defun my-assoc (key table)
+  "Lookup key in table and return value."
+  (cl-find-if #'(lambda (entry)
+                  (equal key (cl-first entry)))
+              table))
+(my-assoc 'three words)
+;; (three . trois)
+(cl-remove-if #'cl-oddp '(1 2 3 4))
+;; (2 4)
+(cl-remove-if-not #'cl-oddp '(1 2 3 4))
+;; (1 3)
+(cl-reduce #'+ '(1 2 3))
+;; 6
+(cl-every #'cl-oddp '(1 2 3))
+;; nil
+(cl-every #'cl-oddp '(1 3))
+;; t
+(cl-mapcar #'+ '(1 2 3) '(10 20 30))
+;; (11 22 33)
+(1+ 3)
+;; 4
+(1- 3)
+;; 2
+(setq x nil)
+(push '1 x)
+;; (1)
+(push '2 x)
+;; (2 1)
+(pop x)
+;; 2
+x
+;; (1)
+(defun picky-multiply (x y)
+  "Compute X times Y.
+   X must be odd; Y must be even."
+  (unless (cl-oddp x)
+    (setq x (1+ x)))
+  (when (cl-oddp y)
+    (setq y (1- y)))
+  (list x 'times y 'equals (* x y)))
+(picky-multiply 2 9)
+;; (3 times 8 equals 24)
