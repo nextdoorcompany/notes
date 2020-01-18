@@ -30,6 +30,7 @@
 | <any prefix> C-h          | list keys for prefix                              |
 | C-h l                     | get list of commands run                          |
 | M-x apropos               | help                                              |
+| C-h d                     | apropos-documentation                             |
 | M-x info                  | manual (u = up)                                   |
 | M-x describe-mode         |                                                   |
 | M-x describe-function     |                                                   |
@@ -299,4 +300,3 @@
 | *ELISP*                   |                                                   |
 | C-x C-e                   | evaluate last sexp                                |
 | C-j                       | evaluate and print last sexp (scratch buffer)     |
-
