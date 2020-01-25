@@ -31,7 +31,8 @@
 | C-h l                     | get list of commands run                          |
 | M-x apropos               | help                                              |
 | C-h d                     | apropos-documentation                             |
-| M-x info                  | manual (u = up)                                   |
+| C-h r                     | emacs manual                                      |
+| M-x info                  | manual system                                     |
 | M-x describe-mode         |                                                   |
 | M-x describe-function     |                                                   |
 | M-x describe-variable     |                                                   |
@@ -39,6 +40,17 @@
 | M-x describe-bindings     |                                                   |
 | M-x where-is              | enter command it gives keybinding                 |
 | M-x helpful-              | alternative to describe-                          |
+|                           |                                                   |
+| *INFO*                    |                                                   |
+| <SPC> <del>               | scroll forward/backward                           |
+| <tab>                     | visit links                                       |
+| i                         | index search                                      |
+| s                         | search                                            |
+| g                         | goto node                                         |
+| l                         | last                                              |
+| f                         | follow cross ref                                  |
+| u                         | up                                                |
+| m                         | menu items on current node                        |
 |                           |                                                   |
 | *SPELLING*                |                                                   |
 | M-x flyspell-mode         | highlight spelling                                |
