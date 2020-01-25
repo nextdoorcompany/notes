@@ -349,3 +349,23 @@ x
   (list x 'times y 'equals (* x y)))
 (picky-multiply 2 9)
 ;; (3 times 8 equals 24)
+(defun atom-to-function (x)
+  "Returns a function based on symbol."
+  (cond ((equal x '+) #'+)
+        ((equal x '*) #'*)))
+(funcall (atom-to-function '+) 2 2)
+;; 4
+(dotimes (i 2)
+  (print i))
+;;
+;; 0
+;;
+;; 1
+;; nil
+(dolist (x '(1 2))
+  (print x))
+;;
+;; 1
+;;
+;; 2
+;; nil
