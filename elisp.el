@@ -369,3 +369,16 @@ x
 ;;
 ;; 2
 ;; nil
+(cl-defstruct starship
+  (name nil)
+  (speed 0)
+  (condition 'green)
+  (shields 'down))
+;; starship
+(setq s1 (make-starship))
+;; #s(starship nil 0 green down)
+(setf (starship-name s1) "enterprise")
+s1
+;; #s(starship "enterprise" 0 green down)
+(setq s2 (make-starship :name "reliant"))
+;; #s(starship "reliant" 0 green down)
