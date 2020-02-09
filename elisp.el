@@ -382,3 +382,33 @@ s1
 ;; #s(starship "enterprise" 0 green down)
 (setq s2 (make-starship :name "reliant"))
 ;; #s(starship "reliant" 0 green down)
+(setq my-vec [1 2 3])
+;; [1 2 3]
+(vectorp my-vec)
+;; t
+(aref my-vec 2)
+;; 3
+(aset my-vec 2 "x")
+;; "x"
+my-vec
+;; [1 2 "x"]
+(length my-vec)
+;; 3
+(length "hello")
+;; 5
+(aref "hello" 2)
+;; 108
+(setq my-hash (make-hash-table :test 'equal))
+;; #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ( ...))
+(puthash "cat" 1 my-hash)
+;; 1
+(puthash "dog" 2 my-hash)
+;; 2
+(gethash "cat" my-hash)
+;; 1
+(put 'my-symbol 'property 'value)
+;; value
+(get 'my-symbol 'property)
+;; value
+(symbol-plist 'my-symbol)
+;; (property value)
