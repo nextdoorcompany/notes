@@ -412,3 +412,10 @@ my-vec
 ;; value
 (symbol-plist 'my-symbol)
 ;; (property value)
+(defmacro simple_incf (var)
+  (list 'setq var (list '+ var 1)))
+(setq a 3)
+(simple_incf a)
+;; 4
+`(,a)
+;; (4)
