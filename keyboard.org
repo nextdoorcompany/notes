@@ -216,6 +216,7 @@
 | \!                         | run shell command on marked (r is script to open) |
 | M-x locate                 | linux locate (sudo updatedb)                      |
 | M-x find-name-dired        | linux find -name                                  |
+| M-x counsel-file-jump      | files in current directory (recursive)            |
 | a                          | open file/dir and kill dired buffer               |
 | i                          | open subdirectory in same buffer                  |
 | C-u k                      | on subdirectory header kills from buffer          |
