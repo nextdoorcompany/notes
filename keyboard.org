@@ -40,6 +40,9 @@
 | M-x describe-bindings      |                                                   |
 | M-x where-is               | enter command it gives keybinding                 |
 | M-x helpful-               | alternative to describe-                          |
+| M-x describe-char          | char under point                                  |
+| C-h C                      | describe current buffer coding system             |
+| C-x RET f                  | change file coding system                         |
 |                            |                                                   |
 | *INFO*                     |                                                   |
 | <SPC> <del>                | scroll forward/backward                           |
@@ -85,6 +88,7 @@
 | C-M-S-v                    | scroll other window up                            |
 | S-<return>                 | create newline under current                      |
 | M-x diff-buffer-with-file  | show unsaved changes                              |
+| M-x diff                   | diff files                                        |
 | C-c j                      | jump to visible character                         |
 | M-/ C-M-/                  | dynamic abbreviation expansion (completion)       |
 | M-x untabify               | change tabs to spaces in region                   |
@@ -100,6 +104,7 @@
 | C-x <space>                | rectangle mark mode                               |
 | M-z                        | zap up to char                                    |
 | C-x =                      | what cursor purson                                |
+| M-x toggle-input-mode      | tex to enter tex chars                            |
 |                            |                                                   |
 | *SEARCH*                   |                                                   |
 | C-s                        | forward search                                    |
