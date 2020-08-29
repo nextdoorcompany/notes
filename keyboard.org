@@ -80,6 +80,7 @@
 | C-x r b                    | opens bookmarked file                             |
 | C-x r <SPC> R              | records position in register named R              |
 | C-x r j R                  | jumps to position of register named R             |
+| C-x r w R                  | save window configuration in register named R     |
 | M-x narrow-to-region       | narrows to current selection                      |
 | M-x widen                  | widens to full buffer                             |
 | M-x align-regexp           | align region around regexp                        |
