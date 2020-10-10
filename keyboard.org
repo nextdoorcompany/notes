@@ -210,12 +210,13 @@
 | U                             | unmark all                                            |
 | C                             | copy                                                  |
 | D                             | delete                                                |
+| R                             | rename                                                |
 | f                             | open                                                  |
 | v                             | open read only                                        |
 | \asciicirc                    | up a directory                                        |
 | w                             | copy filename to kill ring                            |
 | M-0 w                         | copy full path to kill ring                           |
-| \!                            | run shell command on marked (r is script to open)     |
+| \!                            | run shell command on marked                           |
 | M-x locate                    | linux locate (sudo updatedb)                          |
 | M-x find-name-dired           | linux find -name                                      |
 | M-x counsel-file-jump         | files in current directory (recursive)                |
@@ -223,12 +224,21 @@
 | i                             | open subdirectory in same buffer                      |
 | C-u k                         | on subdirectory header kills from buffer              |
 | (                             | expands/contracts details                             |
+| s                             | toggle sort name/date                                 |
+| +                             | create directory                                      |
 |                               |                                                       |
 | *YASNIPPET*                   |                                                       |
 | <tab>                         | expand snippet                                        |
 | M-x yas-describe-tables       | view snippets for current mode                        |
+| M-x yas-new-snippet           | create new snippet                                    |
+| M-x yas-insert-snippet        | choose from list and insert                           |
+| M-x yas-visit-snippet-file    | edit snippet                                          |
 | C-c w                         | create auto-snippet                                   |
 | C-c y                         | expand auto-snippet                                   |
+|                               |                                                       |
+| *SNIPPET MODE*                |                                                       |
+| C-c C-c                       | load snippet and quit                                 |
+| C-c C-t                       | try snippet                                           |
 |                               |                                                       |
 | *DESKTOP*                     |                                                       |
 | M-x desktop-save              | save the current desktop                              |
@@ -339,4 +349,12 @@
 | C-q                           | quote terminiating character preventing expansion     |
 | M-x write-abbrev-file         | saves abbrevs, will also happen on exit               |
 | M-x list-abbrevs              | shows abbrevs in a buffer                             |
+|                               |                                                       |
+| *IBUFFER*                     |                                                       |
+| ( or `                        | toggle format                                         |
+| o                             | open in other window                                  |
+| D                             | kill marked buffers                                   |
+| m/u/U                         | mark/unmark buffer at point/unmark all                |
+| Q/I                           | query replace in marked buffers / with regexp         |
+| O                             | occur in marked buffers                               |
 |                               |                                                       |
