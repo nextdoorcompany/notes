@@ -226,6 +226,7 @@
 | (                             | expands/contracts details                             |
 | s                             | toggle sort name/date                                 |
 | +                             | create directory                                      |
+| j                             | jump to file                                          |
 |                               |                                                       |
 | *YASNIPPET*                   |                                                       |
 | <tab>                         | expand snippet                                        |
