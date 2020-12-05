@@ -192,6 +192,7 @@
 | s                             | save all connected org files                          |
 | r                             | reload view                                           |
 | <tab>                         | go to original item                                   |
+| F                             | follow mode                                           |
 |                               |                                                       |
 | *ORG CLOCK*                   |                                                       |
 | C-c C-x C-i                   | clock in                                              |
