@@ -30,6 +30,8 @@
 | <any prefix> C-h              | list keys for prefix                                  |
 | C-h l                         | get list of commands run                              |
 | M-x apropos                   | help                                                  |
+| info-apropos                  | search info system                                    |
+| apropos-command               | short documentation on command with pattern           |
 | C-h d                         | apropos-documentation                                 |
 | C-h r                         | emacs manual                                          |
 | M-x info                      | manual system                                         |
