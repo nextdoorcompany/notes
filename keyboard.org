@@ -159,6 +159,8 @@
 | C-c =                         | add column formula (or type = in field)               |
 | C-u C-c =                     | add formula (or type := in field)                     |
 | S-<enter>                     | copy down                                             |
+| C-c ?                         | information about current field                       |
+| C-c {                         | toggle formula debugger                               |
 |                               |                                                       |
 | *ORG GENERAL*                 |                                                       |
 | \ast                          | start heading                                         |
