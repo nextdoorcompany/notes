@@ -109,6 +109,7 @@
 | M-z                           | zap up to char                                        |
 | C-x =                         | what cursor purson                                    |
 | M-x toggle-input-mode         | tex to enter tex chars                                |
+| C-M-i                         | completion at point if mode provides                  |
 |                               |                                                       |
 | *SEARCH*                      |                                                       |
 | C-s                           | forward search                                        |
@@ -174,7 +175,6 @@
 | C-c '                         | open buffer for current code block                    |
 | C-c c                         | open capture template window                          |
 | C-c C-q                       | set tag for current heading                           |
-| C-M-i                         | auto-complete tag after a colon                       |
 | C-c C-x p                     | org set property                                      |
 | C-c C-l                       | org insert link                                       |
 | C-c C-o                       | org follow link                                       |
@@ -363,4 +363,16 @@
 | m/u/U                         | mark/unmark buffer at point/unmark all                |
 | Q/I                           | query replace in marked buffers / with regexp         |
 | O                             | occur in marked buffers                               |
+|                               |                                                       |
+| *XREF*                        |                                                       |
+| M-.                           | jump to definition of identifier at point             |
+| C-u M-.                       | jump to definition prompt                             |
+| M-,                           | jump back to original location                        |
+| M-?                           | find references of identifier at point                |
+|                               |                                                       |
+| *COMPANY*                     |                                                       |
+| RET                           | complete selection                                    |
+| M-digit                       | choose numbered selection                             |
+| C-h                           | go to help for current selection                      |
+| C-w                           | go to source for current selection                    |
 |                               |                                                       |
