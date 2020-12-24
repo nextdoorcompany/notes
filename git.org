@@ -1,7 +1,7 @@
 * setting up
 git config --global user.name "..."
 git config --global user.email "..."
-# git config --global credential.helper 'cache --timeout=3600'
+# lgit config --global credential.helper 'cache --timeout=3600'
 git config --global push.default simple
 
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
@@ -18,3 +18,4 @@ else
 fi
 
 * commands
+add comment
