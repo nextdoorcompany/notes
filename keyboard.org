@@ -109,6 +109,7 @@
 | M-z                           | zap up to char                                        |
 | C-x =                         | what cursor purson                                    |
 | M-x toggle-input-mode         | tex to enter tex chars                                |
+| C-x 8 <ret>                   | input-char add unicode character                      |
 | C-M-i                         | completion at point if mode provides                  |
 |                               |                                                       |
 | *SEARCH*                      |                                                       |
@@ -375,4 +376,11 @@
 | M-digit                       | choose numbered selection                             |
 | C-h                           | go to help for current selection                      |
 | C-w                           | go to source for current selection                    |
+|                               |                                                       |
+| *PYTHON*                      |                                                       |
+| C-c C-p                       | run python                                            |
+| C-c C-c                       | send buffer to shell                                  |
+| C-c C-r                       | send region to shell                                  |
+| C-c C-s                       | send string to shell                                  |
+| C-c C-z                       | switch to shell                                       |
 |                               |                                                       |
