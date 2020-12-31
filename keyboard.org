@@ -111,6 +111,7 @@
 | M-x toggle-input-mode         | tex to enter tex chars                                |
 | C-x 8 <ret>                   | input-char add unicode character                      |
 | C-M-i                         | completion at point if mode provides                  |
+| C-q                           | quoted input                                          |
 |                               |                                                       |
 | *SEARCH*                      |                                                       |
 | C-s                           | forward search                                        |
@@ -256,6 +257,16 @@
 | M-! cmd                       | run command and display output                        |
 | M-\vert cmd                   | run command with region as input                      |
 |                               |                                                       |
+| *SHELL MODE*                  |                                                       |
+| C-d                           | at end of shell buffer send EOF                       |
+| C-c C-c                       | comint-interrupt-subjob                               |
+| C-c C-\                       | comint-quit-subjob                                    |
+| C-c C-o                       | delete last batch of output                           |
+| C-c C-s                       | write last batch of output to file                    |
+| C-M-l or C-c C-r              | scroll to begin of last batch of output               |
+| C-c C-e                       | scroll to last line of buffer                         |
+| C-c C-l                       | show recent inputs to buffer                          |
+|                               |                                                       |
 | *WORKFLOW*                    |                                                       |
 | C-c f                         | new scratch buffer with spell checking                |
 | C-x m                         | new mail buffer                                       |
@@ -353,7 +364,7 @@
 | M-x inverse-add-mode-abbrev   | add expansion for last word                           |
 | M-x add-global-abbrev         | add abbrev for last word (arg 0 is region/else words) |
 | M-x inverse-add-global-abbrev | add expansion for last word                           |
-| C-q                           | quote terminiating character preventing expansion     |
+| C-q                           | quote terminating character preventing expansion      |
 | M-x write-abbrev-file         | saves abbrevs, will also happen on exit               |
 | M-x list-abbrevs              | shows abbrevs in a buffer                             |
 |                               |                                                       |
