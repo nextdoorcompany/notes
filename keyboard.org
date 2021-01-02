@@ -164,6 +164,7 @@
 | S-<enter>                     | copy down                                             |
 | C-c ?                         | information about current field                       |
 | C-c {                         | toggle formula debugger                               |
+| C-c <spc>                     | clear current field                                   |
 |                               |                                                       |
 | *ORG GENERAL*                 |                                                       |
 | \ast                          | start heading                                         |
