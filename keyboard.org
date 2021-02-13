@@ -299,7 +299,7 @@
 |                               |                                                       |
 | *CALC*                        |                                                       |
 | C-x * *                       | start calc                                            |
-| C-x * q                       | quick calculation put answer in kill-ring             |
+| C-x * q or C-c k              | quick calculation put answer in kill-ring             |
 | C-x * s                       | calc summary                                          |
 | C-x * w                       | toggles embedded mode for number at point             |
 | C-u C-x * g                   | grab region and interpret as number                   |
