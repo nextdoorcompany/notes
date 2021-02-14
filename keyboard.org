@@ -170,8 +170,15 @@
 | \ast                          | start heading                                         |
 | C-c C-n                       | next heading                                          |
 | C-c C-p                       | previous heading                                      |
+| C-c C-f                       | next heading same level                               |
+| C-c C-b                       | previous heading same level                           |
 | C-c M-f                       | next block                                            |
 | C-c M-b                       | previous block                                        |
+| C-c C-u                       | up heading                                            |
+| C-c C-j                       | org goto                                              |
+| M-<return>                    | insert a new heading                                  |
+| C-u M-<return>                | insert a new heading at end of current subtree        |
+| C-u C-u M-<return>            | insert a new heading at end of parent subtree         |
 | \plus - \ast                  | plain list item                                       |
 | [ ]                           | checkbox                                              |
 | C-c !                         | add date                                              |
@@ -183,6 +190,7 @@
 | C-c C-o                       | org follow link                                       |
 | M-x org-store-link            | store link (use insert later)                         |
 | C-c ^                         | sort entries in region                                |
+| C-c C-w                       | org refile                                            |
 |                               |                                                       |
 | *ORG TODO*                    |                                                       |
 | C-c C-t                       | cycle TODO item through states                        |
