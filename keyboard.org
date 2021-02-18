@@ -184,6 +184,7 @@
 | C-c !                         | add date                                              |
 | C-c '                         | open buffer for current code block                    |
 | C-c c                         | open capture template window                          |
+| C-c a                         | org agenda view                                       |
 | C-c C-q                       | set tag for current heading                           |
 | C-c C-x p                     | org set property                                      |
 | C-c C-l                       | org insert link                                       |
