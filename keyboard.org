@@ -214,6 +214,12 @@
 | C-c C-x C-i                   | clock in                                              |
 | C-c C-x C-o                   | clock out                                             |
 |                               |                                                       |
+| *ORG TIMER*                   |                                                       |
+| M-x org-timer-start           | start relative timer                                  |
+| M-x org-timer-set-timer       | start countdown timer                                 |
+| M-x org-timer-item            | insert a list item with current timer value           |
+| M-x org-timer-stop            | stop timer                                            |
+|                               |                                                       |
 | *ARTIST MODE*                 |                                                       |
 | C-c C-a C-o                   | select drawing tool                                   |
 | <return>                      | starts and stops lines and rect, dir on poly line     |
@@ -238,6 +244,7 @@
 | \!                            | run shell command on marked                           |
 | M-x locate                    | linux locate (sudo updatedb)                          |
 | M-x find-name-dired           | linux find -name                                      |
+| M-x find-lisp-find-dired      | find file by regex no external find                   |
 | M-x counsel-file-jump         | files in current directory (recursive)                |
 | a                             | open file/dir and kill dired buffer                   |
 | i                             | open subdirectory in same buffer                      |
@@ -278,6 +285,10 @@
 | C-M-l or C-c C-r              | scroll to begin of last batch of output               |
 | C-c C-e                       | scroll to last line of buffer                         |
 | C-c C-l                       | show recent inputs to buffer                          |
+| C-c M-o                       | clear buffer                                          |
+| C-c M-r/M-s                   | search back/forward in history for current prefix     |
+| M-r                           | backward regex search history                         |
+| C-c .                         | insert previous argument                              |
 |                               |                                                       |
 | *WORKFLOW*                    |                                                       |
 | C-c f                         | new scratch buffer with spell checking                |
@@ -287,6 +298,19 @@
 | *CALENDAR*                    |                                                       |
 | M-x calendar                  | opens calendar                                        |
 | M-w                           | copies date under cursor to kill ring                 |
+| g d                           | move to specific date                                 |
+| .                             | move to today                                         |
+| o                             | center around month                                   |
+| M-=                           | count days in region (inclusive)                      |
+| h                             | holidays on current date                              |
+| x                             | mark all holidays                                     |
+| u                             | unmark all                                            |
+| M-x list-holidays             | list all holidays                                     |
+| d                             | diary entries on current date                         |
+| m                             | mark all days with diary entries                      |
+| i [d w m y]                   | add diary entry for date, week, month, or year        |
+| i [a b c]                     | add diary entry for anniversary, block, or cyclic     |
+| digit                         | prefix arg to movement commands                       |
 |                               |                                                       |
 | *PACKAGES*                    |                                                       |
 | M-x list-packages             | opens package list                                    |
@@ -406,4 +430,18 @@
 | C-c C-r                       | send region to shell                                  |
 | C-c C-s                       | send string to shell                                  |
 | C-c C-z                       | switch to shell                                       |
+| C-M-h                         | mark function                                         |
+|                               |                                                       |
+| *SQL*                         |                                                       |
+| C-c C-b                       | send buffer to shell                                  |
+| C-c C-c                       | send paragraph to shell                               |
+| C-c C-r                       | send region to shell                                  |
+| C-c C-s                       | send string to shell                                  |
+| C-c C-z                       | switch to shell                                       |
+|                               |                                                       |
+| *MAGIT*                       |                                                       |
+| +/-/0                         | more/less/default context                             |
+| 1/2/3/4                       | show level                                            |
+| \asciicirc                    | move to top of section                                |
+| M-n/M-p                       | section forward/previous                              |
 |                               |                                                       |
