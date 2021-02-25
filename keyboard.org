@@ -233,6 +233,7 @@
 | m u                           | mark unmark                                           |
 | % m                           | mark by regexp                                        |
 | U                             | unmark all                                            |
+| t                             | toggle mark (marks all if none are marked)            |
 | C                             | copy                                                  |
 | D                             | delete                                                |
 | R                             | rename                                                |
