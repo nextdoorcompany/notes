@@ -446,3 +446,17 @@
 | \asciicirc                    | move to top of section                                |
 | M-n/M-p                       | section forward/previous                              |
 |                               |                                                       |
+| *DEBUG*                       |                                                       |
+| M-x debug-on-entry            | starts debugger on selected function                  |
+| d                             | step                                                  |
+| e                             | evaluate expression                                   |
+| c                             | quit and continue running                             |
+| q                             | quit and terminate                                    |
+| M-x cancel-debug-on-entry     | stops debugging function                              |
+| C-u C-M-x                     | instrument function for edebug                        |
+| <SPC>                         | step                                                  |
+| e                             | evaluate expression                                   |
+| g                             | run until next breakpoint                             |
+| q                             | quit and terminate                                    |
+| C-M-x                         | turn off instrumentation (or eval in any other way)   |
+|                               |                                                       |
