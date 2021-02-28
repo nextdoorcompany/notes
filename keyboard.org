@@ -134,6 +134,7 @@
 | C-M-<spc>                     | mark by sexp                                          |
 | M-@                           | mark by word                                          |
 | C-x h                         | mark whole buffer                                     |
+| C-M-h                         | mark defun                                            |
 | C-<spc> C-<spc>               | push mark to mark ring                                |
 | C-u C-<spc>                   | pop mark ring within buffer                           |
 | C-x C-<spc>                   | pop global mark ring                                  |
@@ -194,6 +195,8 @@
 | M-x org-store-link            | store link (use insert later)                         |
 | C-c ^                         | sort entries in region                                |
 | C-c C-w                       | org refile                                            |
+| C-c %                         | org mark ring push (also pushes Emacs mark)           |
+| M-x org-mark-ring-goto        | pop org mark ring                                     |
 |                               |                                                       |
 | *ORG TODO*                    |                                                       |
 | C-c C-t                       | cycle TODO item through states                        |
@@ -312,6 +315,7 @@
 | i [d w m y]                   | add diary entry for date, week, month, or year        |
 | i [a b c]                     | add diary entry for anniversary, block, or cyclic     |
 | digit                         | prefix arg to movement commands                       |
+| M-x appt-add                  | add ephemeral appointment with alarm                  |
 |                               |                                                       |
 | *PACKAGES*                    |                                                       |
 | M-x list-packages             | opens package list                                    |
@@ -389,6 +393,7 @@
 | *VIEW MODE*                   |                                                       |
 | M-x view-mode                 | toggles view mode                                     |
 | M-x view-file (v in dired)    | opens a file in view mode                             |
+| M-x view-buffer               | switches to buffer and enables view mode              |
 | q                             | quit                                                  |
 | r/s                           | search                                                |
 | \ /                           | regex search                                          |
@@ -431,7 +436,7 @@
 | C-c C-r                       | send region to shell                                  |
 | C-c C-s                       | send string to shell                                  |
 | C-c C-z                       | switch to shell                                       |
-| C-M-h                         | mark function                                         |
+| M-e/M-a                       | block forward/backward                                |
 |                               |                                                       |
 | *SQL*                         |                                                       |
 | C-c C-b                       | send buffer to shell                                  |
