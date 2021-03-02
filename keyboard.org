@@ -112,6 +112,7 @@
 | C-x 8 <ret>                   | input-char add unicode character                      |
 | C-M-i                         | completion at point if mode provides                  |
 | C-q                           | quoted input                                          |
+| C-x M-:                       | repeat complex command                                |
 |                               |                                                       |
 | *SEARCH*                      |                                                       |
 | C-s                           | forward search                                        |
