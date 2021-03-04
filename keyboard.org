@@ -213,6 +213,7 @@
 | r                             | reload view                                           |
 | <tab>                         | go to original item                                   |
 | F                             | follow mode                                           |
+| <spc> <del>                   | open org buffer and scroll up/down                    |
 |                               |                                                       |
 | *ORG CLOCK*                   |                                                       |
 | C-c C-x C-i                   | clock in                                              |
