@@ -371,6 +371,9 @@
 | c f/c F                       | top of stack to float/Fraction mode                   |
 | Z F                           | store algebraic formula at top of stack               |
 | Z P                           | persist formula                                       |
+| I F                           | ceil in algebraic                                     |
+| z e                           | round to nearest 64th                                 |
+| z w                           | copy top of stack and remove plus signs               |
 |                               |                                                       |
 | *IDO*                         |                                                       |
 | C-f/C-b                       | stop using IDO for files/buffers                      |
