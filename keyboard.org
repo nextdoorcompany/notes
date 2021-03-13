@@ -349,6 +349,7 @@
 |                               |                                                       |
 | *INSIDE CALC*                 |                                                       |
 | '                             | start algebraic                                       |
+| x:y:z or x+y:z                | enter mixed number x y/z                              |
 | h                             | help                                                  |
 | <backspace>                   | removes one line of stack                             |
 | M-0 <backspace>               | clear stack                                           |
@@ -369,6 +370,7 @@
 | t N                           | insert current time                                   |
 | '<date>                       | insert date                                           |
 | c f/c F                       | top of stack to float/Fraction mode                   |
+| m f                           | toggle fraction mode                                  |
 | Z F                           | store algebraic formula at top of stack               |
 | Z P                           | persist formula                                       |
 | I F                           | ceil in algebraic                                     |
