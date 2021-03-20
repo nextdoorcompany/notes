@@ -49,7 +49,7 @@
 | *INFO*                        |                                                       |
 | <SPC> <del>                   | scroll forward/backward                               |
 | <tab>                         | visit links                                           |
-| i                             | index search                                          |
+| i/S-i                         | index search/index broken out into node               |
 | s                             | search                                                |
 | g                             | goto node                                             |
 | l                             | last                                                  |
