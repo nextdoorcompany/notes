@@ -416,6 +416,8 @@
 | C-q                           | quote terminating character preventing expansion      |
 | M-x write-abbrev-file         | saves abbrevs, will also happen on exit               |
 | M-x list-abbrevs              | shows abbrevs in a buffer                             |
+| M-x define-global-abbrev      | interactively build abbrev                            |
+| M-x define-mode-abbrev        | interactively build mode abbrev                       |
 |                               |                                                       |
 | *IBUFFER*                     |                                                       |
 | ( or `                        | toggle format                                         |
