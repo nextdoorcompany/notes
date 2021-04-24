@@ -113,6 +113,8 @@
 | C-M-i                           | completion at point if mode provides                  |
 | C-q                             | quoted input                                          |
 | C-x M-:                         | repeat complex command                                |
+| M-x scroll-lock-mode            | scroll the buffer not move the cursor                 |
+| C-x <TAB>                       | indent rigidly                                        |
 |                                 |                                                       |
 | *SEARCH*                        |                                                       |
 | C-s                             | forward search                                        |
@@ -214,6 +216,8 @@
 | <tab>                           | go to original item                                   |
 | F                               | follow mode                                           |
 | <spc> <del>                     | open org buffer and scroll up/down                    |
+| + -                             | priority up down                                      |
+| < =                             | narrow to current category/regex                      |
 |                                 |                                                       |
 | *ORG CLOCK*                     |                                                       |
 | C-c C-x C-i                     | clock in                                              |
