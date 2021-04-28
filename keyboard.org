@@ -180,8 +180,8 @@
 | C-c M-b                         | previous block                                        |
 | C-c C-u                         | up heading                                            |
 | C-c C-j                         | org goto                                              |
-| M-<return>                      | insert a new heading                                  |
-| C-u M-<return>                  | insert a new heading at end of current subtree        |
+| M-<return>                      | insert a new thing depending on context               |
+| C-u M-<return>, C-<return>      | insert a new heading at end of current subtree        |
 | C-u C-u M-<return>              | insert a new heading at end of parent subtree         |
 | \plus - \ast                    | plain list item                                       |
 | [ ]                             | checkbox                                              |
