@@ -125,10 +125,12 @@
 | ret                             | selects match and drops mark at previous location     |
 | C-w                             | add word at point to search string                    |
 | C-y                             | yank from clipboard to search string                  |
+| C-u C-s/r                       | forward/reverse search with regex                     |
 | M-x occur                       | find all                                              |
 | e/C-c C-c                       | starts/stops edit mode in occur buffer                |
 | M-x imenu                       | jump to definition                                    |
 | M-%                             | interactive search and replace                        |
+| C-M-%                           | interactive search and replace regex                  |
 | M-x replace-string              | search and replace                                    |
 | M-q                             | search and replace in swiper search                   |
 | C-z                             | swiper                                                |
@@ -481,4 +483,11 @@
 | g                               | run until next breakpoint                             |
 | q                               | quit and terminate                                    |
 | C-M-x                           | turn off instrumentation (or eval in any other way)   |
+|                                 |                                                       |
+| *RE-BUILDER*                    |                                                       |
+| M-x re-builder                  | starts the builder                                    |
+| C-c C-q                         | quit                                                  |
+| C-c C-r/s                       | prev/next match                                       |
+| C-c C-u                         | force update                                          |
+| C-c C-w                         | copy string for using in elisp                        |
 |                                 |                                                       |
