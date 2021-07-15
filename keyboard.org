@@ -205,6 +205,7 @@
 | C-c C-w                         | org refile                                            |
 | C-c %                           | org mark ring push (also pushes Emacs mark)           |
 | M-x org-mark-ring-goto          | pop org mark ring                                     |
+| C-c \ast                        | make a line a heading                                 |
 |                                 |                                                       |
 | *ORG TODO*                      |                                                       |
 | C-c C-t                         | cycle TODO item through states                        |
