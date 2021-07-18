@@ -172,6 +172,7 @@
 | C-c {                           | toggle formula debugger                               |
 | C-c }                           | show row and col headers                              |
 | C-c <spc>                       | clear current field                                   |
+| C-u C-c C-c                     | recompute from anywhere in table                      |
 |                                 |                                                       |
 | *ORG GENERAL*                   |                                                       |
 | \ast                            | start heading                                         |
