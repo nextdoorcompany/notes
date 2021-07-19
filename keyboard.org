@@ -213,7 +213,7 @@
 | C-c C-s                         | schedule a TODO                                       |
 | C-c C-d                         | insert a deadline                                     |
 | C-c C-z                         | add a note                                            |
-| M-S-<return>                    | add a TODO at same indentation                        |
+| M-S-<return>                    | add a TODO at same indentation or checkbox if list    |
 |                                 |                                                       |
 | *ORG AGENDA VIEW*               |                                                       |
 | d                               | daily view                                            |
