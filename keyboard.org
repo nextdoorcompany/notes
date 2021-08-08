@@ -320,6 +320,9 @@
 | g d                             | move to specific date                                 |
 | .                               | move to today                                         |
 | o                               | center around month                                   |
+| C-f/C-b                         | forward/backward by day                               |
+| C-n/C-p                         | forward/backwood by week                              |
+| < >                             | scroll view                                           |
 | M-=                             | count days in region (inclusive)                      |
 | h                               | holidays on current date                              |
 | x                               | mark all holidays                                     |
