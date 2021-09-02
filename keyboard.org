@@ -254,6 +254,7 @@
 | t                               | toggle mark (marks all if none are marked)            |
 | C                               | copy                                                  |
 | D                               | delete                                                |
+| C-d                             | permanently delete                                    |
 | R                               | rename                                                |
 | f                               | open                                                  |
 | v                               | open read only                                        |
