@@ -87,6 +87,7 @@
 | M-x narrow-to-region            | narrows to current selection                          |
 | M-x widen                       | widens to full buffer                                 |
 | M-x align-regexp                | align region around regexp                            |
+| M-x sort-regexp-fields          | sort region by regexp \w+ by word                     |
 | M-x whitespace-mode             | displays whitespace characters                        |
 | C-M-v                           | scroll other window down                              |
 | C-M-S-v                         | scroll other window up                                |
