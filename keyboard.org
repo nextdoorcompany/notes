@@ -94,7 +94,7 @@
 | S-<return>                      | create newline under current                          |
 | M-x diff-buffer-with-file       | show unsaved changes                                  |
 | M-x diff                        | diff files                                            |
-| C-c j                           | jump to visible character                             |
+| C-c i                           | jump to visible character                             |
 | M-/ C-M-/                       | dynamic abbreviation expansion (completion)           |
 | M-x untabify                    | change tabs to spaces in region                       |
 | C-x C-u                         | upcase-region                                         |
@@ -116,6 +116,7 @@
 | C-x M-:                         | repeat complex command                                |
 | M-x scroll-lock-mode            | scroll the buffer not move the cursor                 |
 | C-x <TAB>                       | indent rigidly                                        |
+| C-c j                           | counsel-outline or with arg counsel-imenu             |
 |                                 |                                                       |
 | *SEARCH*                        |                                                       |
 | C-s                             | forward search                                        |
