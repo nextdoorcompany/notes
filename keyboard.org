@@ -416,6 +416,7 @@
 |                                 |                                                       |
 | *ELISP*                         |                                                       |
 | C-x C-e                         | evaluate last sexp                                    |
+| C-u C-x C-e                     | evaluate and print last sexp                          |
 | C-j                             | evaluate and print last sexp (scratch buffer)         |
 |                                 |                                                       |
 | *VIEW MODE*                     |                                                       |
