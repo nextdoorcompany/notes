@@ -276,6 +276,11 @@
 | +                               | create directory                                      |
 | j                               | jump to file                                          |
 |                                 |                                                       |
+| *WDIRED*                        |                                                       |
+| C-x C-q                         | enter wdired - rename and move files                  |
+| C-c C-c                         | confirm changes and exit                              |
+| C-c C-k                         | abort                                                 |
+|                                 |                                                       |
 | *YASNIPPET*                     |                                                       |
 | <tab>                           | expand snippet                                        |
 | M-x yas-describe-tables         | view snippets for current mode                        |
