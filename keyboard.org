@@ -209,6 +209,7 @@
 | C-c %                           | org mark ring push (also pushes Emacs mark)           |
 | M-x org-mark-ring-goto          | pop org mark ring                                     |
 | C-c \ast                        | make a line a heading                                 |
+| M-x org-toggle-link-display     | shows/hides raw links                                 |
 |                                 |                                                       |
 | *ORG TODO*                      |                                                       |
 | C-c C-t                         | cycle TODO item through states                        |
@@ -486,6 +487,7 @@
 | 1/2/3/4                         | show level                                            |
 | \asciicirc                      | move to top of section                                |
 | M-n/M-p                         | section forward/previous                              |
+| M-x magit-log-buffer-file       | see log for current buffer                            |
 |                                 |                                                       |
 | *DEBUG*                         |                                                       |
 | M-x debug-on-entry              | starts debugger on selected function                  |
