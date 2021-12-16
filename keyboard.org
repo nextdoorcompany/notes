@@ -20,6 +20,7 @@
 | C-c p                           | pin buffer window                                     |
 | C-c C-c                         | insert control-c into ansi-term                       |
 | C-c t                           | open or switch to ansi-term                           |
+| M-x proced                      | show list of processes                                |
 | C-x C-f                         | open file                                             |
 | C-x C-r                         | open recent file list                                 |
 | C-x C-s                         | save buffer                                           |
