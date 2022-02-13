@@ -16,6 +16,7 @@
 | C-x 4 b                         | display a buffer in the next window                   |
 | C-x 4 f                         | display a file in the next window                     |
 | C-x 4 t                         | transpose windows                                     |
+| C-x 4 c                         | create indirect buffer other window                   |
 | C-x i                           | insert file contents into buffer                      |
 | C-c p                           | pin buffer window                                     |
 | C-c C-c                         | insert control-c into ansi-term                       |
@@ -211,6 +212,7 @@
 | M-x org-mark-ring-goto          | pop org mark ring                                     |
 | C-c \ast                        | make a line a heading                                 |
 | M-x org-toggle-link-display     | shows/hides raw links                                 |
+| C-c C-x b                       | tree to indirect buffer                               |
 |                                 |                                                       |
 | *ORG TODO*                      |                                                       |
 | C-c C-t                         | cycle TODO item through states                        |
