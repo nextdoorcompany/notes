@@ -65,13 +65,15 @@
 | M-$                             | check work at point                                   |
 |                                 |                                                       |
 | *EDITING*                       |                                                       |
-| C-x u                           | undo                                                  |
+| C-x u                           | undo (switch to redo with C-g)                        |
 | C-x z                           | repeat (z alone for multiple)                         |
 | C-g                             | cancel                                                |
 | M-m                             | home but to first non-whitespace                      |
 | M-< M->                         | beginning (end) of buffer                             |
 | C-M-f                           | forward by sexp                                       |
 | C-M-b                           | backward by sexp                                      |
+| C-M-a/e                         | beginning (end) of function                           |
+| C-M-u/d                         | up (down) into a list                                 |
 | C-l                             | center window at point                                |
 | M-g M-g                         | go to line                                            |
 | M-0 or C-u 0                    | digit argument 0-9                                    |
@@ -149,9 +151,11 @@
 | C-x C-<spc>                     | pop global mark ring                                  |
 | C-<spc>                         | set mark toggles region                               |
 | C-k                             | kill rest of line                                     |
-| C-S-<backspace>                 | kill line                                             |
+| C-c <backspace>                 | kill line                                             |
 | M-d, C-<backspace>              | kill word                                             |
 | M-<backspace>                   | backward kill word                                    |
+| M-k                             | kill rest of sentence                                 |
+| M-x <backspace>                 | kill sentence backward                                |
 | C-w                             | kill region                                           |
 | M-w                             | copy to kill ring                                     |
 | C-y                             | yank                                                  |
