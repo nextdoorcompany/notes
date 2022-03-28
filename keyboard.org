@@ -96,6 +96,7 @@
 | C-M-v                           | scroll other window down                              |
 | C-M-S-v                         | scroll other window up                                |
 | S-<return>                      | create newline under current                          |
+| M-x diff-backup                 | diff file with most recent backup                     |
 | M-x diff-buffer-with-file       | show unsaved changes                                  |
 | M-x diff                        | diff files                                            |
 | C-c i                           | jump to visible character                             |
