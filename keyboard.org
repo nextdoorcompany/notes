@@ -156,7 +156,7 @@
 | M-d, C-<backspace>              | kill word                                             |
 | M-<backspace>                   | backward kill word                                    |
 | M-k                             | kill rest of sentence                                 |
-| M-x <backspace>                 | kill sentence backward                                |
+| C-x <backspace>                 | kill sentence backward                                |
 | C-w                             | kill region                                           |
 | M-w                             | copy to kill ring                                     |
 | C-y                             | yank                                                  |
