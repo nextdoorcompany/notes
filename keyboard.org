@@ -518,3 +518,28 @@
 | C-c C-u                         | force update                                          |
 | C-c C-w                         | copy string for using in elisp                        |
 |                                 |                                                       |
+| *REGEX*                         |                                                       |
+| .                               | any char                                              |
+| \* *?                           | 0 or more of preceding (non-greedy)                   |
+| + +?                            | 1 or more of preceding (non-greedy)                   |
+| ? ??                            | 0 or 1 of preceding (non-greedy)                      |
+| [ ]                             | character set                                         |
+| \asciicirc $                    | begin/end line                                        |
+| \\vert                          | or                                                    |
+| \( \)                           | group                                                 |
+| \sC \SC                         | any char whose syntax is/is not C                     |
+|                                 |                                                       |
+| *SYNTAX CLASSES*                |                                                       |
+| -                               | whitespace                                            |
+| w                               | chars in words in human languages                     |
+| \_                              | chars in programming symbols                          |
+| .                               | punctuation                                           |
+| "                               | string quotes                                         |
+| < >                             | comment starters/enders                               |
+|                                 |                                                       |
+| *REGEX REPLACEMENTS*            |                                                       |
+| \&                              | entire match                                          |
+| \D                              | Dth group in match                                    |
+| \?                              | prompt for replacement                                |
+| \,(elisp expression)            | example \,(upcase \&)                                 |
+|                                 |                                                       |
