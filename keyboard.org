@@ -150,6 +150,7 @@
 | C-<spc> C-<spc>                 | push mark to mark ring                                |
 | C-u C-<spc>                     | pop mark ring within buffer                           |
 | C-x C-<spc>                     | pop global mark ring                                  |
+| C-x C-x                         | exchange point and mark                               |
 | C-<spc>                         | set mark toggles region                               |
 | C-k                             | kill rest of line                                     |
 | C-c <backspace>                 | kill line                                             |
