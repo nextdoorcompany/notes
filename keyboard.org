@@ -484,6 +484,7 @@
 | C-c C-r                         | send region to shell                                  |
 | C-c C-s                         | send string to shell                                  |
 | C-c C-z                         | switch to shell                                       |
+| C-c C-d                         | describe at point help in repl                        |
 | M-e/M-a                         | block forward/backward                                |
 |                                 |                                                       |
 | *SQL*                           |                                                       |
