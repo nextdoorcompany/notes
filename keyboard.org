@@ -222,6 +222,7 @@
 |                                 |                                                       |
 | *ORG TODO*                      |                                                       |
 | C-c C-t                         | cycle TODO item through states                        |
+| C-u C-u C-c C-t                 | change TODO sequence                                  |
 | C-c C-s                         | schedule a TODO                                       |
 | C-c C-d                         | insert a deadline                                     |
 | C-c C-z                         | add a note                                            |
@@ -230,6 +231,7 @@
 | *ORG AGENDA VIEW*               |                                                       |
 | d                               | daily view                                            |
 | t                               | cycle TODO item through states                        |
+| C-u C-u t                       | change TODO sequence                                  |
 | s                               | save all connected org files                          |
 | r                               | reload view                                           |
 | <tab>                           | go to original item                                   |
