@@ -74,6 +74,7 @@
 | C-M-b                           | backward by sexp                                      |
 | C-M-a/e                         | beginning (end) of function                           |
 | C-M-u/d                         | up (down) into a list                                 |
+| M-a/e                           | backward/forward sentence                             |
 | C-l                             | center window at point                                |
 | M-g M-g                         | go to line                                            |
 | M-0 or C-u 0                    | digit argument 0-9                                    |
