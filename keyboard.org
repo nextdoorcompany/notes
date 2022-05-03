@@ -58,6 +58,7 @@
 | f                               | follow cross ref                                      |
 | u                               | up                                                    |
 | m                               | menu items on current node                            |
+| L                               | show history of visited nodes                         |
 |                                 |                                                       |
 | *SPELLING*                      |                                                       |
 | M-x flyspell-mode               | highlight spelling                                    |
