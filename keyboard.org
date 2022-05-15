@@ -110,7 +110,6 @@
 | M-x diff-backup                 | diff file with most recent backup                     |
 | M-x diff-buffer-with-file       | show unsaved changes                                  |
 | M-x diff                        | diff files                                            |
-| C-c i                           | jump to visible character                             |
 | M-/ C-M-/                       | dynamic abbreviation expansion (completion)           |
 | M-x untabify                    | change tabs to spaces in region                       |
 | C-x C-u                         | upcase-region                                         |
