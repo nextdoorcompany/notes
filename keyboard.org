@@ -37,16 +37,24 @@
 | C-h d                           | apropos-documentation                                 |
 | C-h r                           | emacs manual                                          |
 | M-x info                        | manual system                                         |
-| M-x describe-mode               |                                                       |
-| M-x describe-function           |                                                       |
-| M-x describe-variable           |                                                       |
-| M-x describe-key                |                                                       |
+| C-h m                           | describe-mode                                         |
+| C-h f                           | describe-function                                     |
+| C-h x                           | describe-command                                      |
+| C-h v                           | describe-variable                                     |
+| C-h k                           | describe-key                                          |
+| C-h o                           | describe-symbol                                       |
+| M-x describe-keymap             |                                                       |
 | M-x describe-bindings           |                                                       |
+| M-x shortdoc-display-group      | cheat sheet for common commands                       |
 | M-x where-is                    | enter command it gives keybinding                     |
-| M-x helpful-                    | alternative to describe-                              |
 | M-x describe-char               | char under point                                      |
 | C-h C                           | describe current buffer coding system                 |
 | C-x RET f                       | change file coding system                             |
+|                                 |                                                       |
+| *INSIDE HELP*                   |                                                       |
+| l/r                             | back/forward                                          |
+| i                               | goto relevant info note                               |
+| s                               | view source                                           |
 |                                 |                                                       |
 | *INFO*                          |                                                       |
 | <SPC> <del>                     | scroll forward/backward                               |
