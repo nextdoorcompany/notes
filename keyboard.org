@@ -72,6 +72,7 @@
 | M-x flyspell-mode               | highlight spelling                                    |
 | M-x ispell-buffer               | check buffer                                          |
 | M-$                             | check work at point                                   |
+| M-x dictionary-search           | search for word (default is word at point)            |
 |                                 |                                                       |
 | *EDITING*                       |                                                       |
 | C-x u                           | undo (switch to redo with C-g)                        |
