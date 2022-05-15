@@ -266,6 +266,17 @@
 | M-x org-timer-pause-or-continue | pause/continue timer                                  |
 | M-x org-timer-stop              | stop timer                                            |
 |                                 |                                                       |
+| *ORG SPEED KEYS*                |                                                       |
+| n/p                             | next/previous visible                                 |
+| b/f                             | back/foward same level                                |
+| u                               | up level                                              |
+| s                               | narrow to subtree                                     |
+| k                               | cut subtree                                           |
+| r/l                             | demote/promote heading                                |
+| R/L                             | demote/promote subtree                                |
+| i                               | insert heading                                        |
+| S                               | insert subheading                                     |
+|                                 |                                                       |
 | *ARTIST MODE*                   |                                                       |
 | C-c C-a C-o                     | select drawing tool                                   |
 | <return>                        | starts and stops lines and rect, dir on poly line     |
