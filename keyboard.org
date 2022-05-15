@@ -133,6 +133,9 @@
 | M-x scroll-lock-mode            | scroll the buffer not move the cursor                 |
 | C-x <TAB>                       | indent rigidly                                        |
 | C-c j                           | counsel-outline or with arg counsel-imenu             |
+| C-t                             | transpose-chars                                       |
+| M-t                             | transpose-words                                       |
+| C-M-t                           | transpose-sexps                                       |
 |                                 |                                                       |
 | *SEARCH*                        |                                                       |
 | C-s                             | forward search                                        |
