@@ -587,8 +587,23 @@
 | *VERSION CONTROL*               |                                                       |
 | C-x v d                         | status                                                |
 | C-x v =                         | diff buffer and last revison                          |
+| C-x v D                         | diff working tree and last revison                    |
 | C-x v g                         | show blame                                            |
 | C-x v v                         | do next logical action                                |
-| C-x v l                         | print log                                             |
+| C-x v l                         | print log for file                                    |
+| C-x v L                         | print log                                             |
 | C-x v O                         | print log for entries not yet pushed                  |
+| C-x v h                         | display history of changes made in current region     |
+| M-x vc-log-search               | search history for pattern                            |
+| C-x v u                         | revert work files back to last revision               |
+| C-x v G                         | ignore current file (universal removes from ignore)   |
+| C-x v P                         | push                                                  |
+| C-x v +                         | pull                                                  |
+| M-x vc-delete-file              | delete file                                           |
+| M-x vc-rename-file              | rename file                                           |
 |                                 |                                                       |
+| *INSIDE LOG MESSAGE*            |                                                       |
+| C-c C-c                         | save and execute                                      |
+| C-c C-k                         | abort                                                 |
+| C-c C-d                         | view diff                                             |
+| C-c C-w                         | generate log skeleton                                 |
