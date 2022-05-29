@@ -102,6 +102,9 @@
 | M-x narrow-to-region            | narrows to current selection                          |
 | M-x widen                       | widens to full buffer                                 |
 | M-x align-regexp                | align region around regexp                            |
+| M-x sort-lines                  | sort lines asc (universal reverses)                   |
+| M-x sort-fields                 | sort region by column set by numeric arg              |
+| M-x sort-numeric-fields         | sort region by numeric column set by numeric arg      |
 | M-x sort-regexp-fields          | sort region by regexp \w+ by word                     |
 | M-x whitespace-mode             | displays whitespace characters                        |
 | C-M-v                           | scroll other window down                              |
@@ -117,6 +120,7 @@
 | M-x revert-buffer               | loads the file from disk                              |
 | M-x nato-region                 | translate region to phonetic alphabet                 |
 | C-x C-o                         | delete blank lines around point                       |
+| M-^                             | joins current line with one above                     |
 | M-<space>                       | delete all but one space around point                 |
 | M-x flush-lines                 | delete lines with regex                               |
 | M-x keep-lines                  | delete lines without regex                            |
@@ -393,11 +397,14 @@
 |                                 |                                                       |
 | *MACROS*                        |                                                       |
 | <f3>                            | start recording (univeral arg sets the counter)       |
-| <f3>                            | insert counter                                        |
+| <f3>                            | insert counter (universal insert but no increment)    |
+| C-x q                           | queries for user input                                |
 | <f4>                            | stop recording                                        |
 | <f4>                            | run (universal arg sets number of times)              |
+| C-M-c                           | exit recursive edit                                   |
 | M-x name-last-kbd-macro         | names last macro                                      |
 | M-x insert-kbd-macro            | puts elisp equivalent of macro into buffer            |
+| C-x C-k C-n/p                   | cycles macro ring next/previous                       |
 |                                 |                                                       |
 | *CALC*                          |                                                       |
 | C-x * *                         | start calc                                            |
