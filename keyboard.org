@@ -139,6 +139,7 @@
 | C-t                             | transpose-chars                                       |
 | M-t                             | transpose-words                                       |
 | C-M-t                           | transpose-sexps                                       |
+| C-x C-q                         | toggle read only mode                                 |
 |                                 |                                                       |
 | *SEARCH*                        |                                                       |
 | C-s                             | forward search                                        |
@@ -340,8 +341,8 @@
 | M-x desktop-clear               | clear the desktop                                     |
 |                                 |                                                       |
 | *SHELL*                         |                                                       |
-| M-! cmd                         | run command and display output                        |
-| M-\vert cmd                     | run command with region as input                      |
+| M-! cmd                         | run command and display output (univ arg inserts)     |
+| M-\vert cmd                     | run command with region as input (univ arg replaces)  |
 |                                 |                                                       |
 | *SHELL MODE*                    |                                                       |
 | C-d                             | at end of shell buffer send EOF                       |
@@ -582,4 +583,12 @@
 | C-c C-u                         | kill input                                            |
 | C-c C-r                         | move point to last output (universal arg to narrow)   |
 | C-c C-c                         | interrupt process                                     |
+|                                 |                                                       |
+| *VERSION CONTROL*               |                                                       |
+| C-x v d                         | status                                                |
+| C-x v =                         | diff buffer and last revison                          |
+| C-x v g                         | show blame                                            |
+| C-x v v                         | do next logical action                                |
+| C-x v l                         | print log                                             |
+| C-x v O                         | print log for entries not yet pushed                  |
 |                                 |                                                       |
