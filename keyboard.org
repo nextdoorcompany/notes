@@ -580,9 +580,11 @@
 | \,(elisp expression)            | example \,(upcase \&)                                 |
 |                                 |                                                       |
 | *ESHELL*                        |                                                       |
+| C-u d M-x eshell                | creates an eshell session d, d is a number            |
 | C-c C-u                         | kill input                                            |
 | C-c C-r                         | move point to last output (universal arg to narrow)   |
 | C-c C-c                         | interrupt process                                     |
+| addpath -b /path                | add path to beginning of $PATH                        |
 |                                 |                                                       |
 | *VERSION CONTROL*               |                                                       |
 | C-x v d                         | status                                                |
@@ -607,3 +609,12 @@
 | C-c C-k                         | abort                                                 |
 | C-c C-d                         | view diff                                             |
 | C-c C-w                         | generate log skeleton                                 |
+|                                 |                                                       |
+| *PROJECT*                       |                                                       |
+| C-x p p                         | switch to project                                     |
+| C-x p D                         | dired in project root                                 |
+| C-x p b                         | switch buffer in project                              |
+| C-x p e                         | eshell in project root                                |
+| C-x p f                         | find file in project                                  |
+| C-x p k                         | kill all project buffers                              |
+|                                 |                                                       |
