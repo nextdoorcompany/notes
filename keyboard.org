@@ -342,6 +342,7 @@
 |                                 |                                                       |
 | *SHELL*                         |                                                       |
 | M-! cmd                         | run command and display output (univ arg inserts)     |
+| M-! cmd M-n                     | insert current filename into minibuffer               |
 | M-\vert cmd                     | run command with region as input (univ arg replaces)  |
 |                                 |                                                       |
 | *SHELL MODE*                    |                                                       |
