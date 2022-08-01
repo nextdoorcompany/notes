@@ -50,6 +50,9 @@
 | M-x describe-char               | char under point                                      |
 | C-h C                           | describe current buffer coding system                 |
 | C-x RET f                       | change file coding system                             |
+| M-x find-function               | go to function source                                 |
+| M-x find-function-on-key        | go to function source for key                         |
+| M-x find-library                | go to source file for library                         |
 |                                 |                                                       |
 | *INSIDE HELP*                   |                                                       |
 | l/r                             | back/forward                                          |
