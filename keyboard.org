@@ -471,6 +471,8 @@
 | C-x C-e                         | evaluate last sexp                                    |
 | C-u C-x C-e                     | evaluate and print last sexp                          |
 | C-j                             | evaluate and print last sexp (scratch buffer)         |
+| C-M-x                           | evaluate defun (outermost form from point)            |
+| C-u C-M-x                       | evaluate defun with edebug                            |
 |                                 |                                                       |
 | *VIEW MODE*                     |                                                       |
 | M-x view-mode                   | toggles view mode                                     |
@@ -536,6 +538,8 @@
 | \asciicirc                      | move to top of section                                |
 | M-n/M-p                         | section forward/previous                              |
 | M-x magit-log-buffer-file       | see log for current buffer                            |
+| \$                              | see commands magit is running                         |
+| C-c M-g                         | magit dispatch on file                                |
 |                                 |                                                       |
 | *DEBUG*                         |                                                       |
 | M-x debug-on-entry              | starts debugger on selected function                  |
