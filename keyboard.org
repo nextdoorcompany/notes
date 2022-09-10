@@ -323,19 +323,6 @@
 | C-c C-c                         | confirm changes and exit                              |
 | C-c C-k                         | abort                                                 |
 |                                 |                                                       |
-| *YASNIPPET*                     |                                                       |
-| <tab>                           | expand snippet                                        |
-| M-x yas-describe-tables         | view snippets for current mode                        |
-| M-x yas-new-snippet             | create new snippet                                    |
-| M-x yas-insert-snippet          | choose from list and insert                           |
-| M-x yas-visit-snippet-file      | edit snippet                                          |
-| C-c w                           | create auto-snippet                                   |
-| C-c y                           | expand auto-snippet                                   |
-|                                 |                                                       |
-| *SNIPPET MODE*                  |                                                       |
-| C-c C-c                         | load snippet and quit                                 |
-| C-c C-t                         | try snippet                                           |
-|                                 |                                                       |
 | *DESKTOP*                       |                                                       |
 | M-x desktop-save                | save the current desktop                              |
 | M-x desktop-read                | restore save desktop                                  |
