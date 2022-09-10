@@ -55,7 +55,7 @@ from within WSL
 
 * use WSL for aspell
 
-Create aspell.bat in system path.  
+Create aspell.bat in system path.
 #+BEGIN_SRC shell
   wsl aspell %*
 #+END_SRC
@@ -68,8 +68,3 @@ Use cmd in emacs home directory to make ~/org.
 #+BEGIN_SRC shell
   mklink /J org "c:\path\to\org"
 #+END_SRC
-
-
-
-
-
