@@ -101,7 +101,6 @@
 | C-x r <SPC> R                   | records position in register named R                  |
 | C-x r j R                       | jumps to position of register named R                 |
 | C-x r w R                       | save window configuration in register named R         |
-| M-x ivy-push-view               | adds window configuration to C-x b list               |
 | M-x narrow-to-region            | narrows to current selection                          |
 | M-x widen                       | widens to full buffer                                 |
 | M-x align-regexp                | align region around regexp                            |
@@ -138,7 +137,7 @@
 | C-x M-:                         | repeat complex command                                |
 | M-x scroll-lock-mode            | scroll the buffer not move the cursor                 |
 | C-x <TAB>                       | indent rigidly                                        |
-| C-c j                           | counsel-outline or with arg counsel-imenu             |
+| C-c j                           | org-goto or imenu                                     |
 | C-t                             | transpose-chars                                       |
 | M-t                             | transpose-words                                       |
 | C-M-t                           | transpose-sexps                                       |
@@ -311,7 +310,6 @@
 | M-x locate                      | linux locate (sudo updatedb)                          |
 | M-x find-name-dired             | linux find -name                                      |
 | M-x find-lisp-find-dired        | find file by regex no external find                   |
-| M-x counsel-file-jump           | files in current directory (recursive)                |
 | a                               | open file/dir and kill dired buffer                   |
 | i                               | open subdirectory in same buffer                      |
 | C-u k                           | on subdirectory header kills from buffer              |
@@ -450,15 +448,6 @@
 | I F                             | ceil in algebraic                                     |
 | z e                             | round to nearest 64th                                 |
 | z w                             | copy top of stack and remove plus signs               |
-|                                 |                                                       |
-| *IDO*                           |                                                       |
-| C-f/C-b                         | stop using IDO for files/buffers                      |
-| C-r/C-s                         | previous/next match                                   |
-|                                 |                                                       |
-| *IVY*                           |                                                       |
-| C-M-j                           | use prefix of a match                                 |
-| C-j                             | accept current match                                  |
-| C-c C-o                         | put current completions into an ivy occur buffer      |
 |                                 |                                                       |
 | *SMARTPARENS*                   |                                                       |
 | C-<right><left>                 | forward(backward) slurp parens by sexp                |
