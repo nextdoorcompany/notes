@@ -436,9 +436,6 @@
 | z e                             | round to nearest 64th                                 |
 | z w                             | copy top of stack and remove plus signs               |
 |                                 |                                                       |
-| *SMARTPARENS*                   |                                                       |
-| C-<right><left>                 | forward(backward) slurp parens by sexp                |
-|                                 |                                                       |
 | *COMPILIATION*                  |                                                       |
 | C-c r                           | recompile                                             |
 | M-g M-n M-g M-p                 | jump to next(previous) error from any buffer          |
