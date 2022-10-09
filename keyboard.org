@@ -599,3 +599,15 @@
 | C-x p f                         | find file in project                                  |
 | C-x p k                         | kill all project buffers                              |
 |                                 |                                                       |
+| *MINIBUFFER COMPLETION*         |                                                       |
+| <TAB>                           | complete                                              |
+| <SPC>                           | complete word                                         |
+| <TAB> <TAB> or ?                | raise completions window                              |
+| M-v                             | go to completions window                              |
+|                                 |                                                       |
+| *COMPLETION STYLES*             | _ is point                                            |
+| basic                           | foo_bar -> foo*bar*                                   |
+| partial-completion              | l-c*o_h -> l*-c*o*h*                                  |
+| emacs22                         | foo_bar -> foo*bar                                    |
+| substring                       | foo_bar -> \*foo*bar*                                 |
+|                                 |                                                       |
