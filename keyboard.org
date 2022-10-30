@@ -483,12 +483,6 @@
 | M-,                             | jump back to original location                        |
 | M-?                             | find references of identifier at point                |
 |                                 |                                                       |
-| *COMPANY*                       |                                                       |
-| RET                             | complete selection                                    |
-| M-digit                         | choose numbered selection                             |
-| C-h                             | go to help for current selection                      |
-| C-w                             | go to source for current selection                    |
-|                                 |                                                       |
 | *PYTHON*                        |                                                       |
 | C-c C-p                         | run python                                            |
 | C-c C-c                         | send buffer to shell                                  |
