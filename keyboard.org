@@ -605,3 +605,7 @@
 | emacs22                         | foo_bar -> foo*bar                                    |
 | substring                       | foo_bar -> \star{}foo*bar*                            |
 |                                 |                                                       |
+| *IN BUFFER COMPLETION*          |                                                       |
+| C-M-i                           | complete symbol at point                              |
+| <f17>                           | hippie-expand (uses dabbrev)                          |
+|                                 |                                                       |
