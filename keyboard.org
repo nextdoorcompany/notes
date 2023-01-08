@@ -239,6 +239,7 @@
 | C-c \ast                        | make a line a heading                                 |
 | M-x org-toggle-link-display     | shows/hides raw links                                 |
 | C-c C-x b                       | tree to indirect buffer                               |
+| C-c @                           | org mark subtree                                      |
 |                                 |                                                       |
 | *ORG TODO*                      |                                                       |
 | C-c C-t                         | cycle TODO item through states                        |
