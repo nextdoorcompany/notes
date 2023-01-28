@@ -434,6 +434,11 @@
 | Z F                             | store algebraic formula at top of stack               |
 | Z P                             | persist formula                                       |
 | I F                             | ceil in algebraic                                     |
+| 2 in                            | enter number then units in algebraic mode             |
+| u r                             | remove units from number                              |
+| u c                             | convert number at top of stack                        |
+| u n                             | convert number at top of stack force consist          |
+| u s                             | simplify expressions with multiple units              |
 | z e                             | round to nearest 64th                                 |
 | z w                             | copy top of stack and remove plus signs               |
 |                                 |                                                       |
