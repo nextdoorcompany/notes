@@ -9,6 +9,8 @@
 | C-x 2                           | split window below                                    |
 | C-x 3                           | split window right                                    |
 | C-x } C-x {                     | increase (decrease) buffer width                      |
+| C-x ^                           | increase buffer height                                |
+| M-x shrink-window               | decrease buffer height                                |
 | C-x 4 0                         | kill buffer and window                                |
 | C-x o                           | other buffer                                          |
 | C-x b                           | switch to buffer                                      |
@@ -493,6 +495,7 @@
 | *PYTHON*                        |                                                       |
 | C-c C-p                         | run python                                            |
 | C-c C-c                         | send buffer to shell                                  |
+| C-u C-c C-c                     | send buffer to shell with if name==main               |
 | C-c C-r                         | send region to shell                                  |
 | C-c C-s                         | send string to shell                                  |
 | C-c C-z                         | switch to shell                                       |
