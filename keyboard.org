@@ -142,6 +142,7 @@
 | M-t                             | transpose-words                                       |
 | C-M-t                           | transpose-sexps                                       |
 | C-x C-q                         | toggle read only mode                                 |
+| M-x delete-pair                 | removes pair at sexp following point                  |
 |                                 |                                                       |
 | *SEARCH*                        |                                                       |
 | C-s                             | forward search                                        |
