@@ -595,6 +595,10 @@
 | C-c C-d                         | view diff                                             |
 | C-c C-w                         | generate log skeleton                                 |
 |                                 |                                                       |
+| *INSIDE LOG VIEW*               |                                                       |
+| d/=                             | show diff for file at point (region defines start)    |
+| D                               | show entire diff (region defines start)               |
+|                                 |                                                       |
 | *PROJECT*                       |                                                       |
 | C-x p p                         | switch to project                                     |
 | C-x p D                         | dired in project root                                 |
