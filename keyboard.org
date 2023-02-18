@@ -121,6 +121,7 @@
 | M-x untabify                    | change tabs to spaces in region                       |
 | C-x C-u                         | upcase-region                                         |
 | M-;                             | comment region or add comment                         |
+| C-x C-;                         | comment line                                          |
 | M-x revert-buffer               | loads the file from disk                              |
 | M-x nato-region                 | translate region to phonetic alphabet                 |
 | C-x C-o                         | delete blank lines around point                       |
