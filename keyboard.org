@@ -106,6 +106,7 @@
 | M-x narrow-to-region            | narrows to current selection                          |
 | M-x widen                       | widens to full buffer                                 |
 | M-x align-regexp                | align region around regexp                            |
+| C-u M-x align-regexp            | align region around regexp with guided options        |
 | M-x sort-lines                  | sort lines asc (universal reverses)                   |
 | M-x sort-fields                 | sort region by column set by numeric arg              |
 | M-x sort-numeric-fields         | sort region by numeric column set by numeric arg      |
@@ -137,7 +138,7 @@
 | C-x 8 <ret>                     | input-char add unicode character                      |
 | C-M-i                           | completion at point if mode provides                  |
 | C-q                             | quoted input                                          |
-| C-x M-:                         | repeat complex command                                |
+| C-x M-:                         | repeat complex command (M-p thru history)             |
 | M-x scroll-lock-mode            | scroll the buffer not move the cursor                 |
 | C-x <TAB>                       | indent rigidly                                        |
 | C-c j                           | org-goto or imenu                                     |
@@ -157,14 +158,18 @@
 | C-w                             | add word at point to search string                    |
 | C-y                             | yank from clipboard to search string                  |
 | C-u C-s/r                       | forward/reverse search with regex                     |
-| M-x occur                       | find all                                              |
 | e/C-c C-c                       | starts/stops edit mode in occur buffer                |
 | M-x imenu                       | jump to definition                                    |
 | M-%                             | interactive search and replace                        |
 | C-M-%                           | interactive search and replace regex                  |
 | M-x replace-string              | search and replace                                    |
-| M-q                             | search and replace in swiper search                   |
-| C-z                             | swiper                                                |
+| M-s o                           | occur                                                 |
+|                                 |                                                       |
+| *OCCUR*                         |                                                       |
+| n/p                             | forward/back no select                                |
+| l                               | recenter current error                                |
+| M-g M-n/p                       | in original buffer next/prev occurance                |
+| e                               | edit mode                                             |
 |                                 |                                                       |
 | *MARK*                          |                                                       |
 | C-M-<spc>                       | mark by sexp                                          |
