@@ -1,631 +1,634 @@
 #+HTML_HEAD: <style>body {font-size: xx-small;}</style>
 #+OPTIONS: html-postamble:nil
 #+TITLE:
-| *GENERAL*                       |                                                       |
-| C-x C-+                         | zoom in                                               |
-| C-x C--                         | zoom out                                              |
-| C-x 0                           | delete active window                                  |
-| C-x 1                           | deletes other windows                                 |
-| C-x 2                           | split window below                                    |
-| C-x 3                           | split window right                                    |
-| C-x } C-x {                     | increase (decrease) buffer width                      |
-| C-x ^                           | increase buffer height                                |
-| M-x shrink-window               | decrease buffer height                                |
-| C-x 4 0                         | kill buffer and window                                |
-| C-x o                           | other buffer                                          |
-| C-x b                           | switch to buffer                                      |
-| C-x C-b                         | list buffers                                          |
-| C-x 4 b                         | display a buffer in the next window                   |
-| C-x 4 f                         | display a file in the next window                     |
-| C-x 4 t                         | transpose windows                                     |
-| C-x 4 c                         | create indirect buffer other window                   |
-| C-x i                           | insert file contents into buffer                      |
-| C-c p                           | pin buffer window                                     |
-| C-c C-c                         | insert control-c into ansi-term                       |
-| C-c t                           | open or switch to ansi-term                           |
-| M-x proced                      | show list of processes                                |
-| C-x C-f                         | open file                                             |
-| C-x C-r                         | open recent file list                                 |
-| C-x C-s                         | save buffer                                           |
-| C-x C-w                         | write buffer                                          |
-| C-x C-c                         | exit Emacs                                            |
-|                                 |                                                       |
-| *HELP*                          |                                                       |
-| <any prefix> C-h                | list keys for prefix                                  |
-| C-h l                           | get list of commands run                              |
-| M-x apropos                     | help                                                  |
-| info-apropos                    | search info system                                    |
-| apropos-command                 | short documentation on command with pattern           |
-| C-h d                           | apropos-documentation                                 |
-| C-h r                           | emacs manual                                          |
-| M-x info                        | manual system                                         |
-| C-h m                           | describe-mode                                         |
-| C-h f                           | describe-function                                     |
-| C-h x                           | describe-command                                      |
-| C-h v                           | describe-variable                                     |
-| C-h k                           | describe-key                                          |
-| C-h o                           | describe-symbol                                       |
-| M-x describe-keymap             |                                                       |
-| M-x describe-bindings           |                                                       |
-| M-x shortdoc-display-group      | cheat sheet for common commands                       |
-| M-x where-is                    | enter command it gives keybinding                     |
-| M-x describe-char               | char under point                                      |
-| C-h C                           | describe current buffer coding system                 |
-| C-x RET f                       | change file coding system                             |
-| M-x find-function               | go to function source                                 |
-| M-x find-function-on-key        | go to function source for key                         |
-| M-x find-library                | go to source file for library                         |
-|                                 |                                                       |
-| *INSIDE HELP*                   |                                                       |
-| l/r                             | back/forward                                          |
-| i                               | goto relevant info note                               |
-| s                               | view source                                           |
-|                                 |                                                       |
-| *INFO*                          |                                                       |
-| <SPC> <del>                     | scroll forward/backward                               |
-| <tab>                           | visit links                                           |
-| i/S-i                           | index search/index broken out into node               |
-| s                               | search                                                |
-| g                               | goto node                                             |
-| l                               | last                                                  |
-| f                               | follow cross ref                                      |
-| u                               | up                                                    |
-| m                               | menu items on current node                            |
-| L                               | show history of visited nodes                         |
-|                                 |                                                       |
-| *SPELLING*                      |                                                       |
-| M-x flyspell-mode               | highlight spelling                                    |
-| M-x ispell-buffer               | check buffer                                          |
-| M-$                             | check work at point                                   |
-| M-x dictionary-search           | search for word (default is word at point)            |
-|                                 |                                                       |
-| *EDITING*                       |                                                       |
-| C-x u                           | undo (switch to redo with C-g)                        |
-| C-x z                           | repeat (z alone for multiple)                         |
-| C-g                             | cancel                                                |
-| M-m                             | home but to first non-whitespace                      |
-| M-< M->                         | beginning (end) of buffer                             |
-| C-M-f                           | forward by sexp                                       |
-| C-M-b                           | backward by sexp                                      |
-| C-M-a/e                         | beginning (end) of function                           |
-| C-M-u/d                         | up (down) into a list                                 |
-| M-a/e                           | backward/forward sentence                             |
-| C-l                             | center window at point                                |
-| M-g M-g                         | go to line                                            |
-| M-0 or C-u 0                    | digit argument 0-9                                    |
-| M-- or C--                      | negative argument                                     |
-| C-c d                           | duplicate line                                        |
-| C-c M-d                         | duplicate line and comment original                   |
-| C-c <del>                       | delete line                                           |
-| C-x r m                         | sets bookmark of current open file                    |
-| M-x list-bookmark               | opens bookmark buffer                                 |
-| C-x r b                         | opens bookmarked file                                 |
-| C-x r <SPC> R                   | records position in register named R                  |
-| C-x r j R                       | jumps to position of register named R                 |
-| C-x r w R                       | save window configuration in register named R         |
-| M-x narrow-to-region            | narrows to current selection                          |
-| M-x widen                       | widens to full buffer                                 |
-| M-x align-regexp                | align region around regexp                            |
-| C-u M-x align-regexp            | align region around regexp with guided options        |
-| M-x sort-lines                  | sort lines asc (universal reverses)                   |
-| M-x sort-fields                 | sort region by column set by numeric arg              |
-| M-x sort-numeric-fields         | sort region by numeric column set by numeric arg      |
-| M-x sort-regexp-fields          | sort region by regexp \w+ by word                     |
-| M-x whitespace-mode             | displays whitespace characters                        |
-| C-M-v                           | scroll other window down                              |
-| C-M-S-v                         | scroll other window up                                |
-| S-<return>                      | create newline under current                          |
-| M-x diff-backup                 | diff file with most recent backup                     |
-| M-x diff-buffer-with-file       | show unsaved changes                                  |
-| M-x diff                        | diff files                                            |
-| M-/ C-M-/                       | dynamic abbreviation expansion (completion)           |
-| M-x untabify                    | change tabs to spaces in region                       |
-| C-x C-u                         | upcase-region                                         |
-| M-;                             | comment region or add comment                         |
-| C-x C-;                         | comment line                                          |
-| M-x revert-buffer               | loads the file from disk                              |
-| M-x nato-region                 | translate region to phonetic alphabet                 |
-| C-x C-o                         | delete blank lines around point                       |
-| M-^                             | joins current line with one above                     |
-| C-u M-^                         | joins current line with one below                     |
-| M-<space>                       | delete all but one space around point                 |
-| M-x flush-lines                 | delete lines with regex                               |
-| M-x keep-lines                  | delete lines without regex                            |
-| C-x <space>                     | rectangle mark mode                                   |
-| M-z                             | zap up to char                                        |
-| C-x =                           | what cursor purson                                    |
-| M-x toggle-input-mode           | tex to enter tex chars                                |
-| C-x 8 <ret>                     | input-char add unicode character                      |
-| C-M-i                           | completion at point if mode provides                  |
-| C-q                             | quoted input                                          |
-| C-x M-:                         | repeat complex command (M-p thru history)             |
-| M-x scroll-lock-mode            | scroll the buffer not move the cursor                 |
-| C-x <TAB>                       | indent rigidly                                        |
-| C-c j                           | org-goto or imenu                                     |
-| C-t                             | transpose-chars                                       |
-| M-t                             | transpose-words                                       |
-| C-M-t                           | transpose-sexps                                       |
-| C-x C-q                         | toggle read only mode                                 |
-| M-x delete-pair                 | removes pair at sexp following point                  |
-|                                 |                                                       |
-| *SEARCH*                        |                                                       |
-| C-s                             | forward search                                        |
-| C-r                             | reverse search                                        |
-| C-s C-s                         | forward search with previous term                     |
-| C-r C-r                         | reverse search with previous term                     |
-| C-g                             | exits search and returns to orig location             |
-| ret                             | selects match and drops mark at previous location     |
-| C-w                             | add word at point to search string                    |
-| C-y                             | yank from clipboard to search string                  |
-| C-u C-s/r                       | forward/reverse search with regex                     |
-| e/C-c C-c                       | starts/stops edit mode in occur buffer                |
-| M-x imenu                       | jump to definition                                    |
-| M-%                             | interactive search and replace                        |
-| C-M-%                           | interactive search and replace regex                  |
-| M-x replace-string              | search and replace                                    |
-| M-s o                           | occur                                                 |
-|                                 |                                                       |
-| *OCCUR*                         |                                                       |
-| n/p                             | forward/back no select                                |
-| l                               | recenter current error                                |
-| M-g M-n/p                       | in original buffer next/prev occurance                |
-| e                               | edit mode                                             |
-|                                 |                                                       |
-| *MARK*                          |                                                       |
-| C-M-<spc>                       | mark by sexp                                          |
-| M-@                             | mark by word                                          |
-| C-x h                           | mark whole buffer                                     |
-| C-M-h                           | mark defun                                            |
-| C-<spc> C-<spc>                 | push mark to mark ring                                |
-| C-u C-<spc>                     | pop mark ring within buffer                           |
-| C-x C-<spc>                     | pop global mark ring                                  |
-| C-x C-x                         | exchange point and mark                               |
-| C-<spc>                         | set mark toggles region                               |
-| C-k                             | kill rest of line                                     |
-| C-c <backspace>                 | kill line                                             |
-| M-d, C-<backspace>              | kill word                                             |
-| M-<backspace>                   | backward kill word                                    |
-| M-k                             | kill rest of sentence                                 |
-| C-x <backspace>                 | kill sentence backward                                |
-| C-w                             | kill region                                           |
-| M-w                             | copy to kill ring                                     |
-| C-y                             | yank                                                  |
-| M-y                             | cycle through kill ring                               |
-| C-=                             | mark using context                                    |
-|                                 |                                                       |
-| *ORG TABLE*                     |                                                       |
-| \vert-                          | create horizontal line                                |
-| \vert                           | start a row                                           |
-| C-c ^                           | sort rows by column where point is                    |
-| C-c -                           | insert horizontal line                                |
-| M-S-<down>                      | insert row                                            |
-| M-S-<up>                        | kill current row                                      |
-| M-<up>                          | move row up (down)                                    |
-| M-S-<right>                     | insert column                                         |
-| M-S-<left>                      | kill current column                                   |
-| M-<left>                        | move column left (right)                              |
-| C-c =                           | add column formula (or type = in field)               |
-| C-u C-c =                       | add formula (or type := in field)                     |
-| S-<enter>                       | copy down                                             |
-| C-c ?                           | information about current field                       |
-| C-c {                           | toggle formula debugger                               |
-| C-c }                           | show row and col headers                              |
-| C-c <spc>                       | clear current field                                   |
-| C-u C-c C-c                     | recompute from anywhere in table                      |
-|                                 |                                                       |
-| *ORG GENERAL*                   |                                                       |
-| \ast                            | start heading                                         |
-| C-c C-n                         | next heading                                          |
-| C-c C-p                         | previous heading                                      |
-| C-c C-f                         | next heading same level                               |
-| C-c C-b                         | previous heading same level                           |
-| C-c M-f                         | next block                                            |
-| C-c M-b                         | previous block                                        |
-| C-c C-u                         | up heading                                            |
-| C-c C-j                         | org goto                                              |
-| C-c /                           | org sparse tree                                       |
-| M-g M-n/p                       | next/sparse tree match                                |
-| M-<return>                      | insert a new thing depending on context               |
-| C-u M-<return>, C-<return>      | insert a new heading at end of current subtree        |
-| C-u C-u M-<return>              | insert a new heading at end of parent subtree         |
-| \plus - \ast                    | plain list item                                       |
-| [ ]                             | checkbox                                              |
-| C-c !                           | add date                                              |
-| C-c '                           | open buffer for current code block                    |
-| C-c c                           | open capture template window                          |
-| C-u C-c C-c                     | inside a capture template, finalize and go to item    |
-| C-u C-u M-x org-capture         | go to last captured item                              |
-| C-c a                           | org agenda view                                       |
-| C-c C-q                         | set tag for current heading                           |
-| C-c C-x p                       | org set property                                      |
-| C-c C-l                         | org insert link                                       |
-| C-c C-o                         | org follow link                                       |
-| M-x org-store-link              | store link (use insert later)                         |
-| C-c ^                           | sort entries in region                                |
-| C-c C-w                         | org refile                                            |
-| C-c %                           | org mark ring push (also pushes Emacs mark)           |
-| M-x org-mark-ring-goto          | pop org mark ring                                     |
-| C-c \ast                        | make a line a heading                                 |
-| M-x org-toggle-link-display     | shows/hides raw links                                 |
-| C-c C-x b                       | tree to indirect buffer                               |
-| C-c @                           | org mark subtree                                      |
-|                                 |                                                       |
-| *ORG TODO*                      |                                                       |
-| C-c C-t                         | cycle TODO item through states                        |
-| C-u C-u C-c C-t                 | change TODO sequence                                  |
-| C-c C-s                         | schedule a TODO                                       |
-| C-c C-d                         | insert a deadline                                     |
-| C-c C-z                         | add a note                                            |
-| M-S-<return>                    | add a TODO at same indentation or checkbox if list    |
-|                                 |                                                       |
-| *ORG AGENDA VIEW*               |                                                       |
-| d                               | daily view                                            |
-| t                               | cycle TODO item through states                        |
-| C-u C-u t                       | change TODO sequence                                  |
-| s                               | save all connected org files                          |
-| r                               | reload view                                           |
-| <tab>                           | go to original item                                   |
-| F                               | follow mode                                           |
-| <spc> <del>                     | open org buffer and scroll up/down                    |
-| + -                             | priority up down                                      |
-| < =                             | narrow to current category/regex                      |
-|                                 |                                                       |
-| *ORG CLOCK*                     |                                                       |
-| C-c C-x C-i                     | clock in                                              |
-| C-c C-x C-o                     | clock out                                             |
-|                                 |                                                       |
-| *ORG TIMER*                     |                                                       |
-| M-x org-timer-start             | start relative timer                                  |
-| M-x org-timer-set-timer         | start countdown timer                                 |
-| M-x org-timer                   | insert the current timer value                        |
-| M-x org-timer-item              | insert a list item with current timer value           |
-| M-x org-timer-pause-or-continue | pause/continue timer                                  |
-| M-x org-timer-stop              | stop timer                                            |
-|                                 |                                                       |
-| *ORG SPEED KEYS*                |                                                       |
-| n/p                             | next/previous visible                                 |
-| b/f                             | back/foward same level                                |
-| u                               | up level                                              |
-| s                               | narrow to subtree                                     |
-| k                               | cut subtree                                           |
-| r/l                             | demote/promote heading                                |
-| R/L                             | demote/promote subtree                                |
-| i                               | insert heading                                        |
-| S                               | insert subheading                                     |
-|                                 |                                                       |
-| *ARTIST MODE*                   |                                                       |
-| C-c C-a C-o                     | select drawing tool                                   |
-| <return>                        | starts and stops lines and rect, dir on poly line     |
-| C-u <return>                    | stops poly line                                       |
-| < >                             | adds/removes arrows of last line drawn                |
-|                                 |                                                       |
-| *DIRED*                         |                                                       |
-| C-x d                           | open                                                  |
-| q                               | quit                                                  |
-| h                               | help                                                  |
-| m u                             | mark unmark                                           |
-| % m                             | mark by regexp                                        |
-| U                               | unmark all                                            |
-| t                               | toggle mark (marks all if none are marked)            |
-| C                               | copy                                                  |
-| D                               | delete                                                |
-| C-d                             | permanently delete                                    |
-| R                               | rename                                                |
-| f                               | open                                                  |
-| v                               | open read only                                        |
-| \asciicirc                      | up a directory                                        |
-| w                               | copy filename to kill ring                            |
-| M-0 w                           | copy full path to kill ring                           |
-| \!                              | run shell command on marked                           |
-| M-x locate                      | linux locate (sudo updatedb)                          |
-| M-x find-name-dired             | linux find -name                                      |
-| M-x find-lisp-find-dired        | find file by regex no external find                   |
-| a                               | open file/dir and kill dired buffer                   |
-| i                               | open subdirectory in same buffer                      |
-| C-u k                           | on subdirectory header kills from buffer              |
-| (                               | expands/contracts details                             |
-| s                               | toggle sort name/date                                 |
-| +                               | create directory                                      |
-| j                               | jump to file                                          |
-|                                 |                                                       |
-| *WDIRED*                        |                                                       |
-| C-x C-q                         | enter wdired - rename and move files                  |
-| C-c C-c                         | confirm changes and exit                              |
-| C-c C-k                         | abort                                                 |
-|                                 |                                                       |
-| *DESKTOP*                       |                                                       |
-| M-x desktop-save                | save the current desktop                              |
-| M-x desktop-read                | restore save desktop                                  |
-| M-x desktop-clear               | clear the desktop                                     |
-|                                 |                                                       |
-| *SHELL*                         |                                                       |
-| M-! cmd                         | run command and display output (univ arg inserts)     |
-| M-! cmd M-n                     | insert current filename into minibuffer               |
-| M-\vert cmd                     | run command with region as input (univ arg replaces)  |
-|                                 |                                                       |
-| *SHELL MODE*                    |                                                       |
-| C-d                             | at end of shell buffer send EOF                       |
-| C-c C-c                         | comint-interrupt-subjob                               |
-| C-c C-\                         | comint-quit-subjob                                    |
-| C-c C-o                         | delete last batch of output                           |
-| C-c C-s                         | write last batch of output to file                    |
-| C-M-l or C-c C-r                | scroll to begin of last batch of output               |
-| C-c C-e                         | scroll to last line of buffer                         |
-| C-c C-l                         | show recent inputs to buffer                          |
-| C-c M-o                         | clear buffer                                          |
-| C-c M-r/M-s                     | search back/forward in history for current prefix     |
-| M-r                             | backward regex search history                         |
-| C-c .                           | insert previous argument                              |
-|                                 |                                                       |
-| *WORKFLOW*                      |                                                       |
-| C-c f                           | new scratch buffer with spell checking                |
-| C-x m                           | new mail buffer                                       |
-| C-c s                           | send mail buffer                                      |
-|                                 |                                                       |
-| *CALENDAR*                      |                                                       |
-| M-x calendar                    | opens calendar                                        |
-| M-w                             | copies date under cursor to kill ring                 |
-| g d                             | move to specific date                                 |
-| .                               | move to today                                         |
-| o                               | center around month                                   |
-| C-f/C-b                         | forward/backward by day                               |
-| C-n/C-p                         | forward/backwood by week                              |
-| < >                             | scroll view                                           |
-| M-=                             | count days in region (inclusive)                      |
-| h                               | holidays on current date                              |
-| x                               | mark all holidays                                     |
-| u                               | unmark all                                            |
-| M-x list-holidays               | list all holidays                                     |
-| d                               | diary entries on current date                         |
-| m                               | mark all days with diary entries                      |
-| i [d w m y]                     | add diary entry for date, week, month, or year        |
-| i [a b c]                       | add diary entry for anniversary, block, or cyclic     |
-| digit                           | prefix arg to movement commands                       |
-| M-x appt-add                    | add ephemeral appointment with alarm                  |
-|                                 |                                                       |
-| *PACKAGES*                      |                                                       |
-| M-x list-packages               | opens package list                                    |
-| M-x occur installed             | opens occur buffer with installed packages            |
-| U x                             | update packages                                       |
-| r                               | refresh package list                                  |
-| h                               | help                                                  |
-|                                 |                                                       |
-| *HIGHLIGHTING*                  |                                                       |
-| M-x highlight-regexp            | M-n, M-p cycle through colors                         |
-| M-x unhighlight-regexp          |                                                       |
-| M-s h l                         | shorthand regexp captures entire line                 |
-|                                 |                                                       |
-| *MACROS*                        |                                                       |
-| <f3>                            | start recording (univeral arg sets the counter)       |
-| <f3>                            | insert counter (universal insert but no increment)    |
-| C-x q                           | queries for user input                                |
-| <f4>                            | stop recording                                        |
-| <f4>                            | run (universal arg sets number of times)              |
-| C-M-c                           | exit recursive edit                                   |
-| M-x name-last-kbd-macro         | names last macro                                      |
-| M-x insert-kbd-macro            | puts elisp equivalent of macro into buffer            |
-| C-x C-k C-n/p                   | cycles macro ring next/previous                       |
-|                                 |                                                       |
-| *CALC*                          |                                                       |
-| C-x * *                         | start calc                                            |
-| C-x * q or C-c k                | quick calculation put answer in kill-ring             |
-| C-u C-x * q                     | quick calculation insert answer at point              |
-| C-j                             | inside quick calc insert result at point              |
-| C-x * s                         | calc summary                                          |
-| C-x * w                         | toggles embedded mode for number at point             |
-| C-u C-x * g                     | grab region and interpret as number                   |
-| C-x * y                         | yank top of stack                                     |
-|                                 |                                                       |
-| *INSIDE CALC*                   |                                                       |
-| '                               | start algebraic                                       |
-| x:y:z or x+y:z                  | enter mixed number x y/z                              |
-| h                               | help                                                  |
-| <backspace>                     | removes one line of stack                             |
-| M-0 <backspace>                 | clear stack                                           |
-| n                               | change sign                                           |
-| <TAB>                           | swaps last two lines of stack                         |
-| M-<TAB>                         | rotates stack                                         |
-| s s                             | peek stack and store to variable                      |
-| s t                             | pop stack and store to variable                       |
-| s r                             | recall variable                                       |
-| s u                             | clear variable                                        |
-| U                               | undo                                                  |
-| D                               | redo                                                  |
-| t n/p                           | move trail pointer                                    |
-| t y                             | yank from trail                                       |
-| d g                             | group digits toggle                                   |
-| C-x * o                         | other window that is not calc                         |
-| C-x * 0                         | reset calc                                            |
-| t N                             | insert current time                                   |
-| '<date>                         | insert date                                           |
-| c f/c F                         | top of stack to float/Fraction mode                   |
-| m f                             | toggle fraction mode                                  |
-| Z F                             | store algebraic formula at top of stack               |
-| Z P                             | persist formula                                       |
-| I F                             | ceil in algebraic                                     |
-| 2 in                            | enter number then units in algebraic mode             |
-| u r                             | remove units from number                              |
-| u c                             | convert number at top of stack                        |
-| u n                             | convert number at top of stack force consist          |
-| u s                             | simplify expressions with multiple units              |
-| z e                             | round to nearest 64th                                 |
-| z w                             | copy top of stack and remove plus signs               |
-|                                 |                                                       |
-| *COMPILIATION*                  |                                                       |
-| C-c r                           | recompile                                             |
-| M-g M-n M-g M-p                 | jump to next(previous) error from any buffer          |
-|                                 |                                                       |
-| *ELISP*                         |                                                       |
-| C-x C-e                         | evaluate last sexp                                    |
-| C-u C-x C-e                     | evaluate and print last sexp                          |
-| C-j                             | evaluate and print last sexp (scratch buffer)         |
-| C-M-x                           | evaluate defun (outermost form from point)            |
-| C-u C-M-x                       | evaluate defun with edebug                            |
-|                                 |                                                       |
-| *VIEW MODE*                     |                                                       |
-| M-x view-mode                   | toggles view mode                                     |
-| M-x view-file (v in dired)      | opens a file in view mode                             |
-| M-x view-buffer                 | switches to buffer and enables view mode              |
-| q                               | quit                                                  |
-| r/s                             | search                                                |
-| \ /                             | regex search                                          |
-| m/'                             | save/goto point in character register                 |
-| del/spc u/d                     | scroll full/half page back/forward                    |
-|                                 |                                                       |
-| *ABBREV*                        |                                                       |
-| M-x unexpand-abbrev             | unexpands last abbrev                                 |
-| M-x add-mode-abbrev             | add abbrev for last word (arg 0 is region/else words) |
-| M-x inverse-add-mode-abbrev     | add expansion for last word                           |
-| M-x add-global-abbrev           | add abbrev for last word (arg 0 is region/else words) |
-| M-x inverse-add-global-abbrev   | add expansion for last word                           |
-| C-q                             | quote terminating character preventing expansion      |
-| M-x write-abbrev-file           | saves abbrevs, will also happen on exit               |
-| M-x list-abbrevs                | shows abbrevs in a buffer                             |
-| M-x define-global-abbrev        | interactively build abbrev                            |
-| M-x define-mode-abbrev          | interactively build mode abbrev                       |
-|                                 |                                                       |
-| *IBUFFER*                       |                                                       |
-| ( or `                          | toggle format                                         |
-| o                               | open in other window                                  |
-| D                               | kill marked buffers                                   |
-| m/u/U                           | mark/unmark buffer at point/unmark all                |
-| Q/I                             | query replace in marked buffers / with regexp         |
-| O                               | occur in marked buffers                               |
-|                                 |                                                       |
-| *XREF*                          |                                                       |
-| M-.                             | jump to definition of identifier at point             |
-| C-u M-.                         | jump to definition prompt                             |
-| M-,                             | jump back to original location                        |
-| M-?                             | find references of identifier at point                |
-|                                 |                                                       |
-| *PYTHON*                        |                                                       |
-| C-c C-p                         | run python                                            |
-| C-c C-c                         | send buffer to shell                                  |
-| C-u C-c C-c                     | send buffer to shell with if name==main               |
-| C-c C-r                         | send region to shell                                  |
-| C-c C-s                         | send string to shell                                  |
-| C-c C-z                         | switch to shell                                       |
-| C-c C-d                         | describe at point help in repl                        |
-| M-e/M-a                         | block forward/backward                                |
-|                                 |                                                       |
-| *SQL*                           |                                                       |
-| C-c C-b                         | send buffer to shell                                  |
-| C-c C-c                         | send paragraph to shell                               |
-| C-c C-r                         | send region to shell                                  |
-| C-c C-s                         | send string to shell                                  |
-| C-c C-z                         | switch to shell                                       |
-|                                 |                                                       |
-| *MAGIT*                         |                                                       |
-| +/-/0                           | more/less/default context                             |
-| 1/2/3/4                         | show level                                            |
-| \asciicirc                      | move to top of section                                |
-| M-n/M-p                         | section forward/previous                              |
-| M-x magit-log-buffer-file       | see log for current buffer                            |
-| $                               | see commands magit is running                         |
-| C-c M-g                         | magit dispatch on file                                |
-|                                 |                                                       |
-| *DEBUG*                         |                                                       |
-| M-x debug-on-entry              | starts debugger on selected function                  |
-| d                               | step                                                  |
-| e                               | evaluate expression                                   |
-| c                               | quit and continue running                             |
-| q                               | quit and terminate                                    |
-| M-x cancel-debug-on-entry       | stops debugging function                              |
-| C-u C-M-x                       | instrument function for edebug                        |
-| <SPC>                           | step                                                  |
-| e                               | evaluate expression                                   |
-| g                               | run until next breakpoint                             |
-| q                               | quit and terminate                                    |
-| C-M-x                           | turn off instrumentation (or eval in any other way)   |
-|                                 |                                                       |
-| *RE-BUILDER*                    |                                                       |
-| M-x re-builder                  | starts the builder                                    |
-| C-c C-q                         | quit                                                  |
-| C-c C-r/s                       | prev/next match                                       |
-| C-c C-u                         | force update                                          |
-| C-c C-w                         | copy string for using in elisp                        |
-|                                 |                                                       |
-| *REGEX*                         |                                                       |
-| .                               | any char                                              |
-| \star *?                        | 0 or more of preceding (non-greedy)                   |
-| + +?                            | 1 or more of preceding (non-greedy)                   |
-| ? ??                            | 0 or 1 of preceding (non-greedy)                      |
-| [ ]                             | character set                                         |
-| \asciicirc $                    | begin/end line                                        |
-| \\vert                          | or                                                    |
-| \( \)                           | group                                                 |
-| \sC \SC                         | any char whose syntax is/is not C                     |
-|                                 |                                                       |
-| *SYNTAX CLASSES*                |                                                       |
-| -                               | whitespace                                            |
-| w                               | chars in words in human languages                     |
-| \under                          | chars in programming symbols                          |
-| .                               | punctuation                                           |
-| "                               | string quotes                                         |
-| < >                             | comment starters/enders                               |
-|                                 |                                                       |
-| *REGEX REPLACEMENTS*            |                                                       |
-| \&                              | entire match                                          |
-| \D                              | Dth group in match                                    |
-| \?                              | prompt for replacement                                |
-| \,(elisp expression)            | example \,(upcase \&)                                 |
-|                                 |                                                       |
-| *ESHELL*                        |                                                       |
-| C-u d M-x eshell                | creates an eshell session d, d is a number            |
-| C-c C-u                         | kill input                                            |
-| C-c C-r                         | move point to last output (universal arg to narrow)   |
-| C-c C-c                         | interrupt process                                     |
-| addpath -b /path                | add path to beginning of $PATH                        |
-|                                 |                                                       |
-| *VERSION CONTROL*               |                                                       |
-| C-x v d                         | status                                                |
-| C-x v =                         | diff buffer and last revison                          |
-| C-x v D                         | diff working tree and last revison                    |
-| C-x v g                         | show blame                                            |
-| C-x v v                         | do next logical action                                |
-| C-x v l                         | print log for file                                    |
-| C-x v L                         | print log                                             |
-| C-x v O                         | print log for entries not yet pushed                  |
-| C-x v h                         | display history of changes made in current region     |
-| M-x vc-log-search               | search history for pattern                            |
-| C-x v u                         | revert work files back to last revision               |
-| C-x v G                         | ignore current file (universal removes from ignore)   |
-| C-x v P                         | push                                                  |
-| C-x v +                         | pull                                                  |
-| M-x vc-delete-file              | delete file                                           |
-| M-x vc-rename-file              | rename file                                           |
-|                                 |                                                       |
-| *INSIDE LOG MESSAGE*            |                                                       |
-| C-c C-c                         | save and execute                                      |
-| C-c C-k                         | abort                                                 |
-| C-c C-d                         | view diff                                             |
-| C-c C-w                         | generate log skeleton                                 |
-|                                 |                                                       |
-| *INSIDE LOG VIEW*               |                                                       |
-| d/=                             | show diff for file at point (region defines start)    |
-| D                               | show entire diff (region defines start)               |
-|                                 |                                                       |
-| *PROJECT*                       |                                                       |
-| C-x p p                         | switch to project                                     |
-| C-x p D                         | dired in project root                                 |
-| C-x p b                         | switch buffer in project                              |
-| C-x p e                         | eshell in project root                                |
-| C-x p f                         | find file in project                                  |
-| C-x p k                         | kill all project buffers                              |
-|                                 |                                                       |
-| *MINIBUFFER COMPLETION*         |                                                       |
-| <TAB>                           | complete                                              |
-| <SPC>                           | complete word                                         |
-| <TAB> <TAB> or ?                | raise completions window                              |
-| M-v                             | go to completions window                              |
-|                                 |                                                       |
-| *COMPLETION STYLES*             | _ is point                                            |
-| basic                           | foo_bar -> foo*bar*                                   |
-| partial-completion              | l-c*o_h -> l*-c*o*h*                                  |
-| emacs22                         | foo_bar -> foo*bar                                    |
-| substring                       | foo_bar -> \star{}foo*bar*                            |
-|                                 |                                                       |
-| *IN BUFFER COMPLETION*          |                                                       |
-| C-M-i                           | complete symbol at point                              |
-| <f17>                           | hippie-expand (uses dabbrev)                          |
-|                                 |                                                       |
+| *GENERAL*                         |                                                       |
+| C-x C-+                           | zoom in                                               |
+| C-x C--                           | zoom out                                              |
+| C-x 0                             | delete active window                                  |
+| C-x 1                             | deletes other windows                                 |
+| C-x 2                             | split window below                                    |
+| C-x 3                             | split window right                                    |
+| C-x } C-x {                       | increase (decrease) buffer width                      |
+| C-x ^                             | increase buffer height                                |
+| M-x shrink-window                 | decrease buffer height                                |
+| C-x 4 0                           | kill buffer and window                                |
+| C-x o                             | other buffer                                          |
+| C-x b                             | switch to buffer                                      |
+| C-x C-b                           | list buffers                                          |
+| C-x 4 b                           | display a buffer in the next window                   |
+| C-x 4 f                           | display a file in the next window                     |
+| C-x 4 t                           | transpose windows                                     |
+| C-x 4 c                           | create indirect buffer other window                   |
+| C-x i                             | insert file contents into buffer                      |
+| C-c p                             | pin buffer window                                     |
+| C-c C-c                           | insert control-c into ansi-term                       |
+| C-c t                             | open or switch to ansi-term                           |
+| M-x proced                        | show list of processes                                |
+| C-x C-f                           | open file                                             |
+| C-x C-r                           | open recent file list                                 |
+| C-x C-s                           | save buffer                                           |
+| C-x C-w                           | write buffer                                          |
+| C-x C-c                           | exit Emacs                                            |
+|                                   |                                                       |
+| *HELP*                            |                                                       |
+| <any prefix> C-h                  | list keys for prefix                                  |
+| C-h l                             | get list of commands run                              |
+| M-x apropos                       | help                                                  |
+| info-apropos                      | search info system                                    |
+| apropos-command                   | short documentation on command with pattern           |
+| C-h d                             | apropos-documentation                                 |
+| C-h r                             | emacs manual                                          |
+| M-x info                          | manual system                                         |
+| C-h m                             | describe-mode                                         |
+| C-h f                             | describe-function                                     |
+| C-h x                             | describe-command                                      |
+| C-h v                             | describe-variable                                     |
+| C-h k                             | describe-key                                          |
+| C-h o                             | describe-symbol                                       |
+| M-x describe-keymap               |                                                       |
+| M-x describe-bindings             |                                                       |
+| M-x shortdoc-display-group        | cheat sheet for common commands                       |
+| M-x where-is                      | enter command it gives keybinding                     |
+| M-x describe-char                 | char under point                                      |
+| C-h C                             | describe current buffer coding system                 |
+| C-x RET f                         | change file coding system                             |
+| M-x find-function                 | go to function source                                 |
+| M-x find-function-on-key          | go to function source for key                         |
+| M-x find-library                  | go to source file for library                         |
+|                                   |                                                       |
+| *INSIDE HELP*                     |                                                       |
+| l/r                               | back/forward                                          |
+| i                                 | goto relevant info note                               |
+| s                                 | view source                                           |
+|                                   |                                                       |
+| *INFO*                            |                                                       |
+| <SPC> <del>                       | scroll forward/backward                               |
+| <tab>                             | visit links                                           |
+| i/S-i                             | index search/index broken out into node               |
+| s                                 | search                                                |
+| g                                 | goto node                                             |
+| l                                 | last                                                  |
+| f                                 | follow cross ref                                      |
+| u                                 | up                                                    |
+| m                                 | menu items on current node                            |
+| L                                 | show history of visited nodes                         |
+|                                   |                                                       |
+| *SPELLING*                        |                                                       |
+| M-x flyspell-mode                 | highlight spelling                                    |
+| M-x ispell-buffer                 | check buffer                                          |
+| M-$                               | check work at point                                   |
+| M-x dictionary-search             | search for word (default is word at point)            |
+|                                   |                                                       |
+| *EDITING*                         |                                                       |
+| C-x u                             | undo (switch to redo with C-g)                        |
+| C-x z                             | repeat (z alone for multiple)                         |
+| C-g                               | cancel                                                |
+| M-m                               | home but to first non-whitespace                      |
+| M-< M->                           | beginning (end) of buffer                             |
+| C-M-f                             | forward by sexp                                       |
+| C-M-b                             | backward by sexp                                      |
+| C-M-a/e                           | beginning (end) of function                           |
+| C-M-u/d                           | up (down) into a list                                 |
+| M-a/e                             | backward/forward sentence                             |
+| C-l                               | center window at point                                |
+| M-g M-g                           | go to line                                            |
+| M-0 or C-u 0                      | digit argument 0-9                                    |
+| M-- or C--                        | negative argument                                     |
+| C-c d                             | duplicate line                                        |
+| C-c M-d                           | duplicate line and comment original                   |
+| C-c <del>                         | delete line                                           |
+| C-x r m                           | sets bookmark of current open file                    |
+| M-x list-bookmark                 | opens bookmark buffer                                 |
+| C-x r b                           | opens bookmarked file                                 |
+| C-x r <SPC> R                     | records position in register named R                  |
+| C-x r j R                         | jumps to position of register named R                 |
+| C-x r w R                         | save window configuration in register named R         |
+| M-x narrow-to-region              | narrows to current selection                          |
+| M-x widen                         | widens to full buffer                                 |
+| M-x align-regexp                  | align region around regexp                            |
+| C-u M-x align-regexp              | align region around regexp with guided options        |
+| M-x sort-lines                    | sort lines asc (universal reverses)                   |
+| M-x sort-fields                   | sort region by column set by numeric arg              |
+| M-x sort-numeric-fields           | sort region by numeric column set by numeric arg      |
+| M-x sort-regexp-fields            | sort region by regexp \w+ by word                     |
+| M-x whitespace-mode               | displays whitespace characters                        |
+| C-M-v                             | scroll other window down                              |
+| C-M-S-v                           | scroll other window up                                |
+| S-<return>                        | create newline under current                          |
+| M-x diff-backup                   | diff file with most recent backup                     |
+| M-x diff-buffer-with-file         | show unsaved changes                                  |
+| M-x diff                          | diff files                                            |
+| M-/ C-M-/                         | dynamic abbreviation expansion (completion)           |
+| M-x untabify                      | change tabs to spaces in region                       |
+| C-x C-u                           | upcase-region                                         |
+| M-;                               | comment region or add comment                         |
+| C-x C-;                           | comment line                                          |
+| M-x revert-buffer                 | loads the file from disk                              |
+| M-x nato-region                   | translate region to phonetic alphabet                 |
+| C-x C-o                           | delete blank lines around point                       |
+| M-^                               | joins current line with one above                     |
+| C-u M-^                           | joins current line with one below                     |
+| M-<space>                         | delete all but one space around point                 |
+| M-x flush-lines                   | delete lines with regex                               |
+| M-x keep-lines                    | delete lines without regex                            |
+| C-x <space>                       | rectangle mark mode                                   |
+| M-z                               | zap up to char                                        |
+| C-x =                             | what cursor purson                                    |
+| M-x toggle-input-mode             | tex to enter tex chars                                |
+| C-x 8 <ret>                       | input-char add unicode character                      |
+| C-M-i                             | completion at point if mode provides                  |
+| C-q                               | quoted input                                          |
+| C-x M-:                           | repeat complex command (M-p thru history)             |
+| M-x scroll-lock-mode              | scroll the buffer not move the cursor                 |
+| C-x <TAB>                         | indent rigidly                                        |
+| C-c j                             | org-goto or imenu                                     |
+| C-t                               | transpose-chars                                       |
+| M-t                               | transpose-words                                       |
+| C-M-t                             | transpose-sexps                                       |
+| C-x C-q                           | toggle read only mode                                 |
+| M-x delete-pair                   | removes pair at sexp following point                  |
+|                                   |                                                       |
+| *SEARCH*                          |                                                       |
+| C-s                               | forward search                                        |
+| C-r                               | reverse search                                        |
+| C-s C-s                           | forward search with previous term                     |
+| C-r C-r                           | reverse search with previous term                     |
+| C-g                               | exits search and returns to orig location             |
+| ret                               | selects match and drops mark at previous location     |
+| C-w                               | add word at point to search string                    |
+| C-y                               | yank from clipboard to search string                  |
+| C-u C-s/r                         | forward/reverse search with regex                     |
+| e/C-c C-c                         | starts/stops edit mode in occur buffer                |
+| M-x imenu                         | jump to definition                                    |
+| M-%                               | interactive search and replace                        |
+| C-M-%                             | interactive search and replace regex                  |
+| M-x replace-string                | search and replace                                    |
+| M-s o                             | occur                                                 |
+|                                   |                                                       |
+| *OCCUR*                           |                                                       |
+| n/p                               | forward/back no select                                |
+| l                                 | recenter current error                                |
+| M-g M-n/p                         | in original buffer next/prev occurance                |
+| e                                 | edit mode                                             |
+|                                   |                                                       |
+| *MARK*                            |                                                       |
+| C-M-<spc>                         | mark by sexp                                          |
+| M-@                               | mark by word                                          |
+| C-x h                             | mark whole buffer                                     |
+| C-M-h                             | mark defun                                            |
+| C-<spc> C-<spc>                   | push mark to mark ring                                |
+| C-u C-<spc>                       | pop mark ring within buffer                           |
+| C-x C-<spc>                       | pop global mark ring                                  |
+| C-x C-x                           | exchange point and mark                               |
+| C-<spc>                           | set mark toggles region                               |
+| C-k                               | kill rest of line                                     |
+| C-c <backspace>                   | kill line                                             |
+| M-d, C-<backspace>                | kill word                                             |
+| M-<backspace>                     | backward kill word                                    |
+| M-k                               | kill rest of sentence                                 |
+| C-x <backspace>                   | kill sentence backward                                |
+| C-w                               | kill region                                           |
+| M-w                               | copy to kill ring                                     |
+| C-y                               | yank                                                  |
+| M-y                               | cycle through kill ring                               |
+| C-=                               | mark using context                                    |
+|                                   |                                                       |
+| *ORG TABLE*                       |                                                       |
+| \vert-                            | create horizontal line                                |
+| \vert                             | start a row                                           |
+| C-c ^                             | sort rows by column where point is                    |
+| C-c -                             | insert horizontal line                                |
+| M-S-<down>                        | insert row                                            |
+| M-S-<up>                          | kill current row                                      |
+| M-<up>                            | move row up (down)                                    |
+| M-S-<right>                       | insert column                                         |
+| M-S-<left>                        | kill current column                                   |
+| M-<left>                          | move column left (right)                              |
+| C-c =                             | add column formula (or type = in field)               |
+| C-u C-c =                         | add formula (or type := in field)                     |
+| S-<enter>                         | copy down                                             |
+| C-c ?                             | information about current field                       |
+| C-c {                             | toggle formula debugger                               |
+| C-c }                             | show row and col headers                              |
+| C-c <spc>                         | clear current field                                   |
+| C-u C-c C-c                       | recompute from anywhere in table                      |
+|                                   |                                                       |
+| *ORG GENERAL*                     |                                                       |
+| \ast                              | start heading                                         |
+| C-c C-n                           | next heading                                          |
+| C-c C-p                           | previous heading                                      |
+| C-c C-f                           | next heading same level                               |
+| C-c C-b                           | previous heading same level                           |
+| C-c M-f                           | next block                                            |
+| C-c M-b                           | previous block                                        |
+| C-c C-u                           | up heading                                            |
+| C-c C-j                           | org goto                                              |
+| C-c /                             | org sparse tree                                       |
+| M-g M-n/p                         | next/sparse tree match                                |
+| M-<return>                        | insert a new thing depending on context               |
+| C-u M-<return>, C-<return>        | insert a new heading at end of current subtree        |
+| C-u C-u M-<return>                | insert a new heading at end of parent subtree         |
+| \plus - \ast                      | plain list item                                       |
+| [ ]                               | checkbox                                              |
+| C-c !                             | add date                                              |
+| C-c '                             | open buffer for current code block                    |
+| C-c c                             | open capture template window                          |
+| C-u C-c C-c                       | inside a capture template, finalize and go to item    |
+| C-u C-u M-x org-capture           | go to last captured item                              |
+| C-c a                             | org agenda view                                       |
+| C-c C-q                           | set tag for current heading                           |
+| C-c C-x p                         | org set property                                      |
+| C-c C-l                           | org insert link                                       |
+| C-c C-o                           | org follow link                                       |
+| M-x org-store-link                | store link (use insert later)                         |
+| C-c ^                             | sort entries in region                                |
+| C-c C-w                           | org refile                                            |
+| C-c %                             | org mark ring push (also pushes Emacs mark)           |
+| M-x org-mark-ring-goto            | pop org mark ring                                     |
+| C-c \ast                          | make a line a heading                                 |
+| M-x org-toggle-link-display       | shows/hides raw links                                 |
+| C-c C-x b                         | tree to indirect buffer                               |
+| C-c @                             | org mark subtree                                      |
+|                                   |                                                       |
+| *ORG TODO*                        |                                                       |
+| C-c C-t                           | cycle TODO item through states                        |
+| C-u C-u C-c C-t                   | change TODO sequence                                  |
+| C-c C-s                           | schedule a TODO                                       |
+| C-c C-d                           | insert a deadline                                     |
+| C-c C-z                           | add a note                                            |
+| M-S-<return>                      | add a TODO at same indentation or checkbox if list    |
+|                                   |                                                       |
+| *ORG AGENDA VIEW*                 |                                                       |
+| d                                 | daily view                                            |
+| t                                 | cycle TODO item through states                        |
+| C-u C-u t                         | change TODO sequence                                  |
+| s                                 | save all connected org files                          |
+| r                                 | reload view                                           |
+| <tab>                             | go to original item                                   |
+| F                                 | follow mode                                           |
+| <spc> <del>                       | open org buffer and scroll up/down                    |
+| + -                               | priority up down                                      |
+| < =                               | narrow to current category/regex                      |
+|                                   |                                                       |
+| *ORG CLOCK*                       |                                                       |
+| C-c C-x C-i                       | clock in                                              |
+| C-c C-x C-o                       | clock out                                             |
+|                                   |                                                       |
+| *ORG TIMER*                       |                                                       |
+| M-x org-timer-start               | start relative timer                                  |
+| M-x org-timer-set-timer           | start countdown timer                                 |
+| M-x org-timer                     | insert the current timer value                        |
+| M-x org-timer-item                | insert a list item with current timer value           |
+| M-x org-timer-pause-or-continue   | pause/continue timer                                  |
+| M-x org-timer-stop                | stop timer                                            |
+|                                   |                                                       |
+| *ORG SPEED KEYS*                  |                                                       |
+| n/p                               | next/previous visible                                 |
+| b/f                               | back/foward same level                                |
+| u                                 | up level                                              |
+| s                                 | narrow to subtree                                     |
+| k                                 | cut subtree                                           |
+| r/l                               | demote/promote heading                                |
+| R/L                               | demote/promote subtree                                |
+| i                                 | insert heading                                        |
+| S                                 | insert subheading                                     |
+|                                   |                                                       |
+| *ARTIST MODE*                     |                                                       |
+| C-c C-a C-o                       | select drawing tool                                   |
+| <return>                          | starts and stops lines and rect, dir on poly line     |
+| C-u <return>                      | stops poly line                                       |
+| < >                               | adds/removes arrows of last line drawn                |
+|                                   |                                                       |
+| *DIRED*                           |                                                       |
+| C-x d                             | open                                                  |
+| q                                 | quit                                                  |
+| h                                 | help                                                  |
+| m u                               | mark unmark                                           |
+| % m                               | mark by regexp                                        |
+| U                                 | unmark all                                            |
+| t                                 | toggle mark (marks all if none are marked)            |
+| C                                 | copy                                                  |
+| D                                 | delete                                                |
+| C-d                               | permanently delete                                    |
+| R                                 | rename                                                |
+| f                                 | open                                                  |
+| v                                 | open read only                                        |
+| \asciicirc                        | up a directory                                        |
+| w                                 | copy filename to kill ring                            |
+| M-0 w                             | copy full path to kill ring                           |
+| \!                                | run shell command on marked                           |
+| M-x locate                        | linux locate (sudo updatedb)                          |
+| M-x find-name-dired               | linux find -name                                      |
+| M-x find-lisp-find-dired          | find file by regex no external find                   |
+| a                                 | open file/dir and kill dired buffer                   |
+| i                                 | open subdirectory in same buffer                      |
+| C-u k                             | on subdirectory header kills from buffer              |
+| (                                 | expands/contracts details                             |
+| s                                 | toggle sort name/date                                 |
+| +                                 | create directory                                      |
+| j                                 | jump to file                                          |
+|                                   |                                                       |
+| *WDIRED*                          |                                                       |
+| C-x C-q                           | enter wdired - rename and move files                  |
+| C-c C-c                           | confirm changes and exit                              |
+| C-c C-k                           | abort                                                 |
+|                                   |                                                       |
+| *DESKTOP*                         |                                                       |
+| M-x desktop-save                  | save the current desktop                              |
+| M-x desktop-read                  | restore save desktop                                  |
+| M-x desktop-clear                 | clear the desktop                                     |
+|                                   |                                                       |
+| *SHELL*                           |                                                       |
+| M-! cmd                           | run command and display output (univ arg inserts)     |
+| M-! cmd M-n                       | insert current filename into minibuffer               |
+| M-\vert cmd                       | run command with region as input (univ arg replaces)  |
+|                                   |                                                       |
+| *SHELL MODE*                      |                                                       |
+| C-d                               | at end of shell buffer send EOF                       |
+| C-c C-c                           | comint-interrupt-subjob                               |
+| C-c C-\                           | comint-quit-subjob                                    |
+| C-c C-o                           | delete last batch of output                           |
+| C-c C-s                           | write last batch of output to file                    |
+| C-M-l or C-c C-r                  | scroll to begin of last batch of output               |
+| C-c C-e                           | scroll to last line of buffer                         |
+| C-c C-l                           | show recent inputs to buffer                          |
+| C-c M-o                           | clear buffer                                          |
+| C-c M-r/M-s                       | search back/forward in history for current prefix     |
+| M-r                               | backward regex search history                         |
+| C-c .                             | insert previous argument                              |
+|                                   |                                                       |
+| *WORKFLOW*                        |                                                       |
+| C-c f                             | new scratch buffer with spell checking                |
+| C-x m                             | new mail buffer                                       |
+| C-c s                             | send mail buffer                                      |
+|                                   |                                                       |
+| *CALENDAR*                        |                                                       |
+| M-x calendar                      | opens calendar                                        |
+| M-w                               | copies date under cursor to kill ring                 |
+| g d                               | move to specific date                                 |
+| .                                 | move to today                                         |
+| o                                 | center around month                                   |
+| C-f/C-b                           | forward/backward by day                               |
+| C-n/C-p                           | forward/backwood by week                              |
+| < >                               | scroll view                                           |
+| M-=                               | count days in region (inclusive)                      |
+| h                                 | holidays on current date                              |
+| x                                 | mark all holidays                                     |
+| u                                 | unmark all                                            |
+| M-x list-holidays                 | list all holidays                                     |
+| d                                 | diary entries on current date                         |
+| m                                 | mark all days with diary entries                      |
+| i [d w m y]                       | add diary entry for date, week, month, or year        |
+| i [a b c]                         | add diary entry for anniversary, block, or cyclic     |
+| digit                             | prefix arg to movement commands                       |
+| M-x appt-add                      | add ephemeral appointment with alarm                  |
+|                                   |                                                       |
+| *PACKAGES*                        |                                                       |
+| M-x list-packages                 | opens package list                                    |
+| M-x occur installed               | opens occur buffer with installed packages            |
+| U x                               | update packages                                       |
+| r                                 | refresh package list                                  |
+| h                                 | help                                                  |
+|                                   |                                                       |
+| *HIGHLIGHTING*                    |                                                       |
+| M-x highlight-regexp              | M-n, M-p cycle through colors                         |
+| M-x unhighlight-regexp            |                                                       |
+| M-s h l                           | shorthand regexp captures entire line                 |
+|                                   |                                                       |
+| *MACROS*                          |                                                       |
+| <f3>                              | start recording (univeral arg sets the counter)       |
+| <f3>                              | insert counter (universal insert but no increment)    |
+| C-x q                             | queries for user input                                |
+| <f4>                              | stop recording                                        |
+| <f4>                              | run (universal arg sets number of times)              |
+| C-M-c                             | exit recursive edit                                   |
+| M-x name-last-kbd-macro           | names last macro                                      |
+| M-x insert-kbd-macro              | puts elisp equivalent of macro into buffer            |
+| C-x C-k C-n/p                     | cycles macro ring next/previous                       |
+|                                   |                                                       |
+| *CALC*                            |                                                       |
+| C-x * *                           | start calc                                            |
+| C-x * q or C-c k                  | quick calculation put answer in kill-ring             |
+| C-u C-x * q                       | quick calculation insert answer at point              |
+| C-j                               | inside quick calc insert result at point              |
+| C-x * s                           | calc summary                                          |
+| C-x * w                           | toggles embedded mode for number at point             |
+| C-u C-x * g                       | grab region and interpret as number                   |
+| C-x * y                           | yank top of stack                                     |
+|                                   |                                                       |
+| *INSIDE CALC*                     |                                                       |
+| '                                 | start algebraic                                       |
+| x:y:z or x+y:z                    | enter mixed number x y/z                              |
+| h                                 | help                                                  |
+| <backspace>                       | removes one line of stack                             |
+| M-0 <backspace>                   | clear stack                                           |
+| n                                 | change sign                                           |
+| <TAB>                             | swaps last two lines of stack                         |
+| M-<TAB>                           | rotates stack                                         |
+| s s                               | peek stack and store to variable                      |
+| s t                               | pop stack and store to variable                       |
+| s r                               | recall variable                                       |
+| s u                               | clear variable                                        |
+| U                                 | undo                                                  |
+| D                                 | redo                                                  |
+| t n/p                             | move trail pointer                                    |
+| t y                               | yank from trail                                       |
+| d g                               | group digits toggle                                   |
+| C-x * o                           | other window that is not calc                         |
+| C-x * 0                           | reset calc                                            |
+| t N                               | insert current time                                   |
+| '<date>                           | insert date                                           |
+| c f/c F                           | top of stack to float/Fraction mode                   |
+| m f                               | toggle fraction mode                                  |
+| Z F                               | store algebraic formula at top of stack               |
+| Z P                               | persist formula                                       |
+| I F                               | ceil in algebraic                                     |
+| 2 in                              | enter number then units in algebraic mode             |
+| u r                               | remove units from number                              |
+| u c                               | convert number at top of stack                        |
+| u n                               | convert number at top of stack force consist          |
+| u s                               | simplify expressions with multiple units              |
+| z e                               | round to nearest 64th                                 |
+| z w                               | copy top of stack and remove plus signs               |
+|                                   |                                                       |
+| *COMPILIATION*                    |                                                       |
+| C-c r                             | recompile                                             |
+| M-g M-n M-g M-p                   | jump to next(previous) error from any buffer          |
+|                                   |                                                       |
+| *ELISP*                           |                                                       |
+| C-x C-e                           | evaluate last sexp                                    |
+| C-u C-x C-e                       | evaluate and print last sexp                          |
+| C-j                               | evaluate and print last sexp (scratch buffer)         |
+| C-M-x                             | evaluate defun (outermost form from point)            |
+| C-u C-M-x                         | evaluate defun with edebug                            |
+|                                   |                                                       |
+| *VIEW MODE*                       |                                                       |
+| M-x view-mode                     | toggles view mode                                     |
+| M-x view-file (v in dired)        | opens a file in view mode                             |
+| M-x view-buffer                   | switches to buffer and enables view mode              |
+| q                                 | quit                                                  |
+| r/s                               | search                                                |
+| \ /                               | regex search                                          |
+| m/'                               | save/goto point in character register                 |
+| del/spc u/d                       | scroll full/half page back/forward                    |
+|                                   |                                                       |
+| *ABBREV*                          |                                                       |
+| M-x unexpand-abbrev               | unexpands last abbrev                                 |
+| M-x add-mode-abbrev               | add abbrev for last word (arg 0 is region/else words) |
+| M-x inverse-add-mode-abbrev       | add expansion for last word                           |
+| M-x add-global-abbrev             | add abbrev for last word (arg 0 is region/else words) |
+| M-x inverse-add-global-abbrev     | add expansion for last word                           |
+| C-q                               | quote terminating character preventing expansion      |
+| M-x write-abbrev-file             | saves abbrevs, will also happen on exit               |
+| M-x list-abbrevs                  | shows abbrevs in a buffer                             |
+| M-x define-global-abbrev          | interactively build abbrev                            |
+| M-x define-mode-abbrev            | interactively build mode abbrev                       |
+|                                   |                                                       |
+| *IBUFFER*                         |                                                       |
+| ( or `                            | toggle format                                         |
+| o                                 | open in other window                                  |
+| D                                 | kill marked buffers                                   |
+| m/u/U                             | mark/unmark buffer at point/unmark all                |
+| Q/I                               | query replace in marked buffers / with regexp         |
+| O                                 | occur in marked buffers                               |
+|                                   |                                                       |
+| *XREF*                            |                                                       |
+| M-.                               | jump to definition of identifier at point             |
+| C-u M-.                           | jump to definition prompt                             |
+| M-,                               | jump back to original location                        |
+| M-?                               | find references of identifier at point                |
+|                                   |                                                       |
+| *PYTHON*                          |                                                       |
+| C-c C-p                           | run python                                            |
+| C-c C-c                           | send buffer to shell                                  |
+| C-u C-c C-c                       | send buffer to shell with if name==main               |
+| C-c C-r                           | send region to shell                                  |
+| C-c C-s                           | send string to shell                                  |
+| C-c C-z                           | switch to shell                                       |
+| C-c C-d                           | describe at point help in repl                        |
+| M-e/M-a                           | block forward/backward                                |
+|                                   |                                                       |
+| *SQL*                             |                                                       |
+| C-c C-b                           | send buffer to shell                                  |
+| C-c C-c                           | send paragraph to shell                               |
+| C-c C-r                           | send region to shell                                  |
+| C-c C-s                           | send string to shell                                  |
+| C-c C-z                           | switch to shell                                       |
+|                                   |                                                       |
+| *MAGIT*                           |                                                       |
+| +/-/0                             | more/less/default context                             |
+| 1/2/3/4                           | show level                                            |
+| \asciicirc                        | move to top of section                                |
+| M-n/M-p                           | section forward/previous                              |
+| M-x magit-log-buffer-file         | see log for current buffer                            |
+| $                                 | see commands magit is running                         |
+| C-c M-g                           | magit dispatch on file                                |
+|                                   |                                                       |
+| *DEBUG*                           |                                                       |
+| M-x debug-on-entry                | starts debugger on selected function                  |
+| d                                 | step                                                  |
+| e                                 | evaluate expression                                   |
+| c                                 | quit and continue running                             |
+| q                                 | quit and terminate                                    |
+| M-x cancel-debug-on-entry         | stops debugging function                              |
+| C-u C-M-x                         | instrument function for edebug                        |
+| <SPC>                             | step                                                  |
+| i                                 | step in                                               |
+| o                                 | step out                                              |
+| e                                 | evaluate expression                                   |
+| g                                 | run until next breakpoint                             |
+| q                                 | quit and terminate                                    |
+| C-M-x                             | turn off instrumentation (or eval in any other way)   |
+| M-x edebug-remove-instrumentation | removes instrumentation for functions (or all)        |
+|                                   |                                                       |
+| *RE-BUILDER*                      |                                                       |
+| M-x re-builder                    | starts the builder                                    |
+| C-c C-q                           | quit                                                  |
+| C-c C-r/s                         | prev/next match                                       |
+| C-c C-u                           | force update                                          |
+| C-c C-w                           | copy string for using in elisp                        |
+|                                   |                                                       |
+| *REGEX*                           |                                                       |
+| .                                 | any char                                              |
+| \star *?                          | 0 or more of preceding (non-greedy)                   |
+| + +?                              | 1 or more of preceding (non-greedy)                   |
+| ? ??                              | 0 or 1 of preceding (non-greedy)                      |
+| [ ]                               | character set                                         |
+| \asciicirc $                      | begin/end line                                        |
+| \\vert                            | or                                                    |
+| \( \)                             | group                                                 |
+| \sC \SC                           | any char whose syntax is/is not C                     |
+|                                   |                                                       |
+| *SYNTAX CLASSES*                  |                                                       |
+| -                                 | whitespace                                            |
+| w                                 | chars in words in human languages                     |
+| \under                            | chars in programming symbols                          |
+| .                                 | punctuation                                           |
+| "                                 | string quotes                                         |
+| < >                               | comment starters/enders                               |
+|                                   |                                                       |
+| *REGEX REPLACEMENTS*              |                                                       |
+| \&                                | entire match                                          |
+| \D                                | Dth group in match                                    |
+| \?                                | prompt for replacement                                |
+| \,(elisp expression)              | example \,(upcase \&)                                 |
+|                                   |                                                       |
+| *ESHELL*                          |                                                       |
+| C-u d M-x eshell                  | creates an eshell session d, d is a number            |
+| C-c C-u                           | kill input                                            |
+| C-c C-r                           | move point to last output (universal arg to narrow)   |
+| C-c C-c                           | interrupt process                                     |
+| addpath -b /path                  | add path to beginning of $PATH                        |
+|                                   |                                                       |
+| *VERSION CONTROL*                 |                                                       |
+| C-x v d                           | status                                                |
+| C-x v =                           | diff buffer and last revison                          |
+| C-x v D                           | diff working tree and last revison                    |
+| C-x v g                           | show blame                                            |
+| C-x v v                           | do next logical action                                |
+| C-x v l                           | print log for file                                    |
+| C-x v L                           | print log                                             |
+| C-x v O                           | print log for entries not yet pushed                  |
+| C-x v h                           | display history of changes made in current region     |
+| M-x vc-log-search                 | search history for pattern                            |
+| C-x v u                           | revert work files back to last revision               |
+| C-x v G                           | ignore current file (universal removes from ignore)   |
+| C-x v P                           | push                                                  |
+| C-x v +                           | pull                                                  |
+| M-x vc-delete-file                | delete file                                           |
+| M-x vc-rename-file                | rename file                                           |
+|                                   |                                                       |
+| *INSIDE LOG MESSAGE*              |                                                       |
+| C-c C-c                           | save and execute                                      |
+| C-c C-k                           | abort                                                 |
+| C-c C-d                           | view diff                                             |
+| C-c C-w                           | generate log skeleton                                 |
+|                                   |                                                       |
+| *INSIDE LOG VIEW*                 |                                                       |
+| d/=                               | show diff for file at point (region defines start)    |
+| D                                 | show entire diff (region defines start)               |
+|                                   |                                                       |
+| *PROJECT*                         |                                                       |
+| C-x p p                           | switch to project                                     |
+| C-x p D                           | dired in project root                                 |
+| C-x p b                           | switch buffer in project                              |
+| C-x p e                           | eshell in project root                                |
+| C-x p f                           | find file in project                                  |
+| C-x p k                           | kill all project buffers                              |
+|                                   |                                                       |
+| *MINIBUFFER COMPLETION*           |                                                       |
+| <TAB>                             | complete                                              |
+| <SPC>                             | complete word                                         |
+| <TAB> <TAB> or ?                  | raise completions window                              |
+| M-v                               | go to completions window                              |
+|                                   |                                                       |
+| *COMPLETION STYLES*               | _ is point                                            |
+| basic                             | foo_bar -> foo*bar*                                   |
+| partial-completion                | l-c*o_h -> l*-c*o*h*                                  |
+| emacs22                           | foo_bar -> foo*bar                                    |
+| substring                         | foo_bar -> \star{}foo*bar*                            |
+|                                   |                                                       |
+| *IN BUFFER COMPLETION*            |                                                       |
+| C-M-i                             | complete symbol at point                              |
+| <f17>                             | hippie-expand (uses dabbrev)                          |
+|                                   |                                                       |
