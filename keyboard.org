@@ -134,6 +134,7 @@
 | M-<SPC>                           | delete all but one space around point                 |
 | M-x flush-lines                   | delete lines with regex                               |
 | M-x keep-lines                    | delete lines without regex                            |
+| M-x ensure-empty-lines            | ensure arg blank lines before point, default is 1     |
 | C-x <SPC>                         | rectangle mark mode                                   |
 | M-z                               | zap up to char                                        |
 | C-x =                             | what cursor purson                                    |
