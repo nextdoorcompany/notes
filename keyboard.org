@@ -31,6 +31,7 @@
 | C-x C-s                           | save buffer                                           |
 | C-x C-w                           | write buffer                                          |
 | C-x C-c                           | exit Emacs                                            |
+| M-X                               | context aware execute-extended-command                |
 |                                   |                                                       |
 | *HELP*                            |                                                       |
 | <any prefix> C-h                  | list keys for prefix                                  |
