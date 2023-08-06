@@ -625,6 +625,7 @@
 | <SPC>                             | complete word                                         |
 | <TAB> <TAB> or ?                  | raise completions window                              |
 | M-v                               | go to completions window                              |
+| M-<up>/<down>                     | select completion from completions window             |
 |                                   |                                                       |
 | *COMPLETION STYLES*               | _ is point                                            |
 | basic                             | foo_bar -> foo*bar*                                   |
