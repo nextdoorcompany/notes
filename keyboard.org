@@ -58,7 +58,8 @@
 |                                   |                                                       |
 | *INSIDE HELP*                     |                                                       |
 | l/r                               | back/forward                                          |
-| i                                 | goto relevant info note                               |
+| i                                 | goto relevant info node                               |
+| I                                 | goto relevant elisp info node                         |
 | s                                 | view source                                           |
 |                                   |                                                       |
 | *INFO*                            |                                                       |
