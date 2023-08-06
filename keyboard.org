@@ -4,6 +4,8 @@
 | *GENERAL*                         |                                                       |
 | C-x C-+                           | zoom in                                               |
 | C-x C--                           | zoom out                                              |
+| C-x C-M-+                         | global zoom in                                        |
+| C-x C-M--                         | global zoom out                                       |
 | C-x 0                             | delete active window                                  |
 | C-x 1                             | deletes other windows                                 |
 | C-x 2                             | split window below                                    |
