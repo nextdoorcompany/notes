@@ -22,7 +22,6 @@
 | C-x 4 t                           | transpose windows                                     |
 | C-x 4 c                           | create indirect buffer other window                   |
 | C-x i                             | insert file contents into buffer                      |
-| C-c p                             | pin buffer window                                     |
 | C-c C-c                           | insert control-c into ansi-term                       |
 | C-c t                             | open or switch to ansi-term                           |
 | M-x proced                        | show list of processes                                |
@@ -151,7 +150,7 @@
 | M-t                               | transpose-words                                       |
 | C-M-t                             | transpose-sexps                                       |
 | C-x C-q                           | toggle read only mode                                 |
-| M-x delete-pair                   | removes pair at sexp following point                  |
+| C-c p                             | removes pair at sexp following point                  |
 |                                   |                                                       |
 | *SEARCH*                          |                                                       |
 | C-s                               | forward search                                        |
