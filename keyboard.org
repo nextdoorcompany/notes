@@ -192,6 +192,7 @@
 | M-k                               | kill rest of sentence                                 |
 | C-x <backspace>                   | kill sentence backward                                |
 | C-w                               | kill region                                           |
+| C-M-k                             | kill sexp                                             |
 | M-w                               | copy to kill ring                                     |
 | C-y                               | yank                                                  |
 | M-y                               | cycle through kill ring                               |
