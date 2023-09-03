@@ -151,6 +151,7 @@
 | C-M-t                             | transpose-sexps                                       |
 | C-x C-q                           | toggle read only mode                                 |
 | C-c p                             | removes pair at sexp following point                  |
+| C-c q                             | hoists next sexp up and deletes container             |
 |                                   |                                                       |
 | *SEARCH*                          |                                                       |
 | C-s                               | forward search                                        |
