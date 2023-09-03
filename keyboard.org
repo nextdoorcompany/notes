@@ -391,6 +391,7 @@
 | M-x appt-add                      | add ephemeral appointment with alarm                  |
 |                                   |                                                       |
 | *PACKAGES*                        |                                                       |
+| M-x package-upgrade-all           | upgrades all packages                                 |
 | M-x list-packages                 | opens package list                                    |
 | M-x occur installed               | opens occur buffer with installed packages            |
 | U x                               | update packages                                       |
