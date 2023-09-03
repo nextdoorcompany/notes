@@ -159,7 +159,8 @@
 | C-s C-s                           | forward search with previous term                     |
 | C-r C-r                           | reverse search with previous term                     |
 | C-g                               | exits search and returns to orig location             |
-| ret                               | selects match and drops mark at previous location     |
+| <return>                          | selects match and drops mark at previous location     |
+| any movement command              | selects match and drops mark at previous location     |
 | C-w                               | add word at point to search string                    |
 | C-y                               | yank from clipboard to search string                  |
 | C-u C-s/r                         | forward/reverse search with regex                     |
