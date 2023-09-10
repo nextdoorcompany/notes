@@ -402,6 +402,7 @@
 | M-x highlight-regexp              | M-n, M-p cycle through colors                         |
 | M-x unhighlight-regexp            |                                                       |
 | M-s h l                           | shorthand regexp captures entire line                 |
+| M-x highlight-changes-mode        | toggles minor mode                                    |
 |                                   |                                                       |
 | *MACROS*                          |                                                       |
 | <f3>                              | start recording (univeral arg sets the counter)       |
