@@ -178,6 +178,7 @@
 |                                   |                                                       |
 | *MARK*                            |                                                       |
 | C-M-<spc>                         | mark by sexp                                          |
+| C-M-;                             | mark by sexp backward                                 |
 | M-@                               | mark by word                                          |
 | C-x h                             | mark whole buffer                                     |
 | C-M-h                             | mark defun                                            |
