@@ -128,6 +128,7 @@
 | C-x C-;                           | comment line                                          |
 | M-x revert-buffer                 | loads the file from disk                              |
 | M-x nato-region                   | translate region to phonetic alphabet                 |
+| C-o                               | insert blank lines before point                       |
 | C-x C-o                           | delete blank lines around point                       |
 | M-^                               | joins current line with one above                     |
 | C-u M-^                           | joins current line with one below                     |
@@ -632,6 +633,7 @@
 | <TAB> <TAB> or ?                  | raise completions window                              |
 | M-v                               | go to completions window                              |
 | M-<up>/<down>                     | select completion from completions window             |
+| C-q C-j                           | insert newline into minibuffer                        |
 |                                   |                                                       |
 | *COMPLETION STYLES*               | _ is point                                            |
 | basic                             | foo_bar -> foo*bar*                                   |
