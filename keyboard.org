@@ -645,3 +645,7 @@
 | C-M-i                             | complete symbol at point                              |
 | <f17>                             | hippie-expand (uses dabbrev)                          |
 |                                   |                                                       |
+| *OUTLINE MINOR MODE*              |                                                       |
+| <f7>                              | toggle current heading                                |
+| <f8>                              | toggle all headings                                   |
+|                                   |                                                       |
