@@ -170,6 +170,7 @@
 | C-M-%                             | interactive search and replace regex                  |
 | M-x replace-string                | search and replace                                    |
 | M-s o                             | occur                                                 |
+| C-c s                             | webjump                                               |
 |                                   |                                                       |
 | *OCCUR*                           |                                                       |
 | n/p                               | forward/back no select                                |
