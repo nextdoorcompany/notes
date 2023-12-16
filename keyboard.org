@@ -338,6 +338,8 @@
 | s                                 | toggle sort name/date                                 |
 | +                                 | create directory                                      |
 | j                                 | jump to file                                          |
+| o                                 | open in other window                                  |
+| C-o                               | open in other window but stay in dired buffer         |
 |                                   |                                                       |
 | *WDIRED*                          |                                                       |
 | C-x C-q                           | enter wdired - rename and move files                  |
