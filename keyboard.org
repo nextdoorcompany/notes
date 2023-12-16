@@ -152,6 +152,7 @@
 | C-x C-q                           | toggle read only mode                                 |
 | C-c p                             | removes pair at sexp following point                  |
 | C-c q                             | hoists next sexp up and deletes container             |
+| M-x which-function-mode           | displays current function in mode line                |
 |                                   |                                                       |
 | *SEARCH*                          |                                                       |
 | C-s                               | forward search                                        |
