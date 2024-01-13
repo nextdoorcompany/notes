@@ -656,3 +656,6 @@
 | <f7>                              | toggle current heading                                |
 | <f8>                              | toggle all headings                                   |
 |                                   |                                                       |
+| *LEDGER MODE*                     |                                                       |
+| C-c C-a                           | add a transaction using xact                          |
+|                                   |                                                       |
