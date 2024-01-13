@@ -587,6 +587,7 @@
 | *REGEX REPLACEMENTS*              |                                                       |
 | \&                                | entire match                                          |
 | \D                                | Dth group in match                                    |
+| \#D                               | Dth group as a number \,(+ 1000 \#1)                  |
 | \?                                | prompt for replacement                                |
 | \,(elisp expression)              | example \,(upcase \&)                                 |
 |                                   |                                                       |
