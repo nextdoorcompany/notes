@@ -223,6 +223,7 @@
 | C-c }                             | show row and col headers                              |
 | C-c <spc>                         | clear current field                                   |
 | C-u C-c C-c                       | recompute from anywhere in table                      |
+| C-c +                             | sum current column or region                          |
 |                                   |                                                       |
 | *ORG GENERAL*                     |                                                       |
 | \ast                              | start heading                                         |
