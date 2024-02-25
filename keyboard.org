@@ -261,6 +261,7 @@
 | M-x org-toggle-link-display       | shows/hides raw links                                 |
 | C-c C-x b                         | tree to indirect buffer                               |
 | C-c @                             | org mark subtree                                      |
+| C-c C-k                           | show branches (subheadings)                           |
 |                                   |                                                       |
 | *ORG TODO*                        |                                                       |
 | C-c C-t                           | cycle TODO item through states                        |
