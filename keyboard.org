@@ -162,8 +162,6 @@
 | C-g                               | exits search and returns to orig location             |
 | <return>                          | selects match and drops mark at previous location     |
 | any movement command              | selects match and drops mark at previous location     |
-| C-w                               | add word at point to search string                    |
-| C-y                               | yank from clipboard to search string                  |
 | C-u C-s/r                         | forward/reverse search with regex                     |
 | e/C-c C-c                         | starts/stops edit mode in occur buffer                |
 | M-x imenu                         | jump to definition                                    |
@@ -172,6 +170,16 @@
 | M-x replace-string                | search and replace                                    |
 | M-s o                             | occur                                                 |
 | C-c s                             | webjump                                               |
+|                                   |                                                       |
+| *WITHIN ISEARCH*                  |                                                       |
+| C-w                               | add word at point to search string                    |
+| C-y                               | yank from clipboard to search string                  |
+| M-e                               | edit search                                           |
+| M-%                               | replace                                               |
+| C-M-%                             | regex replace                                         |
+| M-s o                             | run occur on search input                             |
+| M-s h l                           | highlight matching lines                              |
+| M-s h r                           | highlight matching input                              |
 |                                   |                                                       |
 | *OCCUR*                           |                                                       |
 | n/p                               | forward/back no select                                |
