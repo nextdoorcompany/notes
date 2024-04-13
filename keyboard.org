@@ -117,6 +117,9 @@
 | M-x whitespace-mode               | displays whitespace characters                        |
 | C-M-v                             | scroll other window down                              |
 | C-M-S-v                           | scroll other window up                                |
+| C-v                               | scroll down                                           |
+| M-v                               | scroll up                                             |
+| M-n/p                             | scroll down/up without moving point                   |
 | S-<return>                        | create newline under current                          |
 | M-x diff-backup                   | diff file with most recent backup                     |
 | M-x diff-buffer-with-file         | show unsaved changes                                  |
