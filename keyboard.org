@@ -31,6 +31,8 @@
 | C-x C-w                           | write buffer                                          |
 | C-x C-c                           | exit Emacs                                            |
 | M-X                               | context aware execute-extended-command                |
+| C-x 4 1                           | same window prefix for next command                   |
+| C-x 4 4                           | other window prefix for next command                  |
 |                                   |                                                       |
 | *HELP*                            |                                                       |
 | <any prefix> C-h                  | list keys for prefix                                  |
