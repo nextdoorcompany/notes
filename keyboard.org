@@ -137,7 +137,7 @@
 | C-x C-o                           | delete blank lines around point                       |
 | M-^                               | joins current line with one above                     |
 | C-u M-^                           | joins current line with one below                     |
-| M-<SPC>                           | delete all but one space around point                 |
+| M-<SPC>                           | cycles delete all but one space around point          |
 | M-x flush-lines                   | delete lines with regex                               |
 | M-x keep-lines                    | delete lines without regex                            |
 | M-x ensure-empty-lines            | ensure arg blank lines before point, default is 1     |
