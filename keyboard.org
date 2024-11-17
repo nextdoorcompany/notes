@@ -13,6 +13,8 @@
 | C-x } C-x {                       | increase (decrease) buffer width                      |
 | C-x ^                             | increase buffer height                                |
 | M-x shrink-window                 | decrease buffer height                                |
+| C-x +                             | balance windows                                       |
+| C-x -                             | shrink window if larger than buffer                   |
 | C-x 4 0                           | kill buffer and window                                |
 | C-x o                             | other buffer                                          |
 | C-x b                             | switch to buffer                                      |
